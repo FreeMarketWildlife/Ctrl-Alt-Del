@@ -110,3 +110,6 @@ Run-cycle reference: [Raymond Schlitter’s Side View Run N Gun study](https://w
 `world.html` previews the original industrial city kit inspired by [Tiny Sci-Fi Pixels](https://www.slynyrd.com/blog/2025/11/28/pixelblog-59-tiny-sci-fi-pixels). `world.js` supplies the shared platform geometry and scenery for the run-and-gun: modular facades, roof vents, shutters, rail traffic, steam, pipes and illuminated deck edges. Art is drawn at native world scale.
 
 Heavy NEXUS mechs now appear in the platformer enemy mix (22% per spawn). They have 7 HP, move at 13 pixels/second, charge visibly during the last half-second before firing, and fire a 22-damage shell about every 2.4 seconds. Contact deals 28 damage and does not destroy the mech. The existing player invulnerability window still applies. Smaller walkers and drones remain in the mix. The mech is an enemy, not a pilotable vehicle.
+## PC play
+
+Combat automatically starts in PC mode on mouse and keyboard devices. Use the `PC MODE ON` button to toggle PC and touch controls. PC controls are `A/D` to move, `W` to jump, `Space` to fire, and `E` to punch. The FPS route also supports arrow keys or mouse drag to look.

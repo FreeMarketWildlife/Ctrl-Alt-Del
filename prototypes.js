@@ -16,10 +16,15 @@
   let last = 0;
   let raf = 0;
   let running = false;
-  let pcMode = window.matchMedia?.("(pointer:fine)").matches ?? true;
+  const hasTouchDevice = navigator.maxTouchPoints > 0 || window.matchMedia?.("(pointer:coarse)").matches;
+  let pcMode = !hasTouchDevice && (window.matchMedia?.("(pointer:fine)").matches ?? true);
   function setPCMode(enabled){ releaseInputs();pcMode=enabled; shell.classList.toggle("pc-mode",enabled); pcModeButton?.setAttribute("aria-pressed",String(enabled)); if(pcModeButton) pcModeButton.textContent=enabled?"PC MODE ON":"TOUCH MODE"; }
   pcModeButton?.addEventListener("click",()=>setPCMode(!pcMode));
   setPCMode(pcMode);
+
+  window.addEventListener("mousemove", e => {
+    if (running && pcMode && e.movementX) touch.look += e.movementX * .004;
+  }, { passive:true });
 
   const keyMap = {
     arrowleft:"left", a:"strafeLeft", arrowright:"right", d:"strafeRight",
@@ -287,7 +292,7 @@
       ctx.strokeStyle="#39f2df";ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(236,135);ctx.lineTo(244,135);ctx.moveTo(240,131);ctx.lineTo(240,139);ctx.stroke();
       // blaster
       const weaponY=melee>0?-10:0;ctx.fillStyle=muzzle>0?"#ffeac0":"#15121c";ctx.fillRect(211,230+weaponY,58,40);ctx.fillStyle="#41304b";ctx.fillRect(221,220+weaponY,38,30);ctx.fillStyle="#39f2df";ctx.fillRect(237,218+weaponY,6,12);ctx.fillStyle="#ff39cb";ctx.fillRect(226,228+weaponY,28,3);if(muzzle>0){ctx.fillStyle="#ffb84a";ctx.fillRect(234,202,12,18);ctx.fillStyle="#fff";ctx.fillRect(237,197,6,10)}if(melee>0){ctx.fillStyle="#ffb84a";ctx.fillRect(276,202,30,18);ctx.fillStyle="#f1bba0";ctx.fillRect(301,198,17,14);}
-      ctx.fillStyle="rgba(5,4,11,.82)";ctx.fillRect(7,27,150,18);ctx.fillStyle="#fff";ctx.font="7px monospace";ctx.fillText(character.toUpperCase()+" // HP",12,36);ctx.fillStyle="#35121d";ctx.fillRect(61,31,85,7);ctx.fillStyle=p.hp>35?"#39f2df":"#ff5269";ctx.fillRect(61,31,Math.max(0,85*p.hp/100),7);ctx.fillStyle="#fff";ctx.fillText(`CYBORGS ${score}/${enemies.length}`,386,36);
+      ctx.fillStyle="rgba(5,4,11,.82)";ctx.fillRect(7,27,150,18);ctx.fillStyle="#fff";ctx.font="7px monospace";ctx.fillText("JESSIE // HP",12,36);ctx.fillStyle="#35121d";ctx.fillRect(61,31,85,7);ctx.fillStyle=p.hp>35?"#39f2df":"#ff5269";ctx.fillRect(61,31,Math.max(0,85*p.hp/100),7);ctx.fillStyle="#fff";ctx.fillText(`CYBORGS ${score}/${enemies.length}`,386,36);
       if(hurt>0){ctx.fillStyle=`rgba(255,40,80,${hurt*.28})`;ctx.fillRect(0,0,480,270)}
       // micro minimap
       const scale=3;ctx.fillStyle="rgba(0,0,0,.48)";ctx.fillRect(428,43,44,44);for(let y=0;y<12;y++)for(let x=0;x<12;x++)if(MAP[y][x]!=="0"){ctx.fillStyle=MAP[y][x]==="2"?"#6f315f":"#293d43";ctx.fillRect(432+x*scale,47+y*scale,scale,scale)}ctx.fillStyle="#39f2df";ctx.fillRect(432+p.x*scale-1,47+p.y*scale-1,3,3);ctx.fillStyle="#ff5269";enemies.filter(e=>e.alive).forEach(e=>ctx.fillRect(432+e.x*scale,47+e.y*scale,2,2));

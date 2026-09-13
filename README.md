@@ -10,6 +10,8 @@ Touch a glowing cyan/magenta energy orb to swap Jessie and Jane. Exit and re-ent
 
 Mobile reference: [Playdigious on Dead Cells touch controls and optional automatic attacks](https://playdigious.com/news/sharpen-your-thumbs-dead-cells-is-now-slaying-foes-on-android). The implementation here uses original controls tailored to this game's two-dimensional movement.
 
+The NEXUS FPS route remains available from Prototype Lab. Its render loop is stable on both input modes: PC uses WASD, arrow-key turning, mouse look, Space/K fire and E punch; mobile uses the movement stick, right-side drag-to-look zone, and FIRE/PUNCH buttons. The FPS HUD and world render now continue while those controls are active.
+
 Run deterministic gameplay checks with `node tests/level-one.cjs`.
 
 **Ctrl Alt Del** is a campaign game about Jessie and Jane taking down the NEXUS, an AI overlord who rules the world.

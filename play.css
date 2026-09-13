@@ -113,6 +113,22 @@ button,canvas{-webkit-user-drag:none}
 .touch-controls{position:absolute;z-index:6;inset:0;pointer-events:none;--control-size:clamp(48px,13.5vh,64px)}
 .pc-mode .touch-controls{display:none}
 .pc-mode #gameCanvas{cursor:crosshair}
+.campaign-controls .virtual-stick{width:144px;height:72px;border-radius:36px;bottom:max(24px,env(safe-area-inset-bottom));opacity:.9}
+.campaign-controls .stick-knob{border-radius:50%;width:50px;height:50px}
+.campaign-controls .stick-cross::after{display:none}
+.campaign-controls .action-cluster{grid-template-columns:76px 76px;grid-template-rows:48px 76px;gap:12px;bottom:max(22px,env(safe-area-inset-bottom));opacity:.95}
+.campaign-controls .touch-btn{border-radius:50%;font-size:12px}
+.campaign-controls .touch-btn.jump{grid-column:1;grid-row:2}
+.campaign-controls .touch-btn.fire{grid-column:2;grid-row:2}
+.campaign-controls .touch-btn.punch{grid-column:2;grid-row:1;font-size:10px;width:60px;justify-self:center}
+.campaign-controls .desktop-hint{display:none}
+.assist-button{position:absolute;top:48px;right:12px;pointer-events:auto;border:1px solid #57868d;background:#101f30;color:#d4f8f0;padding:10px;font:10px monospace;min-height:40px}
+.pause-button{position:absolute;top:96px;right:12px;pointer-events:auto;border:1px solid #57868d;background:#101f30;color:#d4f8f0;padding:10px;font:10px monospace;min-height:40px}
+.game-shell:not(.pc-mode) .game-topbar{height:36px}
+.game-shell:not(.pc-mode) .exit-button{height:32px;min-width:44px}
+.pc-mode .campaign-controls{display:block}
+.pc-mode .campaign-controls .virtual-stick,.pc-mode .campaign-controls .action-cluster{display:none}
+.pc-mode .campaign-controls .desktop-hint{display:block}
 .look-zone{position:absolute;z-index:1;top:22px;right:0;bottom:0;width:68%;pointer-events:auto;touch-action:none;cursor:grab}
 .look-zone.active{cursor:grabbing}
 .look-hint{position:absolute;right:22%;top:38%;padding:4px 7px;border:1px solid rgba(57,242,223,.22);background:rgba(5,4,12,.34);color:rgba(207,255,248,.58);font-size:7px;letter-spacing:.12em;pointer-events:none}

@@ -1,0 +1,20 @@
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const vm=require('node:vm');
+const env={window:{},document:{createElement:()=>({setAttribute(){}})},localStorage:{setItem(){}},Math};
+vm.createContext(env);vm.runInContext(fs.readFileSync(require('node:path').join(__dirname,'../level-one.js'),'utf8'),env);
+const api=env.window.CADLevelOne;
+function create(random=()=>.8){const input=new Set();let retry;const g=api.create({ctx:{},input,touch:{x:0},audio(){},showMessage:(a,b,c,cb)=>retry=cb,hideMessage(){},controls:{classList:{add(){},remove(){}},appendChild(){}},gameTitle:{},gameMeta:{},releaseInputs:()=>input.clear(),random});g.start();return {g,input,retry:()=>retry()};}
+const advance=(g,n)=>{for(let i=0;i<n;i++)g.update(1/60);};
+const timing=create();timing.g.update(-.1);advance(timing.g,20);assert.equal(timing.g.snapshot().p.y,199,'a stale first frame must not push the player through the ground');
+let values=[.099,.049];let roll=api.lootRoll(()=>values.shift());assert.equal(roll.health,true);assert.equal(roll.power,true);
+values=[.10,.05];roll=api.lootRoll(()=>values.shift());assert.equal(roll.health,false);assert.equal(roll.power,false);
+const run=create();run.input.add('right');run.input.add('fire');advance(run.g,110);assert.equal(run.g.snapshot().p.character,'jane');
+run.input.delete('right');advance(run.g,100);assert.equal(run.g.snapshot().p.character,'jane','orb cannot repeatedly swap a stationary player');
+run.input.add('right');advance(run.g,2000);assert.equal(run.g.snapshot().won,true);assert.ok(run.g.snapshot().enemies.find(e=>e.boss).dead);assert.ok(run.g.snapshot().checkpoint>0);
+run.retry();assert.equal(run.g.snapshot().p.x,45,'win replay starts a fresh level');
+const jump=create();jump.input.add('up');advance(jump.g,12);assert.ok(jump.g.snapshot().p.y<170,'jump can reach the first deck');jump.input.delete('up');advance(jump.g,100);assert.equal(jump.g.snapshot().p.y,199);
+const loot=create(()=>0);loot.input.add('right');loot.input.add('fire');advance(loot.g,400);assert.ok(loot.g.snapshot().p.power>0,'enemy drops are collected');assert.equal(loot.g.snapshot().p.powerType,'overdrive');assert.ok(loot.g.snapshot().p.hp<=100);
+const fail=create();fail.input.add('right');advance(fail.g,1800);assert.equal(fail.g.snapshot().won,false,'cannot win without defeating the gate mech');
+const retry=create();retry.input.add('right');retry.input.add('fire');advance(retry.g,800);assert.equal(retry.g.snapshot().checkpoint,1410);retry.input.delete('fire');advance(retry.g,5000);assert.equal(retry.g.snapshot().dead,true);retry.retry();assert.equal(retry.g.snapshot().p.x,1410);assert.equal(retry.g.snapshot().p.hp,100);
+console.log('PASS: exact drop thresholds, transformation entry latch, jump, pickups, checkpoint, complete win and replay, boss requirement.');

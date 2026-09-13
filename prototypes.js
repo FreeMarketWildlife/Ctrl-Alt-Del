@@ -17,7 +17,7 @@
   let raf = 0;
   let running = false;
   let pcMode = window.matchMedia?.("(pointer:fine)").matches ?? true;
-  function setPCMode(enabled){ pcMode=enabled; shell.classList.toggle("pc-mode",enabled); pcModeButton?.setAttribute("aria-pressed",String(enabled)); if(pcModeButton) pcModeButton.textContent=enabled?"PC MODE ON":"TOUCH MODE"; }
+  function setPCMode(enabled){ releaseInputs();pcMode=enabled; shell.classList.toggle("pc-mode",enabled); pcModeButton?.setAttribute("aria-pressed",String(enabled)); if(pcModeButton) pcModeButton.textContent=enabled?"PC MODE ON":"TOUCH MODE"; }
   pcModeButton?.addEventListener("click",()=>setPCMode(!pcMode));
   setPCMode(pcMode);
 
@@ -94,7 +94,7 @@
     const moveStick=e=>{
       const box=stick.getBoundingClientRect();
       const radius=box.width*.34;
-      let dx=e.clientX-(box.left+box.width/2),dy=e.clientY-(box.top+box.height/2);
+      let dx=e.clientX-(box.left+box.width/2),dy=look?e.clientY-(box.top+box.height/2):0;
       const length=Math.hypot(dx,dy)||1;
       if(length>radius){dx=dx/length*radius;dy=dy/length*radius;}
       touch.x=dx/radius;touch.y=dy/radius;
@@ -131,7 +131,7 @@
 
   function launch(mode) {
     stop();releaseInputs();hideMessage();document.getSelection?.()?.removeAllRanges();shell.classList.remove("hidden");shell.classList.add("game-input-active");running=true;last=performance.now();
-    if(mode==="platformer") active=createPlatformer();
+    if(mode==="platformer") {makeControls({jump:true});active=CADLevelOne.create({ctx,input,touch,audio,showMessage,hideMessage,controls,gameTitle,gameMeta,releaseInputs});}
     if(mode==="fps") active=createFPS();
     if(!active){running=false;shell.classList.add("hidden");return;}
     active?.start?.();
@@ -146,7 +146,7 @@
 
   function loop(now){
     if(!running||!active)return;
-    const dt=Math.min(.035,(now-last)/1000||.016);last=now;
+    const dt=Math.max(0,Math.min(.035,(now-last)/1000));last=now;
     active.update(dt);active.draw();raf=requestAnimationFrame(loop);
   }
 

@@ -1,5 +1,17 @@
 # CTRL ALT DEL
 
+## Play Chapter One — Escape Skyview
+
+[Play on phone or PC](https://freemarketwildlife.github.io/Ctrl-Alt-Del/) and choose **PLAY LEVEL ONE**. The 2,880-pixel scrolling run-and-gun level crosses six city blocks. Reach the midpoint checkpoint, defeat the armored gate mech, and enter the glowing extraction gate to win. Death retries from the checkpoint; the victory screen offers a fresh replay.
+
+On phones, play in landscape: drag the horizontal left-thumb pad, tap/hold JUMP for variable height, hold FIRE, and tap PUNCH. Movement, jump and fire support simultaneous touches. Optional AUTO FIRE attacks forward when enemies are nearby. PAUSE is available during play. PC uses A/D or left/right, W/up to jump, Space/K to fire, and E to punch. Jump buffering and a short ledge grace period help avoid missed jumps.
+
+Touch a glowing cyan/magenta energy orb to swap Jessie and Jane. Exit and re-enter the orb to swap again; health and power-ups carry over. Each defeated enemy independently rolls a **10% health drop** (+30 HP, capped at 100) and **5% power-up drop**. Power-ups last 15 seconds: Overdrive gives triple damage and faster fire; Shield reduces incoming damage by 70% before rounding. Collecting a new power replaces and refreshes the current one. The midpoint checkpoint restores health.
+
+Mobile reference: [Playdigious on Dead Cells touch controls and optional automatic attacks](https://playdigious.com/news/sharpen-your-thumbs-dead-cells-is-now-slaying-foes-on-android). The implementation here uses original controls tailored to this game's two-dimensional movement.
+
+Run deterministic gameplay checks with `node tests/level-one.cjs`.
+
 **Ctrl Alt Del** is a campaign game about Jessie and Jane taking down the NEXUS, an AI overlord who rules the world.
 
 This is the dedicated development repository: `FreeMarketWildlife/Ctrl-Alt-Del`.

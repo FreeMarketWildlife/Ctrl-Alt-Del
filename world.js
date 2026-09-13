@@ -2,7 +2,7 @@
    Original art inspired by SLYNYRD's Tiny Sci-Fi Pixels city study. */
 (() => {
   const platforms=[{x:0,y:234,w:480,h:36},{x:102,y:190,w:76,h:7},{x:255,y:172,w:78,h:7},{x:372,y:205,w:63,h:7}];
-  function draw(ctx,time=0){
+  function draw(ctx,time=0,{decks=true}={}){
     const r=(c,x,y,w,h)=>{ctx.fillStyle=c;ctx.fillRect(Math.round(x),Math.round(y),w,h);};
     const text=(s,x,y,c='#9ca9bd')=>{ctx.fillStyle=c;ctx.font='6px monospace';ctx.fillText(s,x,y);};
     r('#10172d',0,0,480,270);r('#252442',0,48,480,60);r('#39304e',0,108,480,74);
@@ -52,7 +52,7 @@
       r('#91a4b3',sx+Math.round(Math.sin(phase*5+i)*3),sy-Math.floor(phase*24),4+Math.floor(phase*6),3);ctx.globalAlpha=1;
     }
     // Landing surfaces: bright edge, dark face, repeatable metal deck tiles.
-    for(const p of platforms){
+    for(const p of decks?platforms:[]){
       r('#080f1c',p.x,p.y,p.w,p.h);r('#92a8b2',p.x,p.y,p.w,1);r('#4c6877',p.x,p.y+1,p.w,2);
       for(let x=p.x+2;x<p.x+p.w-2;x+=8){r('#28384b',x,p.y+4,5,2);r('#82919c',x,p.y+4,1,1);}
       if(p.y<230){r('#1b3043',p.x+3,p.y+7,p.w-6,3);r('#54b8b2',p.x+5,p.y+2,8,1);r('#cba273',p.x+p.w-12,p.y+2,8,1);for(const x of [p.x+8,p.x+p.w-12]){r('#172338',x,p.y+10,3,234-p.y-10);r('#35485b',x,p.y+10,1,234-p.y-10);}}

@@ -83,7 +83,8 @@
     state.screen = "home";
     menuPanel.innerHTML = `${title("MAIN MENU", "CHAPTER ZERO // SIGNAL ACQUIRED")}
       <div class="menu-list">
-        <button class="menu-btn primary" data-go="continue">CONTINUE</button>
+        <button class="menu-btn primary" data-go="levelOne">PLAY LEVEL ONE</button>
+        <button class="menu-btn" data-go="continue">CONTINUE</button>
         <button class="menu-btn" data-go="episodes">NEW GAME</button>
         <button class="menu-btn" data-go="episodes">EPISODE SELECT</button>
         <button class="menu-btn" data-go="chapters">CHAPTER SELECT</button>
@@ -194,6 +195,7 @@
 
   function go(name) {
     beep(650);
+    if (name === "levelOne") {window.CADPrototypes.launch('platformer');return;}
     if (name === "home") renderHome();
     if (name === "episodes") renderEpisodes();
     if (name === "chapters") renderChapters();
@@ -225,6 +227,7 @@
 
   window.addEventListener("keydown", e => {
     keys.add(e.key.toLowerCase());
+    if (!document.getElementById('gameShell').classList.contains('hidden')) return;
     if (state.screen === "home" && ["arrowdown","arrowup"].includes(e.key.toLowerCase())) {
       e.preventDefault();
       focusIndex += e.key === "ArrowDown" ? 1 : -1;

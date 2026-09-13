@@ -96,3 +96,17 @@ The next phase is to turn Chapter One from a survival sandbox into a directed le
 ## Repository migration
 
 Migrated from `FreeMarketWildlife/Snake-Game-Test/ctrl-alt-del` at source commit `8d61f587cb10f8598781bd0f7c41b74ca6950d7b`. The game files now live at the repository root. The relevant game commit history was preserved by a Git subtree split (which rewrites commit IDs), and the new repository’s initial commit is retained. The original repository remains available as an archive of the shared development history.
+
+## Animated character art
+
+Open `characters.html` (also linked from Field Intel) to inspect Jessie and Jane, select six animations, flip facing, pause, and export transparent PNG sprite sheets. `characters.js` is the shared integer-pixel renderer used in the studio, menu wallpaper, and run-and-gun prototype. Switch between Jessie and Jane using the in-game character button.
+
+Native sprites occupy 40 × 40 cells. Exported sheets in `assets/characters/` contain eight frames in each of six rows: idle, run, jump, fire, punch, hurt. Run plays at 14 fps; other sheet animations at 8 fps. Gameplay attacks synchronize their animation to the attack timer. Collision height is 35 world pixels to match the adult silhouette; art remains one pixel per world unit.
+
+Run-cycle reference: [Raymond Schlitter’s Side View Run N Gun study](https://www.slynyrd.com/blog/2026/1/26/side-view-run-n-gun). Original poses use planted contact, heel recovery, integer-pixel forward lean and a braced two-handed blaster hold. Firing while running preserves the leg cycle. Gameplay cadence follows distance traveled (42 world pixels per cycle). Studio controls include slow motion and frame stepping.
+
+## Skyview environment and heavy mechs
+
+`world.html` previews the original industrial city kit inspired by [Tiny Sci-Fi Pixels](https://www.slynyrd.com/blog/2025/11/28/pixelblog-59-tiny-sci-fi-pixels). `world.js` supplies the shared platform geometry and scenery for the run-and-gun: modular facades, roof vents, shutters, rail traffic, steam, pipes and illuminated deck edges. Art is drawn at native world scale.
+
+Heavy NEXUS mechs now appear in the platformer enemy mix (22% per spawn). They have 7 HP, move at 13 pixels/second, charge visibly during the last half-second before firing, and fire a 22-damage shell about every 2.4 seconds. Contact deals 28 damage and does not destroy the mech. The existing player invulnerability window still applies. Smaller walkers and drones remain in the mix. The mech is an enemy, not a pilotable vehicle.

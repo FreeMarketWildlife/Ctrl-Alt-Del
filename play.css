@@ -111,6 +111,8 @@ button,canvas{-webkit-user-drag:none}
 #gameTitle{color:var(--cyan);font-weight:900}
 #gameMeta{color:var(--muted)}
 .touch-controls{position:absolute;z-index:6;inset:0;pointer-events:none;--control-size:clamp(48px,13.5vh,64px)}
+.pc-mode .touch-controls{display:none}
+.pc-mode #gameCanvas{cursor:crosshair}
 .look-zone{position:absolute;z-index:1;top:22px;right:0;bottom:0;width:68%;pointer-events:auto;touch-action:none;cursor:grab}
 .look-zone.active{cursor:grabbing}
 .look-hint{position:absolute;right:22%;top:38%;padding:4px 7px;border:1px solid rgba(57,242,223,.22);background:rgba(5,4,12,.34);color:rgba(207,255,248,.58);font-size:7px;letter-spacing:.12em;pointer-events:none}

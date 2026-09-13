@@ -181,7 +181,7 @@
         <div style="border:1px solid var(--line);padding:10px;background:rgba(8,6,17,.82)"><b style="color:var(--red)">THE NEXUS</b><br>AI superpower controlling the state, surveillance grid, machines and human collaborators.</div>
         <div style="border:1px solid var(--line);padding:10px;background:rgba(8,6,17,.82)"><b style="color:var(--amber)">THE WORLD</b><br>Soft steampunk + vaporwave. Rails, boilers, steel, neon, drones, blasters. No magic.</div>
       </div>
-      <div class="nav-row"><button class="small-btn" data-go="home">&lt; BACK</button></div>`;
+      <div class="nav-row"><a class="small-btn" href="characters.html">ANIMATED CHARACTER STUDIO</a><button class="small-btn" data-go="home">&lt; BACK</button></div>`;
     bindGeneric();
     setStatus("FIELD INTEL // ENCRYPTED");
   }
@@ -263,7 +263,7 @@
     ctx.fillStyle="#07060d";ctx.fillRect(0,198,480,8);ctx.fillStyle="#3b2946";ctx.fillRect(0,198,480,1);for(let x=8;x<480;x+=27)ctx.fillRect(x,206,2,27);
     const train=(t*.7)%560-60;ctx.fillStyle="#0d0d18";ctx.fillRect(Math.floor(train),188,48,8);ctx.fillStyle="#39f2df";ctx.fillRect(Math.floor(train+4),191,35,1);ctx.fillStyle="#ff39cb";ctx.fillRect(Math.floor(train+43),190,2,2);
     ctx.fillStyle="#030309";ctx.fillRect(0,235,480,35);ctx.fillStyle="#2a1a32";ctx.fillRect(0,233,480,2);
-    human(185,234,"#39f2df");human(200,234,"#ff39cb",true);
+    CADCharacters.draw(ctx,"jessie",181,234,{time:performance.now()/1000});CADCharacters.draw(ctx,"jane",205,234,{time:performance.now()/1000+.4,facing:-1});
     drones.forEach((d,i)=>{const x=((d.x+t*d.s+d.p)%520)-20,y=d.y+Math.sin((t+d.p)/35)*2;ctx.fillStyle="#08070d";ctx.fillRect(x|0,y|0,9,3);ctx.fillRect((x+3)|0,(y-2)|0,3,2);ctx.fillStyle=i%2?"#ff39cb":"#39f2df";ctx.fillRect((x+4)|0,(y+3)|0,1,1)});
     if(Math.floor(t/47)%19===0){ctx.fillStyle="rgba(57,242,223,.2)";ctx.fillRect(0,101,480,1);ctx.fillStyle="rgba(255,57,203,.17)";ctx.fillRect(70,178,300,2)}
     requestAnimationFrame(drawWallpaper);

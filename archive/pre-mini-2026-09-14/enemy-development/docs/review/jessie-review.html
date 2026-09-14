@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Jessie — native pixel review</title>
+  <style>
+    :root{color-scheme:dark;--bg:#10181e;--panel:#18252d;--line:#34464f;--ink:#e1e7df;--muted:#9eb0b1;--accent:#95c8b6;--warm:#d7b28a}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 system-ui,sans-serif}main{max-width:1640px;margin:auto;padding:28px 32px 64px}header{display:flex;justify-content:space-between;align-items:center;padding-bottom:18px;border-bottom:1px solid var(--line);font:11px monospace;letter-spacing:1px}a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}.eyebrow{margin:32px 0 8px;color:var(--warm);font:11px monospace;letter-spacing:2px}h1{margin:0;font-size:clamp(30px,5vw,50px);line-height:1.12;letter-spacing:-1.5px}h1 span{color:var(--accent)}.lede{max-width:750px;color:var(--muted);margin:15px 0 26px}h2{font-size:20px;font-weight:550;margin:0}.section-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:30px 0 12px}.section-top p{margin:0;color:var(--muted);font:11px monospace}.controls{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;margin:14px 0}label{display:flex;align-items:center;gap:8px;font:12px monospace;color:var(--muted)}button,select{min-height:38px;padding:7px 12px;background:#1d2e36;border:1px solid #465b63;border-radius:3px;color:var(--ink);font:12px monospace;cursor:pointer}button:hover,select:hover{border-color:var(--accent)}button[aria-pressed=true]{color:#102229;background:var(--accent)}button:focus-visible,select:focus-visible,input:focus-visible,a:focus-visible{outline:2px solid var(--warm);outline-offset:3px}input{accent-color:var(--accent)}input[type=range]{width:180px}output{font:11px monospace;color:var(--warm);min-width:120px}.scene-wrap,.strip{overflow:auto;border:1px solid var(--line);background:#1c2a33;overscroll-behavior-x:contain}.scene-wrap{padding:12px;min-height:180px}.canvas-inner{width:max-content;min-width:100%;display:flex;justify-content:center}canvas{display:block;image-rendering:pixelated}.measurements{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin:0;padding:16px 0 20px;border-bottom:1px solid var(--line)}.measurements div{min-width:0}.measurements dt{color:var(--muted);font:10px monospace;letter-spacing:.6px}.measurements dd{margin:4px 0 0;font:14px monospace;color:var(--ink)}.note{color:var(--muted);font-size:12px;margin:10px 0}.review-controls{padding:13px 16px;border:1px solid var(--line);background:var(--panel);margin:0 0 16px}.review-controls .controls{margin:0}.state-row{margin:18px 0 24px}.state-caption{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px;margin-bottom:8px}.state-caption h3{font:13px monospace;margin:0;color:var(--ink);text-transform:uppercase;letter-spacing:1px}.state-caption span{font:11px monospace;color:var(--muted)}.strip{padding:8px 0}.frame-key{display:flex;width:max-content;gap:0;padding:6px 0 0;color:#9eb0b1;font:10px monospace}.frame-key span{display:block;padding:0 6px;border-left:1px solid var(--line);white-space:nowrap}.legend{display:flex;gap:8px;flex-wrap:wrap}.swatch{width:20px;height:20px;border:1px solid #78888b}.footer{margin-top:32px;padding-top:20px;border-top:1px solid var(--line);font:11px/1.8 monospace;color:var(--muted)}.footer a{margin-right:20px}.export-buttons{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}details{margin:18px 0}summary{cursor:pointer;color:var(--muted)}.orientation-key{display:flex;gap:16px;font:11px monospace;color:var(--muted)}
+    @media(max-width:650px){main{padding:20px 14px 44px}header span{display:none}.section-top{align-items:start;flex-direction:column;gap:4px}.measurements{grid-template-columns:repeat(2,1fr)}.controls{gap:10px}.review-controls{padding:12px}.scene-wrap{padding:8px}.state-caption{flex-direction:column}.lede{font-size:13px}}
+  </style>
+</head>
+<body>
+<main>
+  <header><a href="../../jessie.html">BACK TO JESSIE WORKSHOP</a><span>CTRL ALT DEL / ART REVIEW</span></header>
+  <p class="eyebrow">CHARACTER / SCALE / MOTION</p>
+  <h1>Jessie, on the <span>same grid.</span></h1>
+  <p class="lede">Inspect the current renderer in a measured industrial setting, then check every pose. Big and mini are independently drawn; each character, weapon and prop uses one native pixel per world unit.</p>
+
+  <section aria-labelledby="world-title">
+    <div class="section-top"><h2 id="world-title">World scale</h2><p id="grid-readout"></p></div>
+    <div class="controls">
+      <label>Pose <select id="state"></select></label>
+      <button id="play" aria-pressed="false">Play</button><button id="step">Next frame</button>
+      <label>Frame <input type="range" id="frame" min="0" max="7" value="0"></label><output id="frame-readout"></output>
+      <label>Speed <select id="speed"><option value="1">1×</option><option value=".5">½×</option><option value=".25">¼×</option></select></label>
+      <label>Scene zoom <select id="scene-zoom"><option value="fit">Fit whole pixels</option><option value="1">1×</option><option value="4" selected>4×</option></select></label>
+      <label><input type="checkbox" id="guides" checked> Height guides</label>
+    </div>
+    <div class="scene-wrap"><div class="canvas-inner"><canvas id="world-scene" width="384" height="168" aria-label="Big and mini Jessie with a 112 pixel clear doorway, 32 pixel crate, and 48 pixel barrier"></canvas></div></div>
+    <dl class="measurements"><div><dt>DOORWAY CLEAR HEIGHT</dt><dd>112 px</dd></div><div><dt>BIG JESSIE</dt><dd>96 px / 128² cell</dd></div><div><dt>MINI JESSIE</dt><dd>32 px / 48² cell</dd></div><div><dt>CARGO CRATE</dt><dd>32 × 32 px</dd></div><div><dt>COVER BARRIER</dt><dd>48 px high</dd></div></dl>
+    <p class="note">Doorway dimensions describe the opening above the deck. The 96px guide marks Jessie's standing height; jumping and crouching poses keep their authored feet anchor. All zoom values are whole device pixels per source pixel, including high-density displays.</p>
+  </section>
+
+  <section aria-labelledby="poses-title">
+    <div class="section-top"><h2 id="poses-title">Every authored pose</h2><p>Actual frame counts and timing / scroll across each sequence</p></div>
+    <div class="review-controls"><div class="controls">
+      <label>Direction <select id="facing"><option value="1">Right</option><option value="-1">Left</option></select></label>
+      <label><input type="checkbox" id="silhouette"> Silhouettes</label>
+      <label>Sheet zoom <select id="sheet-zoom"><option value="1" selected>1×</option><option value="2">2×</option><option value="4">4×</option></select></label>
+      <label>Background <select id="backdrop"><option value="#1c2a33">Dark slate</option><option value="#819393">Mid grey</option><option value="#d5d9cd">Light paper</option></select></label>
+    </div></div>
+    <p class="note">Direction and silhouette controls apply to the character in the world and every sheet. Frame labels are review UI outside the art grid. No interpolated or repeated filler poses appear here.</p>
+    <div id="sheets"></div>
+  </section>
+
+  <details><summary>Compare mini sequences on the identical pixel grid</summary><div id="mini-sheets"></div></details>
+  <section aria-labelledby="exports-title">
+    <div class="section-top"><h2 id="exports-title">Native review exports</h2><p>Transparent PNGs / original cell dimensions</p></div>
+    <div class="export-buttons"><button id="save-scene">Save world vignette</button><button id="save-atlas">Save current big review sheet</button><button id="save-mini">Save current mini review sheet</button></div>
+    <div class="legend" id="palette" aria-label="Jessie's sixteen color palette"></div>
+  </section>
+  <footer class="footer"><a href="../../JESSIE-STANDARD.md">Character standard</a><a href="../../ART-STANDARDS.md">World pixel standard</a><a href="../../docs/references/jessie-direction.md">Direction reference</a><br>Uses the current CADJessie renderer directly. Native pixels, stable feet anchors and full sequences make visual decisions reviewable.</footer>
+</main>
+<script src="../../pixel-grid.js"></script>
+<script src="../../jessie-motion.js"></script>
+<script src="../../jessie.js"></script>
+<script>
+(() => {
+  'use strict';
+  const A=window.CADJessie, byId=id=>document.getElementById(id), scene=byId('world-scene'), context=scene.getContext('2d');
+  const settings={state:'idle',time:0,playing:false,facing:1,silhouette:false};
+  const sheets={big:[],mini:[]};
+  const layer=document.createElement('canvas');layer.width=scene.width;layer.height=scene.height;
+  const actors=layer.getContext('2d');
+  const metrics={floor:140,doorway:{x:28,y:28,width:56,height:112},crate:{x:264,y:108,width:32,height:32},barrier:{x:332,y:92,width:36,height:48},big:{x:137,feet:140,height:96},mini:{x:229,feet:140,height:32}};
+  const rect=(c,x,y,w,h)=>{context.fillStyle=c;context.fillRect(x,y,w,h);};
+  function recolor(c){c.save();c.globalCompositeOperation='source-in';c.fillStyle='#e9e1c6';c.fillRect(0,0,c.canvas.width,c.canvas.height);c.restore();}
+  function frameTime(state,frame){return A.durations[state].slice(0,frame).reduce((a,b)=>a+b,0)/1000+.000001;}
+  function drawActor(c,size,x,feet,state,frame,time){A.draw(c,size,x,feet,{state,frame,time,facing:settings.facing});}
+
+  // Independently authored industrial props. Every edge, seam and light is an
+  // integer rectangle; no mini world assets are enlarged to reach big scale.
+  function environment(){
+    rect('#17242d',0,0,384,168);rect('#202f39',0,12,384,128);
+    for(let x=0;x<384;x+=32){rect('#1a2933',x,12,1,128);rect('#31404a',x+1,12,1,128);}
+    for(let y=28;y<140;y+=16)rect('#24353f',0,y,384,1);
+    rect('#121d27',0,13,384,7);rect('#566974',0,14,384,1);rect('#354b58',0,16,384,3);
+    for(let x=8;x<384;x+=32){rect('#74818a',x,13,2,7);rect('#354552',x+2,14,2,6);}
+    // The opening is exactly 56 × 112; the lintel is outside that measurement.
+    const d=metrics.doorway;rect('#0b151e',d.x-6,d.y-8,d.width+12,d.height+8);rect('#536674',d.x-5,d.y-7,d.width+10,4);rect('#8a9b9f',d.x-4,d.y-7,d.width+8,1);
+    rect('#3c505e',d.x-5,d.y-3,5,d.height+3);rect('#6a7f88',d.x-5,d.y-3,1,d.height+3);rect('#314553',d.x+d.width,d.y-3,5,d.height+3);
+    rect('#101c25',d.x,d.y,d.width,d.height);rect('#1b2b35',d.x+6,d.y+4,d.width-12,d.height-4);rect('#243b45',d.x+7,d.y+5,1,d.height-5);
+    rect('#426571',d.x+10,d.y+9,d.width-20,2);rect('#709c9c',d.x+10,d.y+9,12,1);rect('#172832',d.x+10,d.y+11,d.width-20,d.height-11);
+    for(let y=d.y+24;y<140;y+=16)rect('#1c303a',d.x+10,y,d.width-20,1);
+    rect('#10202a',92,71,10,19);rect('#526c76',92,71,10,1);rect('#356c70',94,74,6,5);rect('#86c8b2',95,74,4,2);rect('#ad8c60',94,83,2,2);rect('#253d48',98,83,2,4);
+    // Far wall service panel and restrained practical lighting.
+    rect('#13212c',182,53,60,29);rect('#455b68',182,53,60,1);rect('#2e424e',184,55,56,25);rect('#142530',189,60,46,13);
+    for(let x=191;x<233;x+=6){rect('#536b76',x,60,2,12);rect('#75929a',x,60,1,8);}
+    rect('#0f1f2a',281,37,62,7);rect('#5c867f',283,38,58,2);rect('#a5c3a3',290,38,44,1);
+    const c=metrics.crate;rect('#0b151f',c.x,c.y,c.width,c.height);rect('#62717a',c.x+1,c.y+1,30,2);rect('#8c9b9b',c.x+2,c.y+1,28,1);rect('#344b58',c.x+1,c.y+3,30,28);rect('#243945',c.x+5,c.y+6,22,21);
+    rect('#5d7780',c.x+4,c.y+5,24,2);rect('#182e39',c.x+4,c.y+27,24,2);rect('#536c74',c.x+4,c.y+7,2,20);rect('#1a2d38',c.x+26,c.y+7,2,20);rect('#839a94',c.x+13,c.y+11,7,2);rect('#9b8a67',c.x+14,c.y+18,5,6);rect('#c1a97b',c.x+14,c.y+18,5,1);
+    for(const x of [c.x+2,c.x+29])for(const y of [c.y+4,c.y+28])rect('#81929a',x,y,1,1);
+    const b=metrics.barrier;rect('#0b151e',b.x,b.y,b.width,b.height);rect('#9a9c90',b.x+1,b.y+1,34,2);rect('#677b81',b.x+1,b.y+3,34,5);rect('#344d5a',b.x+3,b.y+8,30,38);rect('#576d76',b.x+3,b.y+8,2,37);rect('#213a47',b.x+30,b.y+8,3,37);
+    rect('#172c38',b.x+7,b.y+14,21,4);for(let x=b.x+8;x<b.x+27;x+=8){rect('#b39766',x,b.y+14,4,2);rect('#b39766',x+2,b.y+16,4,2);}
+    rect('#192f3b',b.x+8,b.y+23,19,17);rect('#3c5864',b.x+9,b.y+24,17,1);rect('#617984',b.x+12,b.y+28,1,7);rect('#182a36',b.x+1,b.y+44,34,4);
+    // One shared deck baseline for actors, the opening, crate and barrier.
+    rect('#8ba1a9',0,140,384,1);rect('#506b78',0,141,384,2);rect('#0d1a25',0,143,384,25);
+    for(let x=0;x<384;x+=16){rect('#2c4554',x+1,144,14,3);rect('#81929b',x+2,144,1,1);rect('#283e4c',x+1,151,14,13);rect('#426070',x+1,151,14,1);rect('#142936',x+5,155,6,6);}
+    rect('#344f5e',0,165,384,2);
+    if(byId('guides').checked){
+      const line=(x,top,height,color)=>{rect(color,x,top,1,height);rect(color,x-2,top,5,1);rect(color,x-2,top+height-1,5,1);};
+      line(16,28,112,'#83a0a6');line(108,44,96,'#b29672');line(212,108,32,'#8cbba8');
+      for(let x=109;x<183;x+=4)rect('#6f7166',x,44,2,1);
+    }
+  }
+  function renderScene(){
+    environment();actors.clearRect(0,0,layer.width,layer.height);
+    const frame=A.frameAt(settings.state,settings.time);
+    for(const size of ['big','mini']){const m=metrics[size];drawActor(actors,size,m.x,m.feet,settings.state,frame,settings.time);}
+    if(settings.silhouette)recolor(actors);context.drawImage(layer,0,0);
+    byId('frame').value=frame;byId('frame-readout').value=`${String(frame+1).padStart(2,'0')} / ${A.durations[settings.state].length} · ${A.durations[settings.state][frame]} ms`;
+  }
+  function renderSheet(canvas,size,state){
+    const s=A.specs[size],c=canvas.getContext('2d');canvas.width=s.width*A.durations[state].length;canvas.height=s.height;c.imageSmoothingEnabled=false;
+    A.durations[state].forEach((duration,frame)=>drawActor(c,size,frame*s.width+s.anchor[0],s.anchor[1],state,frame,frameTime(state,frame)));
+    if(settings.silhouette)recolor(c);
+  }
+  function createRows(size){
+    for(const state of A.states){
+      const row=document.createElement('section');row.className='state-row';row.dataset.state=state;
+      const caption=document.createElement('div');caption.className='state-caption';
+      const heading=document.createElement('h3');heading.textContent=state.replaceAll('-',' + ');
+      const timing=document.createElement('span');timing.textContent=`${A.durations[state].length} poses / ${A.durations[state].reduce((a,b)=>a+b,0)} ms loop / ${A.specs[size].width} × ${A.specs[size].height} cells`;
+      caption.append(heading,timing);row.append(caption);
+      const strip=document.createElement('div');strip.className='strip';
+      const canvas=document.createElement('canvas');canvas.dataset.size=size;canvas.dataset.state=state;canvas.setAttribute('aria-label',`${size} Jessie ${state}, every authored frame`);
+      const key=document.createElement('div');key.className='frame-key';
+      A.durations[state].forEach((duration,index)=>{const label=document.createElement('span');label.textContent=`${String(index+1).padStart(2,'0')} / ${duration}ms`;key.append(label);});
+      strip.append(canvas,key);row.append(strip);byId(size==='big'?'sheets':'mini-sheets').append(row);sheets[size].push({canvas,key,state});renderSheet(canvas,size,state);
+    }
+  }
+  function resize(){
+    const scale=byId('scene-zoom').value,availableWidth=scene.closest('.scene-wrap').clientWidth-24;
+    const fit=CADPixelGrid.applyScene(scene,scale==='fit'?{availableWidth,maxScale:4}:{scale:Number(scale),availableWidth});
+    byId('grid-readout').textContent=`1 art pixel = ${fit.scale} device pixel${fit.scale===1?'':'s'} / ${scene.width} × ${scene.height} native`;
+    for(const size of ['big','mini'])for(const {canvas,key} of sheets[size]){
+      const applied=CADPixelGrid.applyScene(canvas,{scale:Number(byId('sheet-zoom').value)});
+      for(const label of key.children)label.style.width=`${A.specs[size].width*applied.cssScale}px`;
+    }
+  }
+  function renderAll(){for(const size of ['big','mini'])for(const {canvas,state} of sheets[size])renderSheet(canvas,size,state);renderScene();resize();}
+  function setFrame(frame){settings.time=frameTime(settings.state,frame);renderScene();}
+  function pause(){settings.playing=false;byId('play').textContent='Play';byId('play').setAttribute('aria-pressed','false');}
+  function atlas(size){
+    const s=A.specs[size],canvas=document.createElement('canvas');canvas.width=A.columns*s.width;canvas.height=A.states.length*s.height;
+    const c=canvas.getContext('2d');for(let row=0;row<sheets[size].length;row++)c.drawImage(sheets[size][row].canvas,0,row*s.height);return canvas;
+  }
+  function save(canvas,name){const link=document.createElement('a');link.download=name;link.href=canvas.toDataURL('image/png');link.click();}
+  for(const state of A.states){const option=document.createElement('option');option.value=state;option.textContent=state.replaceAll('-',' + ');byId('state').append(option);}
+  for(const color of A.palette){const swatch=document.createElement('span');swatch.className='swatch';swatch.style.background=color;swatch.title=color;byId('palette').append(swatch);}
+  createRows('big');createRows('mini');
+  byId('state').onchange=()=>{settings.state=byId('state').value;byId('frame').max=A.durations[settings.state].length-1;setFrame(0);};
+  byId('frame').oninput=()=>{pause();setFrame(Number(byId('frame').value));};
+  byId('step').onclick=()=>{pause();setFrame((A.frameAt(settings.state,settings.time)+1)%A.durations[settings.state].length);};
+  byId('play').onclick=()=>{settings.playing=!settings.playing;byId('play').textContent=settings.playing?'Pause':'Play';byId('play').setAttribute('aria-pressed',String(settings.playing));};
+  byId('facing').onchange=()=>{settings.facing=Number(byId('facing').value);renderAll();};
+  byId('silhouette').onchange=()=>{settings.silhouette=byId('silhouette').checked;renderAll();};
+  byId('guides').onchange=renderScene;byId('scene-zoom').onchange=resize;byId('sheet-zoom').onchange=resize;
+  byId('backdrop').onchange=()=>document.querySelectorAll('.strip').forEach(strip=>strip.style.background=byId('backdrop').value);
+  byId('save-scene').onclick=()=>save(scene,'jessie-world-scale.png');
+  const suffix=()=>`${settings.facing===1?'right':'left'}${settings.silhouette?'-silhouette':''}`;
+  byId('save-atlas').onclick=()=>save(atlas('big'),`jessie-big-review-${suffix()}.png`);
+  byId('save-mini').onclick=()=>save(atlas('mini'),`jessie-mini-review-${suffix()}.png`);
+  window.CADJessieReview={metrics,settings,atlas,renderAll,setFrame,pause};
+  window.addEventListener('resize',resize);document.querySelectorAll('.scene-wrap,.strip').forEach(el=>el.addEventListener('scroll',()=>{for(const canvas of el.querySelectorAll('canvas'))CADPixelGrid.alignScene(canvas);}));
+  document.querySelector('details').addEventListener('toggle',resize);renderScene();resize();
+  let previous=performance.now();function tick(now){if(settings.playing&&!document.hidden){settings.time+=Math.min(.05,(now-previous)/1000)*Number(byId('speed').value);renderScene();}previous=now;requestAnimationFrame(tick);}requestAnimationFrame(tick);
+})();
+</script>
+</body>
+</html>

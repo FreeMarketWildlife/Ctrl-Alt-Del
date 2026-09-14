@@ -1,0 +1,158 @@
+{
+  "AGENTS.md": {
+    "before": "0a6caa736fcaf1aa9d8bfe0f0c8abe7f786a4550c99c1bddda7a4b1e06b5c797",
+    "after": "be768dcafc6f51c643480b7e0d1f92316ed07262aad87ca1820531e4d5173037"
+  },
+  "ART-STANDARDS.md": {
+    "before": "e049a9ae12979f1a619882a086ece4de1f1aefc4b2e9f3e2b509051d642034c6",
+    "after": "7d48c1e207179731facb0e86ec75277a50657e5abc9cee92d198efc5a5aa8df6"
+  },
+  "ENEMY-STANDARD.md": {
+    "before": null,
+    "after": "9602fef623786dd7c37a5b7839d7e3f06a1af8ce0d4c9138890117434af09782"
+  },
+  "README.md": {
+    "before": "0c3e60b620d1a42aee165a8a7381cf4095a0b0bfa2e3b33f29a181e0adea8731",
+    "after": "e65b4909ad75897cb72abba2b052ce1ef31efc50d8659cdd67782af8da44c74c"
+  },
+  "assets/enemies/bastion/bastion-animation.json": {
+    "before": null,
+    "after": "6a47d3ebd1ac5e3cbeab7da6a2d4a88a0f5d560a8f5b00bb188aeafddb9f872e"
+  },
+  "assets/enemies/bastion/bastion-big.png": {
+    "before": null,
+    "after": "69003920d5ffa2a16767e46d570ae5621b0676fbbd2f0489c71ce27a9d825279"
+  },
+  "assets/enemies/bastion/bastion-mini.png": {
+    "before": null,
+    "after": "532ee11beae4f59f45fca2cc7f46a8725ae1d4cf7b766e0526db0fd93d10a056"
+  },
+  "assets/enemies/collector/collector-animation.json": {
+    "before": null,
+    "after": "d7cfd71374cbae4f244cdeb03c46e8f028300406f7981f1dffdcb9d635f83e7b"
+  },
+  "assets/enemies/collector/collector-big.png": {
+    "before": null,
+    "after": "be64a67152535739cefbde5a50d7d0000a99b11bf154bac294c3b7736d4a69e3"
+  },
+  "assets/enemies/collector/collector-mini.png": {
+    "before": null,
+    "after": "38c124dfe9a1bbad51739a48ca33833d4756979341110157ca5b7d3119ce5bf1"
+  },
+  "assets/enemies/manta/manta-animation.json": {
+    "before": null,
+    "after": "f749c6722cf7dcac2e8bc2a9a66b99667bce64c3fb76ec08a62696bccf3d1d3a"
+  },
+  "assets/enemies/manta/manta-big.png": {
+    "before": null,
+    "after": "18d68a7980b458fffe8b90dea6fcb38b975a283bff061e617e3714f04bd1e7d9"
+  },
+  "assets/enemies/manta/manta-mini.png": {
+    "before": null,
+    "after": "1bdcc60d94f81f33a2fcf38b7827cabc3412f2ff1fcffc0e1edc96393aba86b2"
+  },
+  "assets/enemies/scrapper/scrapper-animation.json": {
+    "before": null,
+    "after": "4f1715065ac2d00bb103d063970d1a5eb72b56db5e96d4533055f03f0ad515db"
+  },
+  "assets/enemies/scrapper/scrapper-big.png": {
+    "before": null,
+    "after": "a36754862902add14eb6f9fc1a8f3d07a6a584d3392f29194a06b45e4d0274a9"
+  },
+  "assets/enemies/scrapper/scrapper-mini.png": {
+    "before": null,
+    "after": "c1ae7281b0bf1db18df420ba3b4294af3f4e9163994dc61e0a5f1e3664983a85"
+  },
+  "assets/enemies/sentinel/sentinel-animation.json": {
+    "before": null,
+    "after": "2af0eefef9739f0adbdded50187d18d95b60b420ad451bcda40757c819b57e7e"
+  },
+  "assets/enemies/sentinel/sentinel-big.png": {
+    "before": null,
+    "after": "986f73d020628999defe9eb25bdc3af12465b28ec74f7f566a0b79a5f2dace61"
+  },
+  "assets/enemies/sentinel/sentinel-mini.png": {
+    "before": null,
+    "after": "0f803c062d0139465e98c79e89e076f00abe983902b1960b7e02a4184ff3cfd8"
+  },
+  "assets/enemies/watcher/watcher-animation.json": {
+    "before": null,
+    "after": "0304a6b9e85cd73a6b2c1a541a6aa0db09f1a6e1a583a469ae7f4263ac9b674d"
+  },
+  "assets/enemies/watcher/watcher-big.png": {
+    "before": null,
+    "after": "4ae4985e3abf72630a018674a58eae21d90f0b1e4bb2baa0364529c370cefd39"
+  },
+  "assets/enemies/watcher/watcher-mini.png": {
+    "before": null,
+    "after": "9bb6c38ba2d05a14555ced18317aee7af1529193e522eb4b04293d703080697b"
+  },
+  "codex-art.js": {
+    "before": "e4a122cfd41fc233eda8638ddacb7ea8884808d6481d2cb226bc9a5b7779633f",
+    "after": "087f729fedf9df1109583b734ead77ea74490b4c4b71665d30e4028c6d973cc7"
+  },
+  "codex.html": {
+    "before": "aa4f4e86214aaf4f55c6c8ea9c5d6144a8466b62d3f05b3bc526ec4645c5ccc4",
+    "after": "b1b5c7a7d5a14b9ec3d628dcc9f20a72261d4303c958727cc43b09c1139dd05d"
+  },
+  "codex.js": {
+    "before": "0e6e1d28cfdfda63d6ead8ee6927f0ce52866384d34f4e87b63c6e4fd7b19031",
+    "after": "ee6604e1aee8c9f938d9d60d8d473151967d06d1d2cad4d19b5fb9139c2f971e"
+  },
+  "docs/references/enemy-mech-research.md": {
+    "before": null,
+    "after": "21c5db66d43f2e5ef79326c1aae30e93194ae1274002574410773d9d7210a3e6"
+  },
+  "docs/review/enemy-animation.gif": {
+    "before": null,
+    "after": "f6cd5c28c746dc2d3592ed26e9009b97815d0d27d7098def382607f2e81503f3"
+  },
+  "docs/review/enemy-roster.png": {
+    "before": null,
+    "after": "91674f6b00b6b7082a38243be3bf68232519313349ae92440eae44589a639354"
+  },
+  "enemies-study.js": {
+    "before": null,
+    "after": "d74a4e83705a98c5dfa19614930653a8e5ff1085bd11c465f97fe112aaa10d68"
+  },
+  "enemies.css": {
+    "before": null,
+    "after": "1f8eb6588d35ebbd4b243bab1f83d66a274dbde92dca5f4323b446b17d21633e"
+  },
+  "enemies.html": {
+    "before": null,
+    "after": "22937f419e9f8c479eda03d92df7c1825edc918b3dfaf488ae0b9ecbd12623f3"
+  },
+  "enemies.js": {
+    "before": null,
+    "after": "b9a122b0e35225738af7b8fa66abf2df15ee770ad9986ad180d4528078009a15"
+  },
+  "enemy-drones.js": {
+    "before": null,
+    "after": "0e962094b7f39da3b2a2b93b535894b1479da5ee872d3b34c3ebab123a7ec104"
+  },
+  "enemy-mech-motion.js": {
+    "before": null,
+    "after": "9bdf76ba88af673c97df799626742f85e7154f20d19708f49e68cbbd0f181b60"
+  },
+  "enemy-mechs.js": {
+    "before": null,
+    "after": "56d4a2f0ed7576a88a47f0d8f0928f27c891f630899b72bb61d9802b384192c1"
+  },
+  "tests/enemies.cjs": {
+    "before": null,
+    "after": "317dc195826a9442b5a4ef41353b67e509216dae1c41dca9104b00065a6f4285"
+  },
+  "tests/enemy-heroes-baseline.json": {
+    "before": null,
+    "after": "fab54c5b4681150ace34687fbb9f1f714a005ed560e650636a11830a33dcf88e"
+  },
+  "tests/enemy-mech-motion.cjs": {
+    "before": null,
+    "after": "d380f65ce90217f60676a04399b179939881e4c61eac3fd906022f1d206fd49d"
+  },
+  "tests/render-enemy-review.cjs": {
+    "before": null,
+    "after": "5de9208098c6de0fe0c30450abbfaa5ddd980d4c17b7aea532aa49518c9fc0b6"
+  }
+}

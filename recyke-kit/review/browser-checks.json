@@ -1,0 +1,86 @@
+{
+  "status": "passed",
+  "runs": [
+    {
+      "family": "mini",
+      "dpr": 1,
+      "keyboardMovement": true,
+      "jump": true,
+      "entranceCompleted": true,
+      "catalogSearchAndFrameControls": true,
+      "grid": {
+        "native": [
+          480,
+          270
+        ],
+        "css": [
+          960,
+          540
+        ],
+        "dpr": 1,
+        "smooth": false
+      }
+    },
+    {
+      "family": "big",
+      "dpr": 1,
+      "keyboardMovement": true,
+      "jump": true,
+      "entranceCompleted": true,
+      "catalogSearchAndFrameControls": true,
+      "grid": {
+        "native": [
+          640,
+          360
+        ],
+        "css": [
+          640,
+          360
+        ],
+        "dpr": 1,
+        "smooth": false
+      }
+    },
+    {
+      "family": "mini",
+      "dpr": 2,
+      "keyboardMovement": true,
+      "jump": true,
+      "entranceCompleted": true,
+      "catalogSearchAndFrameControls": true,
+      "grid": {
+        "native": [
+          480,
+          270
+        ],
+        "css": [
+          720,
+          405
+        ],
+        "dpr": 2,
+        "smooth": false
+      }
+    },
+    {
+      "family": "big",
+      "dpr": 2,
+      "keyboardMovement": true,
+      "jump": true,
+      "entranceCompleted": true,
+      "catalogSearchAndFrameControls": true,
+      "grid": {
+        "native": [
+          640,
+          360
+        ],
+        "css": [
+          960,
+          540
+        ],
+        "dpr": 2,
+        "smooth": false
+      }
+    }
+  ],
+  "errors": []
+}

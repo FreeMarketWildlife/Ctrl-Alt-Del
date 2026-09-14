@@ -1,0 +1,272 @@
+{
+  "assetId": "cad.mini.recyke.concealed-door",
+  "revision": 1,
+  "name": "Concealed service entrance",
+  "kind": "interactive",
+  "biome": "recyke",
+  "family": "mini",
+  "approval": "review-candidate",
+  "source": {
+    "type": "new-native",
+    "file": "src/mini.cjs",
+    "renderer": "src/painters.cjs"
+  },
+  "native": {
+    "width": 48,
+    "height": 58,
+    "origin": [
+      0,
+      58
+    ],
+    "originName": "base-left",
+    "selectionBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 48,
+      "height": 58
+    },
+    "visibleBounds": [
+      {
+        "variant": 0,
+        "frame": 0,
+        "x": 3,
+        "y": 10,
+        "width": 41,
+        "height": 48
+      },
+      {
+        "variant": 0,
+        "frame": 1,
+        "x": 3,
+        "y": 10,
+        "width": 41,
+        "height": 48
+      },
+      {
+        "variant": 0,
+        "frame": 2,
+        "x": 3,
+        "y": 10,
+        "width": 41,
+        "height": 48
+      },
+      {
+        "variant": 0,
+        "frame": 3,
+        "x": 3,
+        "y": 10,
+        "width": 41,
+        "height": 48
+      },
+      {
+        "variant": 0,
+        "frame": 4,
+        "x": 3,
+        "y": 10,
+        "width": 41,
+        "height": 48
+      },
+      {
+        "variant": 0,
+        "frame": 5,
+        "x": 3,
+        "y": 10,
+        "width": 41,
+        "height": 48
+      },
+      {
+        "variant": 0,
+        "frame": 6,
+        "x": 3,
+        "y": 10,
+        "width": 41,
+        "height": 48
+      }
+    ],
+    "animationEnvelope": {
+      "x": 0,
+      "y": 0,
+      "width": 48,
+      "height": 58
+    }
+  },
+  "sockets": [
+    {
+      "id": "entry",
+      "type": "entry-mini",
+      "x": 24,
+      "y": 0,
+      "facing": "front"
+    }
+  ],
+  "render": {
+    "kind": "sprite-sheet",
+    "layer": "scenery",
+    "parallax": {
+      "x": 1,
+      "y": 1
+    },
+    "variants": [
+      {
+        "id": "v0",
+        "uri": "assets/mini/concealed-door.png",
+        "sha256": "55ceac4741b912aac7363a06b186cccdf437ce2f4e9e91b0fb69a67d6ab8c2df",
+        "width": 336,
+        "height": 58
+      }
+    ],
+    "frameSize": [
+      48,
+      58
+    ],
+    "frameCount": 7,
+    "allowedFacing": [
+      1
+    ],
+    "scale": 1
+  },
+  "collision": {
+    "defaults": [
+      {
+        "channel": "interaction",
+        "mask": [
+          "player"
+        ],
+        "kind": "sensor",
+        "x": 0,
+        "y": -44,
+        "width": 48,
+        "height": 44
+      }
+    ],
+    "decorative": false,
+    "behavior": "none; host may bind sensor to an interaction; artwork does not block horizontal travel"
+  },
+  "properties": {
+    "variant": {
+      "type": "integer",
+      "default": 0,
+      "min": 0,
+      "max": 0,
+      "description": "Explicit visual variation; collision is unchanged."
+    },
+    "state": {
+      "type": "enum",
+      "values": [
+        "sealed",
+        "latched",
+        "unlatched",
+        "opening",
+        "open"
+      ],
+      "default": "sealed"
+    },
+    "initialVisualState": {
+      "type": "enum",
+      "values": [
+        "sealed",
+        "latched",
+        "unlatched",
+        "open"
+      ],
+      "default": "sealed",
+      "description": "Visual state only; host owns access rules."
+    }
+  },
+  "animation": {
+    "states": {
+      "sealed": {
+        "frames": [
+          0
+        ],
+        "timingMs": [
+          1000
+        ],
+        "loop": true
+      },
+      "latched": {
+        "frames": [
+          1
+        ],
+        "timingMs": [
+          1000
+        ],
+        "loop": true
+      },
+      "unlatched": {
+        "frames": [
+          2
+        ],
+        "timingMs": [
+          1000
+        ],
+        "loop": true
+      },
+      "opening": {
+        "frames": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "timingMs": [
+          180,
+          120,
+          120,
+          120,
+          180
+        ],
+        "loop": false,
+        "endState": "open"
+      },
+      "open": {
+        "frames": [
+          6
+        ],
+        "timingMs": [
+          1000
+        ],
+        "loop": true
+      }
+    },
+    "frameEvents": [
+      {
+        "state": "opening",
+        "frameIndex": 4,
+        "event": "opening-clear"
+      }
+    ],
+    "timingUnit": "ms",
+    "sourceFramesOnly": true,
+    "deterministic": true
+  },
+  "tags": [
+    "mini",
+    "recyke",
+    "interactive",
+    "door",
+    "entrance",
+    "locks",
+    "moral code",
+    "native"
+  ],
+  "thumbnail": {
+    "uri": "assets/mini/concealed-door.png",
+    "frame": 0,
+    "variant": 0,
+    "nativeSize": [
+      48,
+      58
+    ],
+    "noResample": true
+  },
+  "placement": {
+    "snap": 1,
+    "suggestedGrid": 8,
+    "preview": "native-art+anchor+collision",
+    "repeat": null,
+    "allowScale": false,
+    "allowRotation": false
+  }
+}

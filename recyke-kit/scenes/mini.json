@@ -1,0 +1,2393 @@
+{
+  "schemaVersion": 1,
+  "id": "recyke-street-alley-mini",
+  "name": "Street to the concealed entrance",
+  "family": "mini",
+  "status": "environment-direction-review",
+  "canon": "Destination follows Intro; layout and interaction are a review staging proposal, not finished campaign.",
+  "viewport": [
+    480,
+    270
+  ],
+  "bounds": {
+    "width": 1440,
+    "height": 270
+  },
+  "background": "#101221",
+  "physics": {
+    "speed": 90,
+    "acceleration": 900,
+    "gravity": 600,
+    "jumpSpeed": 245,
+    "maxFallSpeed": 400,
+    "playerWidth": 10,
+    "playerHeight": 30,
+    "crouchHeight": 16,
+    "crouchSpeed": 25
+  },
+  "entities": [
+    {
+      "id": "skyline-1",
+      "assetId": "cad.mini.recyke.skyline",
+      "assetRevision": 1,
+      "x": 0,
+      "y": 170,
+      "variant": 0,
+      "layer": "distant"
+    },
+    {
+      "id": "skyline-2",
+      "assetId": "cad.mini.recyke.skyline",
+      "assetRevision": 1,
+      "x": 192,
+      "y": 170,
+      "variant": 1,
+      "layer": "distant"
+    },
+    {
+      "id": "skyline-3",
+      "assetId": "cad.mini.recyke.skyline",
+      "assetRevision": 1,
+      "x": 384,
+      "y": 170,
+      "variant": 0,
+      "layer": "distant"
+    },
+    {
+      "id": "skyline-4",
+      "assetId": "cad.mini.recyke.skyline",
+      "assetRevision": 1,
+      "x": 576,
+      "y": 170,
+      "variant": 1,
+      "layer": "distant"
+    },
+    {
+      "id": "skyline-5",
+      "assetId": "cad.mini.recyke.skyline",
+      "assetRevision": 1,
+      "x": 768,
+      "y": 170,
+      "variant": 0,
+      "layer": "distant"
+    },
+    {
+      "id": "skyline-6",
+      "assetId": "cad.mini.recyke.skyline",
+      "assetRevision": 1,
+      "x": 960,
+      "y": 170,
+      "variant": 1,
+      "layer": "distant"
+    },
+    {
+      "id": "skyline-7",
+      "assetId": "cad.mini.recyke.skyline",
+      "assetRevision": 1,
+      "x": 1152,
+      "y": 170,
+      "variant": 0,
+      "layer": "distant"
+    },
+    {
+      "id": "skyline-8",
+      "assetId": "cad.mini.recyke.skyline",
+      "assetRevision": 1,
+      "x": 1344,
+      "y": 170,
+      "variant": 1,
+      "layer": "distant"
+    },
+    {
+      "id": "rail-beam-9",
+      "assetId": "cad.mini.recyke.rail-beam",
+      "assetRevision": 1,
+      "x": 0,
+      "y": 78,
+      "variant": 0,
+      "layer": "distant"
+    },
+    {
+      "id": "rail-beam-10",
+      "assetId": "cad.mini.recyke.rail-beam",
+      "assetRevision": 1,
+      "x": 48,
+      "y": 78,
+      "variant": 0,
+      "layer": "distant"
+    },
+    {
+      "id": "rail-beam-11",
+      "assetId": "cad.mini.recyke.rail-beam",
+      "assetRevision": 1,
+      "x": 96,
+      "y": 78,
+      "variant": 0,
+      "layer": "distant"
+    },
+    {
+      "id": "rail-beam-12",
+      "assetId": "cad.mini.recyke.rail-beam",
+      "assetRevision": 1,
+      "x": 144,
+      "y": 78,
+      "variant": 0,
+      "layer": "distant"
+    },
+    {
+      "id": "rail-beam-13",
+      "assetId": "cad.mini.recyke.rail-beam",
+      "assetRevision": 1,
+      "x": 192,
+      "y": 78,
+      "variant": 0,
+      "layer": "distant"
+    },
+    {
+      "id": "rail-beam-14",
+      "assetId": "cad.mini.recyke.rail-beam",
+      "assetRevision": 1,
+      "x": 240,
+      "y": 78,
+      "variant": 0,
+      "layer": "distant"
+    },
+    {
+      "id": "rail-beam-15",
+      "assetId": "cad.mini.recyke.rail-beam",
+      "assetRevision": 1,
+      "x": 288,
+      "y": 78,
+      "variant": 0,
+      "layer": "distant"
+    },
+    {
+      "id": "rail-beam-16",
+      "assetId": "cad.mini.recyke.rail-beam",
+      "assetRevision": 1,
+      "x": 336,
+      "y": 78,
+      "variant": 0,
+      "layer": "distant"
+    },
+    {
+      "id": "rail-beam-17",
+      "assetId": "cad.mini.recyke.rail-beam",
+      "assetRevision": 1,
+      "x": 384,
+      "y": 78,
+      "variant": 0,
+      "layer": "distant"
+    },
+    {
+      "id": "rail-beam-18",
+      "assetId": "cad.mini.recyke.rail-beam",
+      "assetRevision": 1,
+      "x": 432,
+      "y": 78,
+      "variant": 0,
+      "layer": "distant"
+    },
+    {
+      "id": "rail-beam-19",
+      "assetId": "cad.mini.recyke.rail-beam",
+      "assetRevision": 1,
+      "x": 480,
+      "y": 78,
+      "variant": 0,
+      "layer": "distant"
+    },
+    {
+      "id": "rail-beam-20",
+      "assetId": "cad.mini.recyke.rail-beam",
+      "assetRevision": 1,
+      "x": 528,
+      "y": 78,
+      "variant": 0,
+      "layer": "distant"
+    },
+    {
+      "id": "rail-beam-21",
+      "assetId": "cad.mini.recyke.rail-beam",
+      "assetRevision": 1,
+      "x": 576,
+      "y": 78,
+      "variant": 0,
+      "layer": "distant"
+    },
+    {
+      "id": "rail-beam-22",
+      "assetId": "cad.mini.recyke.rail-beam",
+      "assetRevision": 1,
+      "x": 624,
+      "y": 78,
+      "variant": 0,
+      "layer": "distant"
+    },
+    {
+      "id": "rail-beam-23",
+      "assetId": "cad.mini.recyke.rail-beam",
+      "assetRevision": 1,
+      "x": 672,
+      "y": 78,
+      "variant": 0,
+      "layer": "distant"
+    },
+    {
+      "id": "rail-beam-24",
+      "assetId": "cad.mini.recyke.rail-beam",
+      "assetRevision": 1,
+      "x": 720,
+      "y": 78,
+      "variant": 0,
+      "layer": "distant"
+    },
+    {
+      "id": "rail-beam-25",
+      "assetId": "cad.mini.recyke.rail-beam",
+      "assetRevision": 1,
+      "x": 768,
+      "y": 78,
+      "variant": 0,
+      "layer": "distant"
+    },
+    {
+      "id": "rail-beam-26",
+      "assetId": "cad.mini.recyke.rail-beam",
+      "assetRevision": 1,
+      "x": 816,
+      "y": 78,
+      "variant": 0,
+      "layer": "distant"
+    },
+    {
+      "id": "rail-beam-27",
+      "assetId": "cad.mini.recyke.rail-beam",
+      "assetRevision": 1,
+      "x": 864,
+      "y": 78,
+      "variant": 0,
+      "layer": "distant"
+    },
+    {
+      "id": "rail-beam-28",
+      "assetId": "cad.mini.recyke.rail-beam",
+      "assetRevision": 1,
+      "x": 912,
+      "y": 78,
+      "variant": 0,
+      "layer": "distant"
+    },
+    {
+      "id": "rail-beam-29",
+      "assetId": "cad.mini.recyke.rail-beam",
+      "assetRevision": 1,
+      "x": 960,
+      "y": 78,
+      "variant": 0,
+      "layer": "distant"
+    },
+    {
+      "id": "rail-beam-30",
+      "assetId": "cad.mini.recyke.rail-beam",
+      "assetRevision": 1,
+      "x": 1008,
+      "y": 78,
+      "variant": 0,
+      "layer": "distant"
+    },
+    {
+      "id": "rail-beam-31",
+      "assetId": "cad.mini.recyke.rail-beam",
+      "assetRevision": 1,
+      "x": 1056,
+      "y": 78,
+      "variant": 0,
+      "layer": "distant"
+    },
+    {
+      "id": "rail-beam-32",
+      "assetId": "cad.mini.recyke.rail-beam",
+      "assetRevision": 1,
+      "x": 1104,
+      "y": 78,
+      "variant": 0,
+      "layer": "distant"
+    },
+    {
+      "id": "rail-beam-33",
+      "assetId": "cad.mini.recyke.rail-beam",
+      "assetRevision": 1,
+      "x": 1152,
+      "y": 78,
+      "variant": 0,
+      "layer": "distant"
+    },
+    {
+      "id": "rail-beam-34",
+      "assetId": "cad.mini.recyke.rail-beam",
+      "assetRevision": 1,
+      "x": 1200,
+      "y": 78,
+      "variant": 0,
+      "layer": "distant"
+    },
+    {
+      "id": "rail-beam-35",
+      "assetId": "cad.mini.recyke.rail-beam",
+      "assetRevision": 1,
+      "x": 1248,
+      "y": 78,
+      "variant": 0,
+      "layer": "distant"
+    },
+    {
+      "id": "rail-beam-36",
+      "assetId": "cad.mini.recyke.rail-beam",
+      "assetRevision": 1,
+      "x": 1296,
+      "y": 78,
+      "variant": 0,
+      "layer": "distant"
+    },
+    {
+      "id": "rail-beam-37",
+      "assetId": "cad.mini.recyke.rail-beam",
+      "assetRevision": 1,
+      "x": 1344,
+      "y": 78,
+      "variant": 0,
+      "layer": "distant"
+    },
+    {
+      "id": "rail-beam-38",
+      "assetId": "cad.mini.recyke.rail-beam",
+      "assetRevision": 1,
+      "x": 1392,
+      "y": 78,
+      "variant": 0,
+      "layer": "distant"
+    },
+    {
+      "id": "train-car-39",
+      "assetId": "cad.mini.recyke.train-car",
+      "assetRevision": 1,
+      "x": 80,
+      "y": 78,
+      "variant": 0,
+      "layer": "distant",
+      "motion": "rail",
+      "phase": 80
+    },
+    {
+      "id": "train-car-40",
+      "assetId": "cad.mini.recyke.train-car",
+      "assetRevision": 1,
+      "x": 148,
+      "y": 78,
+      "variant": 0,
+      "layer": "distant",
+      "motion": "rail",
+      "phase": 148
+    },
+    {
+      "id": "train-car-41",
+      "assetId": "cad.mini.recyke.train-car",
+      "assetRevision": 1,
+      "x": 216,
+      "y": 78,
+      "variant": 0,
+      "layer": "distant",
+      "motion": "rail",
+      "phase": 216
+    },
+    {
+      "id": "facade-42",
+      "assetId": "cad.mini.recyke.facade",
+      "assetRevision": 1,
+      "x": 0,
+      "y": 222,
+      "variant": 0,
+      "layer": "architecture"
+    },
+    {
+      "id": "roof-43",
+      "assetId": "cad.mini.recyke.roof",
+      "assetRevision": 1,
+      "x": 0,
+      "y": 110,
+      "variant": 0,
+      "layer": "architecture"
+    },
+    {
+      "id": "facade-44",
+      "assetId": "cad.mini.recyke.facade",
+      "assetRevision": 1,
+      "x": 64,
+      "y": 222,
+      "variant": 1,
+      "layer": "architecture"
+    },
+    {
+      "id": "roof-45",
+      "assetId": "cad.mini.recyke.roof",
+      "assetRevision": 1,
+      "x": 64,
+      "y": 110,
+      "variant": 1,
+      "layer": "architecture"
+    },
+    {
+      "id": "facade-46",
+      "assetId": "cad.mini.recyke.facade",
+      "assetRevision": 1,
+      "x": 128,
+      "y": 222,
+      "variant": 2,
+      "layer": "architecture"
+    },
+    {
+      "id": "roof-47",
+      "assetId": "cad.mini.recyke.roof",
+      "assetRevision": 1,
+      "x": 128,
+      "y": 110,
+      "variant": 2,
+      "layer": "architecture"
+    },
+    {
+      "id": "facade-48",
+      "assetId": "cad.mini.recyke.facade",
+      "assetRevision": 1,
+      "x": 192,
+      "y": 222,
+      "variant": 0,
+      "layer": "architecture"
+    },
+    {
+      "id": "roof-49",
+      "assetId": "cad.mini.recyke.roof",
+      "assetRevision": 1,
+      "x": 192,
+      "y": 110,
+      "variant": 0,
+      "layer": "architecture"
+    },
+    {
+      "id": "facade-50",
+      "assetId": "cad.mini.recyke.facade",
+      "assetRevision": 1,
+      "x": 256,
+      "y": 222,
+      "variant": 2,
+      "layer": "architecture"
+    },
+    {
+      "id": "roof-51",
+      "assetId": "cad.mini.recyke.roof",
+      "assetRevision": 1,
+      "x": 256,
+      "y": 110,
+      "variant": 1,
+      "layer": "architecture"
+    },
+    {
+      "id": "corner-52",
+      "assetId": "cad.mini.recyke.corner",
+      "assetRevision": 1,
+      "x": 320,
+      "y": 222,
+      "variant": 1,
+      "layer": "architecture"
+    },
+    {
+      "id": "shutter-53",
+      "assetId": "cad.mini.recyke.shutter",
+      "assetRevision": 1,
+      "x": 384,
+      "y": 222,
+      "variant": 0,
+      "layer": "architecture"
+    },
+    {
+      "id": "roof-54",
+      "assetId": "cad.mini.recyke.roof",
+      "assetRevision": 1,
+      "x": 384,
+      "y": 110,
+      "variant": 0,
+      "layer": "architecture"
+    },
+    {
+      "id": "shutter-55",
+      "assetId": "cad.mini.recyke.shutter",
+      "assetRevision": 1,
+      "x": 448,
+      "y": 222,
+      "variant": 1,
+      "layer": "architecture"
+    },
+    {
+      "id": "roof-56",
+      "assetId": "cad.mini.recyke.roof",
+      "assetRevision": 1,
+      "x": 448,
+      "y": 110,
+      "variant": 1,
+      "layer": "architecture"
+    },
+    {
+      "id": "shutter-57",
+      "assetId": "cad.mini.recyke.shutter",
+      "assetRevision": 1,
+      "x": 512,
+      "y": 222,
+      "variant": 0,
+      "layer": "architecture"
+    },
+    {
+      "id": "roof-58",
+      "assetId": "cad.mini.recyke.roof",
+      "assetRevision": 1,
+      "x": 512,
+      "y": 110,
+      "variant": 2,
+      "layer": "architecture"
+    },
+    {
+      "id": "corner-59",
+      "assetId": "cad.mini.recyke.corner",
+      "assetRevision": 1,
+      "x": 576,
+      "y": 222,
+      "variant": 1,
+      "layer": "architecture"
+    },
+    {
+      "id": "facade-60",
+      "assetId": "cad.mini.recyke.facade",
+      "assetRevision": 1,
+      "x": 648,
+      "y": 222,
+      "variant": 2,
+      "layer": "architecture"
+    },
+    {
+      "id": "roof-61",
+      "assetId": "cad.mini.recyke.roof",
+      "assetRevision": 1,
+      "x": 648,
+      "y": 110,
+      "variant": 0,
+      "layer": "architecture"
+    },
+    {
+      "id": "facade-62",
+      "assetId": "cad.mini.recyke.facade",
+      "assetRevision": 1,
+      "x": 712,
+      "y": 222,
+      "variant": 1,
+      "layer": "architecture"
+    },
+    {
+      "id": "roof-63",
+      "assetId": "cad.mini.recyke.roof",
+      "assetRevision": 1,
+      "x": 712,
+      "y": 110,
+      "variant": 1,
+      "layer": "architecture"
+    },
+    {
+      "id": "facade-64",
+      "assetId": "cad.mini.recyke.facade",
+      "assetRevision": 1,
+      "x": 776,
+      "y": 222,
+      "variant": 0,
+      "layer": "architecture"
+    },
+    {
+      "id": "roof-65",
+      "assetId": "cad.mini.recyke.roof",
+      "assetRevision": 1,
+      "x": 776,
+      "y": 110,
+      "variant": 2,
+      "layer": "architecture"
+    },
+    {
+      "id": "corner-66",
+      "assetId": "cad.mini.recyke.corner",
+      "assetRevision": 1,
+      "x": 840,
+      "y": 222,
+      "variant": 1,
+      "layer": "architecture"
+    },
+    {
+      "id": "facade-67",
+      "assetId": "cad.mini.recyke.facade",
+      "assetRevision": 1,
+      "x": 912,
+      "y": 222,
+      "variant": 1,
+      "layer": "architecture"
+    },
+    {
+      "id": "roof-68",
+      "assetId": "cad.mini.recyke.roof",
+      "assetRevision": 1,
+      "x": 912,
+      "y": 110,
+      "variant": 0,
+      "layer": "architecture"
+    },
+    {
+      "id": "facade-69",
+      "assetId": "cad.mini.recyke.facade",
+      "assetRevision": 1,
+      "x": 976,
+      "y": 222,
+      "variant": 2,
+      "layer": "architecture"
+    },
+    {
+      "id": "roof-70",
+      "assetId": "cad.mini.recyke.roof",
+      "assetRevision": 1,
+      "x": 976,
+      "y": 110,
+      "variant": 1,
+      "layer": "architecture"
+    },
+    {
+      "id": "facade-71",
+      "assetId": "cad.mini.recyke.facade",
+      "assetRevision": 1,
+      "x": 1040,
+      "y": 222,
+      "variant": 1,
+      "layer": "architecture"
+    },
+    {
+      "id": "roof-72",
+      "assetId": "cad.mini.recyke.roof",
+      "assetRevision": 1,
+      "x": 1040,
+      "y": 110,
+      "variant": 2,
+      "layer": "architecture"
+    },
+    {
+      "id": "facade-73",
+      "assetId": "cad.mini.recyke.facade",
+      "assetRevision": 1,
+      "x": 1104,
+      "y": 222,
+      "variant": 0,
+      "layer": "architecture"
+    },
+    {
+      "id": "roof-74",
+      "assetId": "cad.mini.recyke.roof",
+      "assetRevision": 1,
+      "x": 1104,
+      "y": 110,
+      "variant": 0,
+      "layer": "architecture"
+    },
+    {
+      "id": "corner-75",
+      "assetId": "cad.mini.recyke.corner",
+      "assetRevision": 1,
+      "x": 1168,
+      "y": 222,
+      "variant": 1,
+      "layer": "architecture"
+    },
+    {
+      "id": "alley-wall-76",
+      "assetId": "cad.mini.recyke.alley-wall",
+      "assetRevision": 1,
+      "x": 1184,
+      "y": 222,
+      "variant": 0,
+      "layer": "architecture"
+    },
+    {
+      "id": "roof-77",
+      "assetId": "cad.mini.recyke.roof",
+      "assetRevision": 1,
+      "x": 1184,
+      "y": 110,
+      "variant": 0,
+      "layer": "architecture"
+    },
+    {
+      "id": "alley-wall-78",
+      "assetId": "cad.mini.recyke.alley-wall",
+      "assetRevision": 1,
+      "x": 1248,
+      "y": 222,
+      "variant": 1,
+      "layer": "architecture"
+    },
+    {
+      "id": "roof-79",
+      "assetId": "cad.mini.recyke.roof",
+      "assetRevision": 1,
+      "x": 1248,
+      "y": 110,
+      "variant": 1,
+      "layer": "architecture"
+    },
+    {
+      "id": "alley-wall-80",
+      "assetId": "cad.mini.recyke.alley-wall",
+      "assetRevision": 1,
+      "x": 1312,
+      "y": 222,
+      "variant": 0,
+      "layer": "architecture"
+    },
+    {
+      "id": "roof-81",
+      "assetId": "cad.mini.recyke.roof",
+      "assetRevision": 1,
+      "x": 1312,
+      "y": 110,
+      "variant": 2,
+      "layer": "architecture"
+    },
+    {
+      "id": "alley-wall-82",
+      "assetId": "cad.mini.recyke.alley-wall",
+      "assetRevision": 1,
+      "x": 1376,
+      "y": 222,
+      "variant": 1,
+      "layer": "architecture"
+    },
+    {
+      "id": "roof-83",
+      "assetId": "cad.mini.recyke.roof",
+      "assetRevision": 1,
+      "x": 1376,
+      "y": 110,
+      "variant": 0,
+      "layer": "architecture"
+    },
+    {
+      "id": "cable-84",
+      "assetId": "cad.mini.recyke.cable",
+      "assetRevision": 1,
+      "x": 4,
+      "y": 107,
+      "variant": 0,
+      "layer": "scenery"
+    },
+    {
+      "id": "lamp-85",
+      "assetId": "cad.mini.recyke.lamp",
+      "assetRevision": 1,
+      "x": 56,
+      "y": 117,
+      "variant": 0,
+      "layer": "scenery"
+    },
+    {
+      "id": "cable-86",
+      "assetId": "cad.mini.recyke.cable",
+      "assetRevision": 1,
+      "x": 209,
+      "y": 110,
+      "variant": 0,
+      "layer": "scenery"
+    },
+    {
+      "id": "lamp-87",
+      "assetId": "cad.mini.recyke.lamp",
+      "assetRevision": 1,
+      "x": 261,
+      "y": 120,
+      "variant": 0,
+      "layer": "scenery"
+    },
+    {
+      "id": "cable-88",
+      "assetId": "cad.mini.recyke.cable",
+      "assetRevision": 1,
+      "x": 940,
+      "y": 103,
+      "variant": 0,
+      "layer": "scenery"
+    },
+    {
+      "id": "lamp-89",
+      "assetId": "cad.mini.recyke.lamp",
+      "assetRevision": 1,
+      "x": 992,
+      "y": 113,
+      "variant": 0,
+      "layer": "scenery"
+    },
+    {
+      "id": "cable-90",
+      "assetId": "cad.mini.recyke.cable",
+      "assetRevision": 1,
+      "x": 1140,
+      "y": 108,
+      "variant": 0,
+      "layer": "scenery"
+    },
+    {
+      "id": "lamp-91",
+      "assetId": "cad.mini.recyke.lamp",
+      "assetRevision": 1,
+      "x": 1192,
+      "y": 118,
+      "variant": 0,
+      "layer": "scenery"
+    },
+    {
+      "id": "street-6-92",
+      "assetId": "cad.mini.recyke.street-6",
+      "assetRevision": 1,
+      "x": 0,
+      "y": 222,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "street-3-93",
+      "assetId": "cad.mini.recyke.street-3",
+      "assetRevision": 1,
+      "x": 0,
+      "y": 246,
+      "variant": 1,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-94",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 24,
+      "y": 222,
+      "variant": 1,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-95",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 24,
+      "y": 246,
+      "variant": 2,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-96",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 48,
+      "y": 222,
+      "variant": 2,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-97",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 48,
+      "y": 246,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-98",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 72,
+      "y": 222,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-99",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 72,
+      "y": 246,
+      "variant": 1,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-100",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 96,
+      "y": 222,
+      "variant": 1,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-101",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 96,
+      "y": 246,
+      "variant": 2,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-102",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 120,
+      "y": 222,
+      "variant": 2,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-103",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 120,
+      "y": 246,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-104",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 144,
+      "y": 222,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-105",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 144,
+      "y": 246,
+      "variant": 1,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-106",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 168,
+      "y": 222,
+      "variant": 1,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-107",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 168,
+      "y": 246,
+      "variant": 2,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-108",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 192,
+      "y": 222,
+      "variant": 2,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-109",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 192,
+      "y": 246,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-110",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 216,
+      "y": 222,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-111",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 216,
+      "y": 246,
+      "variant": 1,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-112",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 240,
+      "y": 222,
+      "variant": 1,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-113",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 240,
+      "y": 246,
+      "variant": 2,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-114",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 264,
+      "y": 222,
+      "variant": 2,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-115",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 264,
+      "y": 246,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-116",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 288,
+      "y": 222,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-117",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 288,
+      "y": 246,
+      "variant": 1,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-118",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 312,
+      "y": 222,
+      "variant": 1,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-119",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 312,
+      "y": 246,
+      "variant": 2,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-120",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 336,
+      "y": 222,
+      "variant": 2,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-121",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 336,
+      "y": 246,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-122",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 360,
+      "y": 222,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-123",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 360,
+      "y": 246,
+      "variant": 1,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-124",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 384,
+      "y": 222,
+      "variant": 1,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-125",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 384,
+      "y": 246,
+      "variant": 2,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-126",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 408,
+      "y": 222,
+      "variant": 2,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-127",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 408,
+      "y": 246,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-128",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 432,
+      "y": 222,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-129",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 432,
+      "y": 246,
+      "variant": 1,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-130",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 456,
+      "y": 222,
+      "variant": 1,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-131",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 456,
+      "y": 246,
+      "variant": 2,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-132",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 480,
+      "y": 222,
+      "variant": 2,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-133",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 480,
+      "y": 246,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-134",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 504,
+      "y": 222,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-135",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 504,
+      "y": 246,
+      "variant": 1,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-136",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 528,
+      "y": 222,
+      "variant": 1,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-137",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 528,
+      "y": 246,
+      "variant": 2,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-138",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 552,
+      "y": 222,
+      "variant": 2,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-139",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 552,
+      "y": 246,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-140",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 576,
+      "y": 222,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-141",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 576,
+      "y": 246,
+      "variant": 1,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-142",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 600,
+      "y": 222,
+      "variant": 1,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-143",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 600,
+      "y": 246,
+      "variant": 2,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-144",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 624,
+      "y": 222,
+      "variant": 2,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-145",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 624,
+      "y": 246,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-146",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 648,
+      "y": 222,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-147",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 648,
+      "y": 246,
+      "variant": 1,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-148",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 672,
+      "y": 222,
+      "variant": 1,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-149",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 672,
+      "y": 246,
+      "variant": 2,
+      "layer": "playable"
+    },
+    {
+      "id": "street-6-150",
+      "assetId": "cad.mini.recyke.street-6",
+      "assetRevision": 1,
+      "x": 696,
+      "y": 198,
+      "variant": 1,
+      "layer": "playable"
+    },
+    {
+      "id": "street-f-151",
+      "assetId": "cad.mini.recyke.street-f",
+      "assetRevision": 1,
+      "x": 696,
+      "y": 222,
+      "variant": 2,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-152",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 696,
+      "y": 246,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-153",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 720,
+      "y": 198,
+      "variant": 2,
+      "layer": "playable"
+    },
+    {
+      "id": "street-f-154",
+      "assetId": "cad.mini.recyke.street-f",
+      "assetRevision": 1,
+      "x": 720,
+      "y": 222,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-155",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 720,
+      "y": 246,
+      "variant": 1,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-156",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 744,
+      "y": 198,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "street-f-157",
+      "assetId": "cad.mini.recyke.street-f",
+      "assetRevision": 1,
+      "x": 744,
+      "y": 222,
+      "variant": 1,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-158",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 744,
+      "y": 246,
+      "variant": 2,
+      "layer": "playable"
+    },
+    {
+      "id": "street-c-159",
+      "assetId": "cad.mini.recyke.street-c",
+      "assetRevision": 1,
+      "x": 768,
+      "y": 198,
+      "variant": 1,
+      "layer": "playable"
+    },
+    {
+      "id": "street-f-160",
+      "assetId": "cad.mini.recyke.street-f",
+      "assetRevision": 1,
+      "x": 768,
+      "y": 222,
+      "variant": 2,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-161",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 768,
+      "y": 246,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-162",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 792,
+      "y": 222,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-163",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 792,
+      "y": 246,
+      "variant": 1,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-164",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 816,
+      "y": 222,
+      "variant": 1,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-165",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 816,
+      "y": 246,
+      "variant": 2,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-166",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 840,
+      "y": 222,
+      "variant": 2,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-167",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 840,
+      "y": 246,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-168",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 864,
+      "y": 222,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-169",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 864,
+      "y": 246,
+      "variant": 1,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-170",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 888,
+      "y": 222,
+      "variant": 1,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-171",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 888,
+      "y": 246,
+      "variant": 2,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-172",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 912,
+      "y": 222,
+      "variant": 2,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-173",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 912,
+      "y": 246,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-174",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 936,
+      "y": 222,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-175",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 936,
+      "y": 246,
+      "variant": 1,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-176",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 960,
+      "y": 222,
+      "variant": 1,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-177",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 960,
+      "y": 246,
+      "variant": 2,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-178",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 984,
+      "y": 222,
+      "variant": 2,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-179",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 984,
+      "y": 246,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-180",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 1008,
+      "y": 222,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-181",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 1008,
+      "y": 246,
+      "variant": 1,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-182",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 1032,
+      "y": 222,
+      "variant": 1,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-183",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 1032,
+      "y": 246,
+      "variant": 2,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-184",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 1056,
+      "y": 222,
+      "variant": 2,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-185",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 1056,
+      "y": 246,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-186",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 1080,
+      "y": 222,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-187",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 1080,
+      "y": 246,
+      "variant": 1,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-188",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 1104,
+      "y": 222,
+      "variant": 1,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-189",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 1104,
+      "y": 246,
+      "variant": 2,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-190",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 1128,
+      "y": 222,
+      "variant": 2,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-191",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 1128,
+      "y": 246,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-192",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 1152,
+      "y": 222,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-193",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 1152,
+      "y": 246,
+      "variant": 1,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-194",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 1176,
+      "y": 222,
+      "variant": 1,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-195",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 1176,
+      "y": 246,
+      "variant": 2,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-196",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 1200,
+      "y": 222,
+      "variant": 2,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-197",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 1200,
+      "y": 246,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-198",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 1224,
+      "y": 222,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-199",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 1224,
+      "y": 246,
+      "variant": 1,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-200",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 1248,
+      "y": 222,
+      "variant": 1,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-201",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 1248,
+      "y": 246,
+      "variant": 2,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-202",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 1272,
+      "y": 222,
+      "variant": 2,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-203",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 1272,
+      "y": 246,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-204",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 1296,
+      "y": 222,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-205",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 1296,
+      "y": 246,
+      "variant": 1,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-206",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 1320,
+      "y": 222,
+      "variant": 1,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-207",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 1320,
+      "y": 246,
+      "variant": 2,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-208",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 1344,
+      "y": 222,
+      "variant": 2,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-209",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 1344,
+      "y": 246,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-210",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 1368,
+      "y": 222,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-211",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 1368,
+      "y": 246,
+      "variant": 1,
+      "layer": "playable"
+    },
+    {
+      "id": "street-e-212",
+      "assetId": "cad.mini.recyke.street-e",
+      "assetRevision": 1,
+      "x": 1392,
+      "y": 222,
+      "variant": 1,
+      "layer": "playable"
+    },
+    {
+      "id": "street-b-213",
+      "assetId": "cad.mini.recyke.street-b",
+      "assetRevision": 1,
+      "x": 1392,
+      "y": 246,
+      "variant": 2,
+      "layer": "playable"
+    },
+    {
+      "id": "street-c-214",
+      "assetId": "cad.mini.recyke.street-c",
+      "assetRevision": 1,
+      "x": 1416,
+      "y": 222,
+      "variant": 2,
+      "layer": "playable"
+    },
+    {
+      "id": "street-9-215",
+      "assetId": "cad.mini.recyke.street-9",
+      "assetRevision": 1,
+      "x": 1416,
+      "y": 246,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "crate-low-216",
+      "assetId": "cad.mini.recyke.crate-low",
+      "assetRevision": 1,
+      "x": 280,
+      "y": 222,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "crate-tall-217",
+      "assetId": "cad.mini.recyke.crate-tall",
+      "assetRevision": 1,
+      "x": 324,
+      "y": 222,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "crate-low-218",
+      "assetId": "cad.mini.recyke.crate-low",
+      "assetRevision": 1,
+      "x": 875,
+      "y": 222,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "catwalk-left-219",
+      "assetId": "cad.mini.recyke.catwalk-left",
+      "assetRevision": 1,
+      "x": 348,
+      "y": 178,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "catwalk-middle-220",
+      "assetId": "cad.mini.recyke.catwalk-middle",
+      "assetRevision": 1,
+      "x": 372,
+      "y": 178,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "catwalk-middle-221",
+      "assetId": "cad.mini.recyke.catwalk-middle",
+      "assetRevision": 1,
+      "x": 396,
+      "y": 178,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "catwalk-middle-222",
+      "assetId": "cad.mini.recyke.catwalk-middle",
+      "assetRevision": 1,
+      "x": 420,
+      "y": 178,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "catwalk-middle-223",
+      "assetId": "cad.mini.recyke.catwalk-middle",
+      "assetRevision": 1,
+      "x": 444,
+      "y": 178,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "catwalk-right-224",
+      "assetId": "cad.mini.recyke.catwalk-right",
+      "assetRevision": 1,
+      "x": 468,
+      "y": 178,
+      "variant": 0,
+      "layer": "playable"
+    },
+    {
+      "id": "support-225",
+      "assetId": "cad.mini.recyke.support",
+      "assetRevision": 1,
+      "x": 354,
+      "y": 184,
+      "variant": 0,
+      "layer": "scenery"
+    },
+    {
+      "id": "support-226",
+      "assetId": "cad.mini.recyke.support",
+      "assetRevision": 1,
+      "x": 480,
+      "y": 184,
+      "variant": 0,
+      "layer": "scenery"
+    },
+    {
+      "id": "bins-227",
+      "assetId": "cad.mini.recyke.bins",
+      "assetRevision": 1,
+      "x": 170,
+      "y": 222,
+      "variant": 0,
+      "layer": "scenery"
+    },
+    {
+      "id": "fix-sign-228",
+      "assetId": "cad.mini.recyke.fix-sign",
+      "assetRevision": 1,
+      "x": 270,
+      "y": 148,
+      "variant": 0,
+      "layer": "scenery"
+    },
+    {
+      "id": "poster-229",
+      "assetId": "cad.mini.recyke.poster",
+      "assetRevision": 1,
+      "x": 235,
+      "y": 204,
+      "variant": 0,
+      "layer": "scenery"
+    },
+    {
+      "id": "vent-fan-230",
+      "assetId": "cad.mini.recyke.vent-fan",
+      "assetRevision": 1,
+      "x": 94,
+      "y": 175,
+      "variant": 0,
+      "layer": "scenery"
+    },
+    {
+      "id": "press-231",
+      "assetId": "cad.mini.recyke.press",
+      "assetRevision": 1,
+      "x": 500,
+      "y": 222,
+      "variant": 0,
+      "layer": "scenery"
+    },
+    {
+      "id": "boiler-232",
+      "assetId": "cad.mini.recyke.boiler",
+      "assetRevision": 1,
+      "x": 609,
+      "y": 222,
+      "variant": 0,
+      "layer": "scenery"
+    },
+    {
+      "id": "scrap-233",
+      "assetId": "cad.mini.recyke.scrap",
+      "assetRevision": 1,
+      "x": 565,
+      "y": 222,
+      "variant": 1,
+      "layer": "scenery"
+    },
+    {
+      "id": "scrap-234",
+      "assetId": "cad.mini.recyke.scrap",
+      "assetRevision": 1,
+      "x": 832,
+      "y": 222,
+      "variant": 2,
+      "layer": "scenery"
+    },
+    {
+      "id": "bins-235",
+      "assetId": "cad.mini.recyke.bins",
+      "assetRevision": 1,
+      "x": 1025,
+      "y": 222,
+      "variant": 0,
+      "layer": "scenery"
+    },
+    {
+      "id": "poster-236",
+      "assetId": "cad.mini.recyke.poster",
+      "assetRevision": 1,
+      "x": 1130,
+      "y": 209,
+      "variant": 1,
+      "layer": "scenery"
+    },
+    {
+      "id": "fix-sign-237",
+      "assetId": "cad.mini.recyke.fix-sign",
+      "assetRevision": 1,
+      "x": 785,
+      "y": 142,
+      "variant": 0,
+      "layer": "scenery"
+    },
+    {
+      "id": "drain-238",
+      "assetId": "cad.mini.recyke.drain",
+      "assetRevision": 1,
+      "x": 119,
+      "y": 244,
+      "variant": 0,
+      "layer": "foreground"
+    },
+    {
+      "id": "puddle-239",
+      "assetId": "cad.mini.recyke.puddle",
+      "assetRevision": 1,
+      "x": 390,
+      "y": 249,
+      "variant": 0,
+      "layer": "foreground"
+    },
+    {
+      "id": "puddle-240",
+      "assetId": "cad.mini.recyke.puddle",
+      "assetRevision": 1,
+      "x": 946,
+      "y": 247,
+      "variant": 0,
+      "layer": "foreground"
+    },
+    {
+      "id": "drain-241",
+      "assetId": "cad.mini.recyke.drain",
+      "assetRevision": 1,
+      "x": 1166,
+      "y": 244,
+      "variant": 0,
+      "layer": "foreground"
+    },
+    {
+      "id": "scrap-242",
+      "assetId": "cad.mini.recyke.scrap",
+      "assetRevision": 1,
+      "x": 1400,
+      "y": 222,
+      "variant": 0,
+      "layer": "scenery"
+    },
+    {
+      "id": "pipe-horizontal-243",
+      "assetId": "cad.mini.recyke.pipe-horizontal",
+      "assetRevision": 1,
+      "x": 21,
+      "y": 163,
+      "variant": 0,
+      "layer": "scenery"
+    },
+    {
+      "id": "pipe-horizontal-244",
+      "assetId": "cad.mini.recyke.pipe-horizontal",
+      "assetRevision": 1,
+      "x": 53,
+      "y": 163,
+      "variant": 1,
+      "layer": "scenery"
+    },
+    {
+      "id": "pipe-horizontal-245",
+      "assetId": "cad.mini.recyke.pipe-horizontal",
+      "assetRevision": 1,
+      "x": 85,
+      "y": 163,
+      "variant": 0,
+      "layer": "scenery"
+    },
+    {
+      "id": "pipe-elbow-246",
+      "assetId": "cad.mini.recyke.pipe-elbow",
+      "assetRevision": 1,
+      "x": 117,
+      "y": 162,
+      "variant": 0,
+      "layer": "scenery"
+    },
+    {
+      "id": "pipe-vertical-247",
+      "assetId": "cad.mini.recyke.pipe-vertical",
+      "assetRevision": 1,
+      "x": 123,
+      "y": 178,
+      "variant": 0,
+      "layer": "scenery"
+    },
+    {
+      "id": "pipe-horizontal-248",
+      "assetId": "cad.mini.recyke.pipe-horizontal",
+      "assetRevision": 1,
+      "x": 1050,
+      "y": 170,
+      "variant": 0,
+      "layer": "scenery"
+    },
+    {
+      "id": "pipe-horizontal-249",
+      "assetId": "cad.mini.recyke.pipe-horizontal",
+      "assetRevision": 1,
+      "x": 1082,
+      "y": 170,
+      "variant": 1,
+      "layer": "scenery"
+    },
+    {
+      "id": "pipe-horizontal-250",
+      "assetId": "cad.mini.recyke.pipe-horizontal",
+      "assetRevision": 1,
+      "x": 1114,
+      "y": 170,
+      "variant": 0,
+      "layer": "scenery"
+    },
+    {
+      "id": "pipe-elbow-251",
+      "assetId": "cad.mini.recyke.pipe-elbow",
+      "assetRevision": 1,
+      "x": 1146,
+      "y": 169,
+      "variant": 0,
+      "layer": "scenery"
+    },
+    {
+      "id": "pipe-vertical-252",
+      "assetId": "cad.mini.recyke.pipe-vertical",
+      "assetRevision": 1,
+      "x": 1152,
+      "y": 185,
+      "variant": 0,
+      "layer": "scenery"
+    },
+    {
+      "id": "recess-253",
+      "assetId": "cad.mini.recyke.recess",
+      "assetRevision": 1,
+      "x": 1320,
+      "y": 222,
+      "variant": 0,
+      "layer": "architecture"
+    },
+    {
+      "id": "concealed-door-254",
+      "assetId": "cad.mini.recyke.concealed-door",
+      "assetRevision": 1,
+      "x": 1336,
+      "y": 222,
+      "variant": 0,
+      "layer": "scenery",
+      "state": "sealed"
+    },
+    {
+      "id": "vent-fan-255",
+      "assetId": "cad.mini.recyke.vent-fan",
+      "assetRevision": 1,
+      "x": 1291,
+      "y": 172,
+      "variant": 0,
+      "layer": "scenery"
+    },
+    {
+      "id": "poster-256",
+      "assetId": "cad.mini.recyke.poster",
+      "assetRevision": 1,
+      "x": 1296,
+      "y": 212,
+      "variant": 1,
+      "layer": "scenery"
+    }
+  ],
+  "actors": [
+    {
+      "hero": "jane",
+      "x": 55,
+      "y": 222,
+      "role": "player"
+    },
+    {
+      "hero": "jessie",
+      "x": 98,
+      "y": 222,
+      "role": "scale-reference",
+      "state": "idle"
+    }
+  ],
+  "sections": [
+    {
+      "id": "street",
+      "name": "01 / Main street",
+      "x": 55
+    },
+    {
+      "id": "yard",
+      "name": "02 / Service frontage",
+      "x": 480
+    },
+    {
+      "id": "alley",
+      "name": "03 / Concealed entrance",
+      "x": 1230
+    }
+  ],
+  "door": {
+    "entityId": "concealed-door-254",
+    "entryX": 1360,
+    "entryY": 222,
+    "interactionRadius": 30,
+    "behavior": "preview-inspect-entrance",
+    "note": "E cycles latch/open for review only; password and locks choreography remain unresolved."
+  },
+  "environment": {
+    "wind": "none",
+    "trainSpeed": 22
+  },
+  "spawn": {
+    "x": 55,
+    "y": 222
+  },
+  "approachSpawn": {
+    "x": 1230,
+    "y": 222
+  }
+}

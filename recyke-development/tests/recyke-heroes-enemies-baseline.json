@@ -1,0 +1,30 @@
+{
+  "description": "Approved Jessie, Jane, and six enemy masters before Recyke integration. Preserve the exact source, motion, metadata, and exported native pixels.",
+  "files": {
+    "jessie-motion.js": "184166af8c9471e5bcfa68dcae5bb34bf7853fdee0161f009d16a3af642ec959",
+    "jessie.js": "a6e0068e1b10f61a6ed198e18f6f772755bdc625a47c071ca240c6be27b98d68",
+    "jane-motion.js": "cfabb2ebcdc6ce1896ca23ae842f308024aa185adf88e00f88def349be0a7171",
+    "jane.js": "af4055b95cf4175760959717ea5f7f6ab634dc0c06b35bcac1686e0b2527a164",
+    "enemy-mech-motion.js": "031a98029c8c3633d9790379ffd5f8ceeee77160490dbe8b4c70f8e681544b13",
+    "enemy-mechs.js": "7ca3dd64dbfdce6ef61d9c7439e49850cc21d89ecfbd7c07db8dd8fd2fb93b09",
+    "enemy-drones.js": "3072a11334f4be03cb4fb1731c514b5303b4f1bef618d6d26aca3abc9b2fae28",
+    "enemies.js": "d32c26b661b47abfadd8436f13c16783f9b791abc7f977cb21fa4075e01726db",
+    "assets/jessie/jessie-animation.json": "425e18e8fdaf14754f35d67a2fd4c9e93f2780610d63f4e45fc3e002b44f77e5",
+    "assets/jessie/jessie-mini.png": "eb6ac4ba445328ba48f7c2dd412d1942f890b47f084cbccc168797b2a4588cdb",
+    "assets/jane/jane-animation.json": "c9869dd7e888cd1c4ac09a5c32a871031afce1177a28ebd5959e29d0be31e96f",
+    "assets/jane/jane-mini.png": "ea978dc3e43e4704fa89afafa4a478d283aa81407868de797370b0e6a957dd87",
+    "assets/enemies/bastion/bastion-animation.json": "0ab46652c9c15942896c1c6fd4d38ae3229694e52202766da33d80bbfbd4b5fe",
+    "assets/enemies/bastion/bastion-mini.png": "532ee11beae4f59f45fca2cc7f46a8725ae1d4cf7b766e0526db0fd93d10a056",
+    "assets/enemies/collector/collector-animation.json": "5a549f1d8d55f1a94067abec81204c4c7e756b4c8e74a99007a58b1802691940",
+    "assets/enemies/collector/collector-mini.png": "38c124dfe9a1bbad51739a48ca33833d4756979341110157ca5b7d3119ce5bf1",
+    "assets/enemies/manta/manta-animation.json": "2db890ef6c168aa3b3ebde536cf26e31459ec347381238cd8c82d145a408b25b",
+    "assets/enemies/manta/manta-mini.png": "1bdcc60d94f81f33a2fcf38b7827cabc3412f2ff1fcffc0e1edc96393aba86b2",
+    "assets/enemies/scrapper/scrapper-animation.json": "9fdfddd6665d89abb722b81f96c282f8e79b3dbc4dc88d6c8339996b575a43c6",
+    "assets/enemies/scrapper/scrapper-mini.png": "c1ae7281b0bf1db18df420ba3b4294af3f4e9163994dc61e0a5f1e3664983a85",
+    "assets/enemies/sentinel/sentinel-animation.json": "c53151d3783eedf3c6d37d98d0a6f4e25f71bf9444dbc356292453970ac939b3",
+    "assets/enemies/sentinel/sentinel-mini.png": "0f803c062d0139465e98c79e89e076f00abe983902b1960b7e02a4184ff3cfd8",
+    "assets/enemies/watcher/watcher-animation.json": "64c0853f73fb83d0d5e086a32607997180c5f1d6d587779eea699d7de76d2d7a",
+    "assets/enemies/watcher/watcher-mini.png": "9bb6c38ba2d05a14555ced18317aee7af1529193e522eb4b04293d703080697b"
+  },
+  "note": "Mini-only Proposal A with user-authorized held crouch modes. Original action pixels and motion verified against mini-review/crouch-baseline; pre-mini build remains archived."
+}

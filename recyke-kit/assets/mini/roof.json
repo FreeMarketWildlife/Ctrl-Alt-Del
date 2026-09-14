@@ -1,0 +1,184 @@
+{
+  "assetId": "cad.mini.recyke.roof",
+  "revision": 1,
+  "name": "Roof cornice · clear / vent / patched",
+  "kind": "building",
+  "biome": "recyke",
+  "family": "mini",
+  "approval": "review-candidate",
+  "source": {
+    "type": "new-native",
+    "file": "src/mini.cjs",
+    "renderer": "src/painters.cjs"
+  },
+  "native": {
+    "width": 64,
+    "height": 14,
+    "origin": [
+      0,
+      14
+    ],
+    "originName": "base-left",
+    "selectionBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 64,
+      "height": 14
+    },
+    "visibleBounds": [
+      {
+        "variant": 0,
+        "frame": 0,
+        "x": 0,
+        "y": 6,
+        "width": 64,
+        "height": 8
+      },
+      {
+        "variant": 1,
+        "frame": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 14
+      },
+      {
+        "variant": 2,
+        "frame": 0,
+        "x": 0,
+        "y": 2,
+        "width": 64,
+        "height": 12
+      }
+    ],
+    "animationEnvelope": {
+      "x": 0,
+      "y": 0,
+      "width": 64,
+      "height": 14
+    }
+  },
+  "sockets": [
+    {
+      "id": "left",
+      "type": "roof-mini",
+      "x": 0,
+      "y": 0,
+      "facing": "left"
+    },
+    {
+      "id": "right",
+      "type": "roof-mini",
+      "x": 64,
+      "y": 0,
+      "facing": "right"
+    }
+  ],
+  "render": {
+    "kind": "sprite-sheet",
+    "layer": "architecture",
+    "parallax": {
+      "x": 1,
+      "y": 1
+    },
+    "variants": [
+      {
+        "id": "v0",
+        "uri": "assets/mini/roof-v0.png",
+        "sha256": "eacb7fa532ef8b04929098be86a6d0d50341f9bb113fcbde109dc0c9b78e7e40",
+        "width": 64,
+        "height": 14
+      },
+      {
+        "id": "v1",
+        "uri": "assets/mini/roof-v1.png",
+        "sha256": "5788b649c5eb19ca16af2478bff91ce0ecddaef989235b07755a2ce4646d17cb",
+        "width": 64,
+        "height": 14
+      },
+      {
+        "id": "v2",
+        "uri": "assets/mini/roof-v2.png",
+        "sha256": "df61d404c45068facd84d381fca89d00c81d52803e0e0405c44ceb5ee9e65cd5",
+        "width": 64,
+        "height": 14
+      }
+    ],
+    "frameSize": [
+      64,
+      14
+    ],
+    "frameCount": 1,
+    "allowedFacing": [
+      1
+    ],
+    "scale": 1
+  },
+  "collision": {
+    "defaults": [],
+    "decorative": true,
+    "behavior": "none"
+  },
+  "properties": {
+    "variant": {
+      "type": "integer",
+      "default": 0,
+      "min": 0,
+      "max": 2,
+      "description": "Explicit visual variation; collision is unchanged."
+    },
+    "state": {
+      "type": "enum",
+      "values": [
+        "idle"
+      ],
+      "default": "idle"
+    }
+  },
+  "animation": {
+    "states": {
+      "idle": {
+        "frames": [
+          0
+        ],
+        "timingMs": [
+          1000
+        ],
+        "loop": true
+      }
+    },
+    "frameEvents": [],
+    "timingUnit": "ms",
+    "sourceFramesOnly": true,
+    "deterministic": true
+  },
+  "tags": [
+    "mini",
+    "recyke",
+    "building",
+    "roof",
+    "cornice",
+    "repeat",
+    "native"
+  ],
+  "thumbnail": {
+    "uri": "assets/mini/roof-v0.png",
+    "frame": 0,
+    "variant": 0,
+    "nativeSize": [
+      64,
+      14
+    ],
+    "noResample": true
+  },
+  "placement": {
+    "snap": 1,
+    "suggestedGrid": 8,
+    "preview": "native-art+anchor+collision",
+    "repeat": {
+      "x": 64
+    },
+    "allowScale": false,
+    "allowRotation": false
+  }
+}

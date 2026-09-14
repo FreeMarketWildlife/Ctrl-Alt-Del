@@ -1,0 +1,158 @@
+{
+  "assetId": "cad.mini.recyke.puddle",
+  "revision": 1,
+  "name": "Puddle · reflected light",
+  "kind": "animated",
+  "biome": "recyke",
+  "family": "mini",
+  "approval": "review-candidate",
+  "source": {
+    "type": "new-native",
+    "file": "src/mini.cjs",
+    "renderer": "src/painters.cjs"
+  },
+  "native": {
+    "width": 48,
+    "height": 10,
+    "origin": [
+      0,
+      10
+    ],
+    "originName": "base-left",
+    "selectionBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 48,
+      "height": 10
+    },
+    "visibleBounds": [
+      {
+        "variant": 0,
+        "frame": 0,
+        "x": 0,
+        "y": 0,
+        "width": 46,
+        "height": 10
+      },
+      {
+        "variant": 0,
+        "frame": 1,
+        "x": 0,
+        "y": 0,
+        "width": 46,
+        "height": 10
+      },
+      {
+        "variant": 0,
+        "frame": 2,
+        "x": 0,
+        "y": 0,
+        "width": 46,
+        "height": 10
+      }
+    ],
+    "animationEnvelope": {
+      "x": 0,
+      "y": 0,
+      "width": 48,
+      "height": 10
+    }
+  },
+  "sockets": [],
+  "render": {
+    "kind": "sprite-sheet",
+    "layer": "foreground",
+    "parallax": {
+      "x": 1,
+      "y": 1
+    },
+    "variants": [
+      {
+        "id": "v0",
+        "uri": "assets/mini/puddle.png",
+        "sha256": "26b9e9e9e16140a5e9a3d5bab98b0e2ce8b7a87e1390b356f5bf6478d8b824d5",
+        "width": 144,
+        "height": 10
+      }
+    ],
+    "frameSize": [
+      48,
+      10
+    ],
+    "frameCount": 3,
+    "allowedFacing": [
+      1
+    ],
+    "scale": 1
+  },
+  "collision": {
+    "defaults": [],
+    "decorative": true,
+    "behavior": "none"
+  },
+  "properties": {
+    "variant": {
+      "type": "integer",
+      "default": 0,
+      "min": 0,
+      "max": 0,
+      "description": "Explicit visual variation; collision is unchanged."
+    },
+    "state": {
+      "type": "enum",
+      "values": [
+        "idle"
+      ],
+      "default": "idle"
+    }
+  },
+  "animation": {
+    "states": {
+      "idle": {
+        "frames": [
+          0,
+          1,
+          2
+        ],
+        "timingMs": [
+          500,
+          500,
+          500
+        ],
+        "loop": true
+      }
+    },
+    "frameEvents": [],
+    "timingUnit": "ms",
+    "sourceFramesOnly": true,
+    "deterministic": true
+  },
+  "tags": [
+    "mini",
+    "recyke",
+    "animated",
+    "puddle",
+    "reflection",
+    "wet",
+    "decorative",
+    "native"
+  ],
+  "thumbnail": {
+    "uri": "assets/mini/puddle.png",
+    "frame": 0,
+    "variant": 0,
+    "nativeSize": [
+      48,
+      10
+    ],
+    "noResample": true
+  },
+  "placement": {
+    "snap": 1,
+    "suggestedGrid": 8,
+    "preview": "native-art+anchor+collision",
+    "repeat": null,
+    "allowScale": false,
+    "allowRotation": false
+  }
+}

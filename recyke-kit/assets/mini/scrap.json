@@ -1,0 +1,168 @@
+{
+  "assetId": "cad.mini.recyke.scrap",
+  "revision": 1,
+  "name": "Sorted scrap · three clusters",
+  "kind": "prop",
+  "biome": "recyke",
+  "family": "mini",
+  "approval": "review-candidate",
+  "source": {
+    "type": "new-native",
+    "file": "src/mini.cjs",
+    "renderer": "src/painters.cjs"
+  },
+  "native": {
+    "width": 36,
+    "height": 16,
+    "origin": [
+      0,
+      16
+    ],
+    "originName": "base-left",
+    "selectionBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 36,
+      "height": 16
+    },
+    "visibleBounds": [
+      {
+        "variant": 0,
+        "frame": 0,
+        "x": 0,
+        "y": 4,
+        "width": 35,
+        "height": 12
+      },
+      {
+        "variant": 1,
+        "frame": 0,
+        "x": 2,
+        "y": 1,
+        "width": 33,
+        "height": 15
+      },
+      {
+        "variant": 2,
+        "frame": 0,
+        "x": 0,
+        "y": 2,
+        "width": 36,
+        "height": 14
+      }
+    ],
+    "animationEnvelope": {
+      "x": 0,
+      "y": 0,
+      "width": 36,
+      "height": 16
+    }
+  },
+  "sockets": [],
+  "render": {
+    "kind": "sprite-sheet",
+    "layer": "scenery",
+    "parallax": {
+      "x": 1,
+      "y": 1
+    },
+    "variants": [
+      {
+        "id": "v0",
+        "uri": "assets/mini/scrap-v0.png",
+        "sha256": "82cfc23f228c998eb65d8cabc9d967ae3b7cd647568616b2d8ecc40ac9662c2d",
+        "width": 36,
+        "height": 16
+      },
+      {
+        "id": "v1",
+        "uri": "assets/mini/scrap-v1.png",
+        "sha256": "8627b4312fe9143103a2338ba5556c3370d7d5a881e830488f4d7e06989cd4ba",
+        "width": 36,
+        "height": 16
+      },
+      {
+        "id": "v2",
+        "uri": "assets/mini/scrap-v2.png",
+        "sha256": "5b1dd124ccc5467f420a24363a748dc08c8e344cde2de034757c442e2e495d03",
+        "width": 36,
+        "height": 16
+      }
+    ],
+    "frameSize": [
+      36,
+      16
+    ],
+    "frameCount": 1,
+    "allowedFacing": [
+      1
+    ],
+    "scale": 1
+  },
+  "collision": {
+    "defaults": [],
+    "decorative": true,
+    "behavior": "none"
+  },
+  "properties": {
+    "variant": {
+      "type": "integer",
+      "default": 0,
+      "min": 0,
+      "max": 2,
+      "description": "Explicit visual variation; collision is unchanged."
+    },
+    "state": {
+      "type": "enum",
+      "values": [
+        "idle"
+      ],
+      "default": "idle"
+    }
+  },
+  "animation": {
+    "states": {
+      "idle": {
+        "frames": [
+          0
+        ],
+        "timingMs": [
+          1000
+        ],
+        "loop": true
+      }
+    },
+    "frameEvents": [],
+    "timingUnit": "ms",
+    "sourceFramesOnly": true,
+    "deterministic": true
+  },
+  "tags": [
+    "mini",
+    "recyke",
+    "prop",
+    "scrap",
+    "debris",
+    "metal",
+    "decorative",
+    "native"
+  ],
+  "thumbnail": {
+    "uri": "assets/mini/scrap-v0.png",
+    "frame": 0,
+    "variant": 0,
+    "nativeSize": [
+      36,
+      16
+    ],
+    "noResample": true
+  },
+  "placement": {
+    "snap": 1,
+    "suggestedGrid": 8,
+    "preview": "native-art+anchor+collision",
+    "repeat": null,
+    "allowScale": false,
+    "allowRotation": false
+  }
+}

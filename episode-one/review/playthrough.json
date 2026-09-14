@@ -1,0 +1,211 @@
+[
+  {
+    "id": "01-intro",
+    "won": true,
+    "dead": false,
+    "reason": "",
+    "time": 0,
+    "x": 1390,
+    "y": 222,
+    "hp": 6,
+    "flags": {
+      "completed:01-intro": true
+    },
+    "goals": 0,
+    "kills": 0,
+    "weaponsTaken": 0
+  },
+  {
+    "id": "02-moral-code",
+    "won": true,
+    "dead": false,
+    "reason": "",
+    "time": 13.08,
+    "x": 1195,
+    "y": 222,
+    "hp": 6,
+    "flags": {
+      "approach": true,
+      "oath": true,
+      "training-console": true,
+      "completed:02-moral-code": true
+    },
+    "goals": 2,
+    "kills": 1,
+    "weaponsTaken": 0
+  },
+  {
+    "id": "03a-secondary",
+    "won": true,
+    "dead": false,
+    "reason": "",
+    "time": 17.88,
+    "x": 1643.8,
+    "y": 222,
+    "hp": 6,
+    "flags": {
+      "coolant-a": true,
+      "coolant-b": true,
+      "completed:03a-secondary": true
+    },
+    "goals": 2,
+    "kills": 5,
+    "weaponsTaken": 0
+  },
+  {
+    "id": "03b-module",
+    "won": true,
+    "dead": false,
+    "reason": "",
+    "time": 15.37,
+    "x": 827.4,
+    "y": 222,
+    "hp": 6,
+    "flags": {
+      "module-left": true,
+      "tried-1000": true,
+      "tried-920": true,
+      "reunited": true,
+      "completed:03b-module": true
+    },
+    "goals": 3,
+    "kills": 3,
+    "weaponsTaken": 0
+  },
+  {
+    "id": "03c-wrecking-yard",
+    "won": true,
+    "dead": false,
+    "reason": "",
+    "time": 13.97,
+    "x": 1292.7,
+    "y": 222,
+    "hp": 6,
+    "flags": {
+      "module-left": true,
+      "completed:03c-wrecking-yard": true
+    },
+    "goals": 0,
+    "kills": 3,
+    "weaponsTaken": 0
+  },
+  {
+    "id": "04-skyview",
+    "won": true,
+    "dead": false,
+    "reason": "",
+    "time": 11.77,
+    "x": 1102.9,
+    "y": 222,
+    "hp": 6,
+    "flags": {
+      "completed:04-skyview": true
+    },
+    "goals": 0,
+    "kills": 0,
+    "weaponsTaken": 0
+  },
+  {
+    "id": "05-reaching-out",
+    "won": true,
+    "dead": false,
+    "reason": "",
+    "time": 31.22,
+    "x": 3766.7,
+    "y": 130.2,
+    "hp": 7,
+    "flags": {
+      "completed:05-reaching-out": true
+    },
+    "goals": 0,
+    "kills": 5,
+    "weaponsTaken": 0
+  },
+  {
+    "id": "06-untitled",
+    "won": true,
+    "dead": false,
+    "reason": "",
+    "time": 12.77,
+    "x": 1230,
+    "y": 222,
+    "hp": 6,
+    "flags": {
+      "jessie-dead": true,
+      "completed:06-untitled": true
+    },
+    "goals": 0,
+    "kills": 0,
+    "weaponsTaken": 0
+  },
+  {
+    "id": "07-ctrl-alt-del",
+    "won": true,
+    "dead": false,
+    "reason": "",
+    "time": 32.62,
+    "x": 4365.3,
+    "y": 130.2,
+    "hp": 5,
+    "flags": {
+      "completed:07-ctrl-alt-del": true
+    },
+    "goals": 0,
+    "kills": 10,
+    "weaponsTaken": 0
+  },
+  {
+    "id": "08-acquire",
+    "won": true,
+    "dead": false,
+    "reason": "",
+    "time": 19.03,
+    "x": 1701.5,
+    "y": 222,
+    "hp": 6,
+    "flags": {
+      "climbed": true,
+      "entered-server": true,
+      "server-access": true,
+      "completed:08-acquire": true
+    },
+    "goals": 2,
+    "kills": 6,
+    "weaponsTaken": 0
+  },
+  {
+    "id": "09-server-escape",
+    "won": true,
+    "dead": false,
+    "reason": "",
+    "time": 20.82,
+    "x": 1884.8,
+    "y": 222,
+    "hp": 6,
+    "flags": {
+      "uploaded": true,
+      "escape-lock": true,
+      "completed:09-server-escape": true
+    },
+    "goals": 2,
+    "kills": 7,
+    "weaponsTaken": 3
+  },
+  {
+    "id": "10-never-say-die",
+    "won": true,
+    "dead": false,
+    "reason": "",
+    "time": 0,
+    "x": 410,
+    "y": 222,
+    "hp": 6,
+    "flags": {
+      "episode-complete": true,
+      "completed:10-never-say-die": true
+    },
+    "goals": 0,
+    "kills": 0,
+    "weaponsTaken": 0
+  }
+]

@@ -1,0 +1,206 @@
+{
+  "assetId": "cad.big.recyke.street-1",
+  "revision": 1,
+  "name": "Street · shaft foot",
+  "kind": "terrain",
+  "biome": "recyke",
+  "family": "big",
+  "approval": "review-candidate",
+  "source": {
+    "type": "new-native",
+    "file": "src/big.cjs",
+    "renderer": "src/painters.cjs"
+  },
+  "native": {
+    "width": 48,
+    "height": 48,
+    "origin": [
+      0,
+      0
+    ],
+    "originName": "top-left",
+    "selectionBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 48,
+      "height": 48
+    },
+    "visibleBounds": [
+      {
+        "variant": 0,
+        "frame": 0,
+        "x": 0,
+        "y": 0,
+        "width": 48,
+        "height": 48
+      },
+      {
+        "variant": 1,
+        "frame": 0,
+        "x": 0,
+        "y": 0,
+        "width": 48,
+        "height": 48
+      },
+      {
+        "variant": 2,
+        "frame": 0,
+        "x": 0,
+        "y": 0,
+        "width": 48,
+        "height": 48
+      }
+    ],
+    "animationEnvelope": {
+      "x": 0,
+      "y": 0,
+      "width": 48,
+      "height": 48
+    }
+  },
+  "sockets": [
+    {
+      "id": "left",
+      "type": "street-big",
+      "x": 0,
+      "y": 0,
+      "facing": "left"
+    },
+    {
+      "id": "right",
+      "type": "street-big",
+      "x": 48,
+      "y": 0,
+      "facing": "right"
+    },
+    {
+      "id": "bottom",
+      "type": "street-big",
+      "x": 0,
+      "y": 48,
+      "facing": "down"
+    }
+  ],
+  "render": {
+    "kind": "sprite-sheet",
+    "layer": "playable",
+    "parallax": {
+      "x": 1,
+      "y": 1
+    },
+    "variants": [
+      {
+        "id": "v0",
+        "uri": "assets/big/street-1-v0.png",
+        "sha256": "4831e3cdddd88d6b14222a8796e31ee651ccb89101805b87d07a4d11d5ae3281",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "id": "v1",
+        "uri": "assets/big/street-1-v1.png",
+        "sha256": "951df595d572c2017d01d811a93fd58174ffe0e39ad785338a35ee88e67b8df2",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "id": "v2",
+        "uri": "assets/big/street-1-v2.png",
+        "sha256": "45a529db615dd95eca7b98c6583c9128bbf8261815293913b9cd4c118d93b0f8",
+        "width": 48,
+        "height": 48
+      }
+    ],
+    "frameSize": [
+      48,
+      48
+    ],
+    "frameCount": 1,
+    "allowedFacing": [
+      1
+    ],
+    "scale": 1
+  },
+  "collision": {
+    "defaults": [
+      {
+        "channel": "world",
+        "mask": [
+          "player",
+          "projectile"
+        ],
+        "kind": "solid",
+        "x": 0,
+        "y": 0,
+        "width": 48,
+        "height": 48
+      }
+    ],
+    "decorative": false,
+    "behavior": "none"
+  },
+  "properties": {
+    "variant": {
+      "type": "integer",
+      "default": 0,
+      "min": 0,
+      "max": 2,
+      "description": "Explicit visual variation; collision is unchanged."
+    },
+    "state": {
+      "type": "enum",
+      "values": [
+        "idle"
+      ],
+      "default": "idle"
+    }
+  },
+  "animation": {
+    "states": {
+      "idle": {
+        "frames": [
+          0
+        ],
+        "timingMs": [
+          1000
+        ],
+        "loop": true
+      }
+    },
+    "frameEvents": [],
+    "timingUnit": "ms",
+    "sourceFramesOnly": true,
+    "deterministic": true
+  },
+  "tags": [
+    "big",
+    "recyke",
+    "terrain",
+    "ground",
+    "street",
+    "edge",
+    "repeat",
+    "native"
+  ],
+  "thumbnail": {
+    "uri": "assets/big/street-1-v0.png",
+    "frame": 0,
+    "variant": 0,
+    "nativeSize": [
+      48,
+      48
+    ],
+    "noResample": true
+  },
+  "placement": {
+    "snap": 1,
+    "suggestedGrid": 16,
+    "preview": "native-art+anchor+collision",
+    "repeat": {
+      "x": 48,
+      "y": 48
+    },
+    "allowScale": false,
+    "allowRotation": false
+  }
+}

@@ -1,0 +1,336 @@
+{
+  "assetId": "cad.big.recyke.boiler",
+  "revision": 1,
+  "name": "Boiler + native steam",
+  "kind": "animated",
+  "biome": "recyke",
+  "family": "big",
+  "approval": "review-candidate",
+  "source": {
+    "type": "native-extraction",
+    "file": "archive/pre-mini-2026-09-14/recyke-development/recyke-art.js",
+    "sha256": "7c761b7beceb5fcfad47e3440ed7ca9b7f90724f905c18db824d8a7a6f8d905b",
+    "function": "machinery",
+    "nativeCrop": [
+      1190,
+      76,
+      115,
+      232
+    ],
+    "noResampling": true
+  },
+  "native": {
+    "width": 115,
+    "height": 232,
+    "origin": [
+      10,
+      232
+    ],
+    "originName": "base-left",
+    "selectionBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 115,
+      "height": 232
+    },
+    "visibleBounds": [
+      {
+        "variant": 0,
+        "frame": 0,
+        "x": 10,
+        "y": 19,
+        "width": 94,
+        "height": 207
+      },
+      {
+        "variant": 0,
+        "frame": 1,
+        "x": 10,
+        "y": 16,
+        "width": 94,
+        "height": 210
+      },
+      {
+        "variant": 0,
+        "frame": 2,
+        "x": 10,
+        "y": 13,
+        "width": 94,
+        "height": 213
+      },
+      {
+        "variant": 0,
+        "frame": 3,
+        "x": 10,
+        "y": 11,
+        "width": 93,
+        "height": 215
+      },
+      {
+        "variant": 0,
+        "frame": 4,
+        "x": 10,
+        "y": 8,
+        "width": 94,
+        "height": 218
+      },
+      {
+        "variant": 0,
+        "frame": 5,
+        "x": 10,
+        "y": 19,
+        "width": 94,
+        "height": 207
+      },
+      {
+        "variant": 0,
+        "frame": 6,
+        "x": 10,
+        "y": 16,
+        "width": 94,
+        "height": 210
+      },
+      {
+        "variant": 0,
+        "frame": 7,
+        "x": 10,
+        "y": 13,
+        "width": 93,
+        "height": 213
+      },
+      {
+        "variant": 0,
+        "frame": 8,
+        "x": 10,
+        "y": 11,
+        "width": 93,
+        "height": 215
+      },
+      {
+        "variant": 0,
+        "frame": 9,
+        "x": 10,
+        "y": 8,
+        "width": 94,
+        "height": 218
+      },
+      {
+        "variant": 0,
+        "frame": 10,
+        "x": 10,
+        "y": 19,
+        "width": 93,
+        "height": 207
+      },
+      {
+        "variant": 0,
+        "frame": 11,
+        "x": 10,
+        "y": 16,
+        "width": 92,
+        "height": 210
+      },
+      {
+        "variant": 0,
+        "frame": 12,
+        "x": 10,
+        "y": 13,
+        "width": 91,
+        "height": 213
+      },
+      {
+        "variant": 0,
+        "frame": 13,
+        "x": 10,
+        "y": 11,
+        "width": 89,
+        "height": 215
+      },
+      {
+        "variant": 0,
+        "frame": 14,
+        "x": 10,
+        "y": 8,
+        "width": 90,
+        "height": 218
+      },
+      {
+        "variant": 0,
+        "frame": 15,
+        "x": 10,
+        "y": 19,
+        "width": 93,
+        "height": 207
+      },
+      {
+        "variant": 0,
+        "frame": 16,
+        "x": 10,
+        "y": 16,
+        "width": 94,
+        "height": 210
+      },
+      {
+        "variant": 0,
+        "frame": 17,
+        "x": 10,
+        "y": 13,
+        "width": 94,
+        "height": 213
+      },
+      {
+        "variant": 0,
+        "frame": 18,
+        "x": 10,
+        "y": 11,
+        "width": 94,
+        "height": 215
+      },
+      {
+        "variant": 0,
+        "frame": 19,
+        "x": 10,
+        "y": 8,
+        "width": 93,
+        "height": 218
+      }
+    ],
+    "animationEnvelope": {
+      "x": 0,
+      "y": 0,
+      "width": 115,
+      "height": 232
+    }
+  },
+  "sockets": [],
+  "render": {
+    "kind": "sprite-sheet",
+    "layer": "scenery",
+    "parallax": {
+      "x": 1,
+      "y": 1
+    },
+    "variants": [
+      {
+        "id": "v0",
+        "uri": "assets/big/boiler.png",
+        "sha256": "7fecad9e2b914ee3946676739d5b7f6d22bb01288dc29d442a4c194c4005b50e",
+        "width": 2300,
+        "height": 232
+      }
+    ],
+    "frameSize": [
+      115,
+      232
+    ],
+    "frameCount": 20,
+    "allowedFacing": [
+      1
+    ],
+    "scale": 1
+  },
+  "collision": {
+    "defaults": [],
+    "decorative": true,
+    "behavior": "none"
+  },
+  "properties": {
+    "variant": {
+      "type": "integer",
+      "default": 0,
+      "min": 0,
+      "max": 0,
+      "description": "Explicit visual variation; collision is unchanged."
+    },
+    "state": {
+      "type": "enum",
+      "values": [
+        "idle"
+      ],
+      "default": "idle"
+    }
+  },
+  "animation": {
+    "states": {
+      "idle": {
+        "frames": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "timingMs": [
+          250,
+          250,
+          250,
+          250,
+          250,
+          250,
+          250,
+          250,
+          250,
+          250,
+          250,
+          250,
+          250,
+          250,
+          250,
+          250,
+          250,
+          250,
+          250,
+          250
+        ],
+        "loop": true
+      }
+    },
+    "frameEvents": [],
+    "timingUnit": "ms",
+    "sourceFramesOnly": true,
+    "deterministic": true
+  },
+  "tags": [
+    "big",
+    "recyke",
+    "animated",
+    "boiler",
+    "machinery",
+    "reused",
+    "decorative",
+    "native"
+  ],
+  "thumbnail": {
+    "uri": "assets/big/boiler.png",
+    "frame": 0,
+    "variant": 0,
+    "nativeSize": [
+      115,
+      232
+    ],
+    "noResample": true
+  },
+  "placement": {
+    "snap": 1,
+    "suggestedGrid": 16,
+    "preview": "native-art+anchor+collision",
+    "repeat": null,
+    "allowScale": false,
+    "allowRotation": false
+  }
+}

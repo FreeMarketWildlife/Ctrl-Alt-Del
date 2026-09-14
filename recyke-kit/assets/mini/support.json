@@ -1,0 +1,139 @@
+{
+  "assetId": "cad.mini.recyke.support",
+  "revision": 1,
+  "name": "Catwalk support · decorative",
+  "kind": "prop",
+  "biome": "recyke",
+  "family": "mini",
+  "approval": "review-candidate",
+  "source": {
+    "type": "new-native",
+    "file": "src/mini.cjs",
+    "renderer": "src/painters.cjs"
+  },
+  "native": {
+    "width": 6,
+    "height": 40,
+    "origin": [
+      0,
+      0
+    ],
+    "originName": "top-left",
+    "selectionBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 6,
+      "height": 40
+    },
+    "visibleBounds": [
+      {
+        "variant": 0,
+        "frame": 0,
+        "x": 0,
+        "y": 0,
+        "width": 6,
+        "height": 40
+      }
+    ],
+    "animationEnvelope": {
+      "x": 0,
+      "y": 0,
+      "width": 6,
+      "height": 40
+    }
+  },
+  "sockets": [],
+  "render": {
+    "kind": "sprite-sheet",
+    "layer": "scenery",
+    "parallax": {
+      "x": 1,
+      "y": 1
+    },
+    "variants": [
+      {
+        "id": "v0",
+        "uri": "assets/mini/support.png",
+        "sha256": "264577ea2e783d691fef102b7ecea0fd9f736b491c04207a1116b922a9b4803a",
+        "width": 6,
+        "height": 40
+      }
+    ],
+    "frameSize": [
+      6,
+      40
+    ],
+    "frameCount": 1,
+    "allowedFacing": [
+      1
+    ],
+    "scale": 1
+  },
+  "collision": {
+    "defaults": [],
+    "decorative": true,
+    "behavior": "none"
+  },
+  "properties": {
+    "variant": {
+      "type": "integer",
+      "default": 0,
+      "min": 0,
+      "max": 0,
+      "description": "Explicit visual variation; collision is unchanged."
+    },
+    "state": {
+      "type": "enum",
+      "values": [
+        "idle"
+      ],
+      "default": "idle"
+    }
+  },
+  "animation": {
+    "states": {
+      "idle": {
+        "frames": [
+          0
+        ],
+        "timingMs": [
+          1000
+        ],
+        "loop": true
+      }
+    },
+    "frameEvents": [],
+    "timingUnit": "ms",
+    "sourceFramesOnly": true,
+    "deterministic": true
+  },
+  "tags": [
+    "mini",
+    "recyke",
+    "prop",
+    "support",
+    "post",
+    "decorative",
+    "native"
+  ],
+  "thumbnail": {
+    "uri": "assets/mini/support.png",
+    "frame": 0,
+    "variant": 0,
+    "nativeSize": [
+      6,
+      40
+    ],
+    "noResample": true
+  },
+  "placement": {
+    "snap": 1,
+    "suggestedGrid": 8,
+    "preview": "native-art+anchor+collision",
+    "repeat": {
+      "y": 40
+    },
+    "allowScale": false,
+    "allowRotation": false
+  }
+}

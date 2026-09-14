@@ -1,0 +1,20 @@
+// MINI: independently laid out native clusters. These are not Big dimensions divided down.
+module.exports={family:'mini',cell:[48,48],actorHeight:32,actorAnchor:[20,40],viewport:[480,270],worldWidth:1440,floor:222,
+ terrain:{w:24,h:24,lip:2,band:9,seamY:9,grout:1,mark:[3,4,13]},
+ facade:{w:64,h:112,windows:[[10,14,16,22],[39,14,16,22]],course:18,panel:[12,64,38,31],blind:5,patches:[[8,49,19],[42,54,13],[24,101,21]]},
+ shutter:{w:64,h:112,x:8,y:51,sw:48,sh:56,step:6,rivet:12},
+ roof:{w:64,h:14,top:6},corner:{w:12,h:112,edge:4,step:16,stain:21},
+ recess:{w:80,h:80,inset:12,slope:9},
+ door:{w:48,h:58,x:8,y:14,opening:[32,44],rail:4,bolts:[[3,23],[3,36],[3,48]],boltW:6,handle:[32,36],handleH:8,panels:5,panelStep:7},
+ pipeH:{w:32,h:9,bore:5,spacing:21},pipeV:{w:9,h:32,bore:5,spacing:21,vertical:true},elbow:{w:16,h:16,bore:5,x:8,y:3},
+ vent:{w:24,h:24,cx:12,cy:12,rad:6,slats:4},lamp:{w:18,h:22,stem:8,drop:14,cap:5},
+ scrap:{w:36,h:16,parts:[[[0,9,16,7,'rustDark'],[10,4,16,12,'steelDark'],[24,8,11,8,'plum']],[[2,7,12,9,'steelDark'],[15,9,20,7,'rustDark'],[9,1,12,14,'plum']],[[0,10,24,6,'rustDark'],[5,2,8,14,'steelDark'],[20,6,16,10,'wallFace']]],bits:[[3,15],[25,14],[29,6]]},
+ skyline:{w:192,h:112,towers:[[0,34,31,78],[36,16,42,96],[84,49,27,63],[117,5,30,107],[154,28,38,84]],rows:13,cols:11},
+ cable:{w:96,h:16,base:1,sag:10,knots:[8,53,87]},
+ puddle:{w:48,h:10,outline:[[2,2],[35,0],[47,4],[43,8],[10,10],[0,6]],lines:[[9,2,26,'window'],[17,4,16,'violet'],[6,6,12,'teal']]},
+ crate:[24,16],crateTall:[24,32],platform:{w:24,h:6,bolt:9},support:{w:6,h:40},drain:{w:24,h:8,step:4},
+ sign:{w:28,h:45,text:'FIX',vertical:true},poster:{w:18,h:25},
+ reuse:{bins:{rect:[160,194,70,28],anchor:[0,28]},press:{rect:[442,132,63,90],anchor:[0,90]},boiler:{rect:[663,118,56,104],anchor:[7,104]}},
+ train:{w:64,h:27,bodyH:24,winStep:16,winW:11,winH:8},
+ physics:{speed:90,acceleration:900,gravity:600,jumpSpeed:245,maxFallSpeed:400,playerWidth:10,playerHeight:30,crouchHeight:16,crouchSpeed:25}
+};

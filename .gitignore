@@ -1,0 +1,12 @@
+# Machine-local caches and credentials; all project source/art/review work is kept.
+.DS_Store
+**/node_modules/
+**/__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+*.log
+**/test-results/
+**/playwright-report/
+episode-one/review/export-test-dpr*.json

@@ -1,0 +1,26 @@
+{
+  "passed": 20,
+  "checks": [
+    "All 12 authored levels validate; ten chapters represented",
+    "Runtime never mutates authored input",
+    "Every cinematic has identical final flags when skipped or played",
+    "Cutscene object animation advances and skip reaches its final visual frame",
+    "Enemy-free map movement and exit work",
+    "Crouch feet anchor, 10x16 collider and solid headroom",
+    "Jessie tap fires three successive rounds",
+    "Dormant encounter cannot be damaged before its condition",
+    "Rear guard resists shooting; correct rear melee defeats it",
+    "Checkpoint restores timer, objectives, enemy state and ammo",
+    "Timer pauses during pause and dialogue; expiry retries",
+    "Exit resolves before same-tick timer expiry",
+    "Stealth detection fails; crouch cover protects",
+    "Finite ammo depletes and scavenged guns refill it",
+    "Watch lasts 30 seconds and needs four kills to refill",
+    "Copy remaps internal object, flag, patrol and group references",
+    "Bad references, future schema and overlapping starts block play",
+    "Source oath and unresolved titles remain intact",
+    "Malformed structures return a repair error instead of throwing",
+    "Prior art, playable apps, kit baseline and backup hashes stay unchanged"
+  ],
+  "protectedFiles": 817
+}

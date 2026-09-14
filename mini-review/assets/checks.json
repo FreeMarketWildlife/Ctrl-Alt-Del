@@ -1,0 +1,17 @@
+{
+  "cases": 472,
+  "enemyCases": 816,
+  "stats": [
+    {
+      "name": "Jane",
+      "actions": 18,
+      "poses": 133
+    },
+    {
+      "name": "Jessie",
+      "actions": 14,
+      "poses": 103
+    }
+  ],
+  "failures": []
+}

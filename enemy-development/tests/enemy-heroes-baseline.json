@@ -1,0 +1,24 @@
+{
+  "description": "Approved hero masters before the enemy pass. Source, assets, and every native output pixel must remain unchanged.",
+  "files": {
+    "jessie-motion.js": "184166af8c9471e5bcfa68dcae5bb34bf7853fdee0161f009d16a3af642ec959",
+    "jessie.js": "a6e0068e1b10f61a6ed198e18f6f772755bdc625a47c071ca240c6be27b98d68",
+    "assets/jessie/jessie-animation.json": "425e18e8fdaf14754f35d67a2fd4c9e93f2780610d63f4e45fc3e002b44f77e5",
+    "assets/jessie/jessie-mini.png": "eb6ac4ba445328ba48f7c2dd412d1942f890b47f084cbccc168797b2a4588cdb",
+    "jane-motion.js": "cfabb2ebcdc6ce1896ca23ae842f308024aa185adf88e00f88def349be0a7171",
+    "jane.js": "af4055b95cf4175760959717ea5f7f6ab634dc0c06b35bcac1686e0b2527a164",
+    "assets/jane/jane-animation.json": "c9869dd7e888cd1c4ac09a5c32a871031afce1177a28ebd5959e29d0be31e96f",
+    "assets/jane/jane-mini.png": "ea978dc3e43e4704fa89afafa4a478d283aa81407868de797370b0e6a957dd87"
+  },
+  "renderRGBA": {
+    "jessie": {
+      "big": "96505fb680ffc392784e32bb9de0d695b9ddaffd874ea961e82a00584d257a88",
+      "mini": "2a4171ac35963c86fbf36f54c7c33d63c01366cd9d0876e91dfbdd0d08f42705"
+    },
+    "jane": {
+      "big": "15c93323f6d4e5a72ffa4f9e7aa7f76a6b4a959802c9f95c68995535f6adcb19",
+      "mini": "e1bdb0824a443dac08fa9519e27648ff9bbfc00b106d191d738c681ac827ca62"
+    }
+  },
+  "note": "Mini-only Proposal A with user-authorized held crouch modes. Original action pixels and motion verified against mini-review/crouch-baseline; pre-mini build remains archived."
+}

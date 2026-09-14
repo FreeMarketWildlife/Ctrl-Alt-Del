@@ -1,0 +1,151 @@
+{
+  "assetId": "cad.mini.recyke.fix-sign",
+  "revision": 1,
+  "name": "Repair shop · FIX sign",
+  "kind": "animated",
+  "biome": "recyke",
+  "family": "mini",
+  "approval": "review-candidate",
+  "source": {
+    "type": "adapted-native",
+    "file": "recyke-development/recyke-art.js",
+    "function": "neonSign / word",
+    "note": "FIX is existing prototype signage, not new story text."
+  },
+  "native": {
+    "width": 28,
+    "height": 45,
+    "origin": [
+      0,
+      45
+    ],
+    "originName": "base-left",
+    "selectionBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 28,
+      "height": 45
+    },
+    "visibleBounds": [
+      {
+        "variant": 0,
+        "frame": 0,
+        "x": 0,
+        "y": 0,
+        "width": 28,
+        "height": 45
+      },
+      {
+        "variant": 0,
+        "frame": 1,
+        "x": 0,
+        "y": 0,
+        "width": 28,
+        "height": 45
+      }
+    ],
+    "animationEnvelope": {
+      "x": 0,
+      "y": 0,
+      "width": 28,
+      "height": 45
+    }
+  },
+  "sockets": [],
+  "render": {
+    "kind": "sprite-sheet",
+    "layer": "scenery",
+    "parallax": {
+      "x": 1,
+      "y": 1
+    },
+    "variants": [
+      {
+        "id": "v0",
+        "uri": "assets/mini/fix-sign.png",
+        "sha256": "0af8829bd8d6ce9781d62a682ca3d89f0677ebc27829657e5aa4f5f398b140e3",
+        "width": 56,
+        "height": 45
+      }
+    ],
+    "frameSize": [
+      28,
+      45
+    ],
+    "frameCount": 2,
+    "allowedFacing": [
+      1
+    ],
+    "scale": 1
+  },
+  "collision": {
+    "defaults": [],
+    "decorative": true,
+    "behavior": "none"
+  },
+  "properties": {
+    "variant": {
+      "type": "integer",
+      "default": 0,
+      "min": 0,
+      "max": 0,
+      "description": "Explicit visual variation; collision is unchanged."
+    },
+    "state": {
+      "type": "enum",
+      "values": [
+        "idle"
+      ],
+      "default": "idle"
+    }
+  },
+  "animation": {
+    "states": {
+      "idle": {
+        "frames": [
+          0,
+          1,
+          0
+        ],
+        "timingMs": [
+          1800,
+          90,
+          800
+        ],
+        "loop": true
+      }
+    },
+    "frameEvents": [],
+    "timingUnit": "ms",
+    "sourceFramesOnly": true,
+    "deterministic": true
+  },
+  "tags": [
+    "mini",
+    "recyke",
+    "animated",
+    "sign",
+    "neon",
+    "shop",
+    "FIX",
+    "native"
+  ],
+  "thumbnail": {
+    "uri": "assets/mini/fix-sign.png",
+    "frame": 0,
+    "variant": 0,
+    "nativeSize": [
+      28,
+      45
+    ],
+    "noResample": true
+  },
+  "placement": {
+    "snap": 1,
+    "suggestedGrid": 8,
+    "preview": "native-art+anchor+collision",
+    "repeat": null,
+    "allowScale": false,
+    "allowRotation": false
+  }
+}

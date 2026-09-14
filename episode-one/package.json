@@ -1,0 +1,21 @@
+{
+  "name": "ctrl-alt-del-episode-one-prototype",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Native-mini Episode I campaign and browser level workshop",
+  "scripts": {
+    "serve": "python3 -m http.server 8056 --bind 127.0.0.1 --directory ..",
+    "test": "node tests/core.cjs && node tests/playthrough.cjs",
+    "test:browser": "node tests/browser.cjs && node tests/cutscene-browser.cjs",
+    "test:assets": "node tests/assets.cjs",
+    "build:assets": "node src/build-assets.cjs",
+    "review:boards": "node src/review-boards.cjs"
+  },
+  "devDependencies": {
+    "@napi-rs/canvas": "0.1.100",
+    "playwright": "1.62.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

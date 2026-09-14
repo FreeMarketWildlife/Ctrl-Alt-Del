@@ -1,0 +1,94 @@
+{
+  "AGENTS.md": {
+    "before": "43254a2f84de93b3e8f7e34949c02525d7ee9c30db318a5eb0394857d3cb4131",
+    "after": "0a6caa736fcaf1aa9d8bfe0f0c8abe7f786a4550c99c1bddda7a4b1e06b5c797"
+  },
+  "ART-STANDARDS.md": {
+    "before": "4d80497a2b26ae2d37dee2897b1654dff9fa40fef0321302f56ec114ab7b8aa2",
+    "after": "e049a9ae12979f1a619882a086ece4de1f1aefc4b2e9f3e2b509051d642034c6"
+  },
+  "JESSIE-STANDARD.md": {
+    "before": "d65e2155c86d870485540b4140845d297583579b3335800df11c5e0f7064d3b8",
+    "after": "779106011a56e31f5c5cc2784c4979f079543ba25f0ca952411be8d323128133"
+  },
+  "README.md": {
+    "before": "27e98a3ead4167ecfc791614e4290e6319527c1c0855a0896210cda6529d3150",
+    "after": "0c3e60b620d1a42aee165a8a7381cf4095a0b0bfa2e3b33f29a181e0adea8731"
+  },
+  "codex-art.js": {
+    "before": "daf9fcc3464bbdd7e5ef1f50c29b9b633e57f4220692b71fccba29459f6e8779",
+    "after": "e4a122cfd41fc233eda8638ddacb7ea8884808d6481d2cb226bc9a5b7779633f"
+  },
+  "codex.js": {
+    "before": "8827ca5a5705fc4203ddfeea5ce27d56abb82642b8a7440ed1af18ccccfa764e",
+    "after": "0e6e1d28cfdfda63d6ead8ee6927f0ce52866384d34f4e87b63c6e4fd7b19031"
+  },
+  "codex.html": {
+    "before": "5ef1920e36cdaafd644cf638c7a115db55efaf994ca138b84d3bb1fb94686595",
+    "after": "aa4f4e86214aaf4f55c6c8ea9c5d6144a8466b62d3f05b3bc526ec4645c5ccc4"
+  },
+  "jane.js": {
+    "before": null,
+    "after": "a4486ede2aab3ae3f50a7792c5743b1e2d419f871d42087a460af988e9276e0c"
+  },
+  "jane-motion.js": {
+    "before": null,
+    "after": "29a56af475a924e5703436ab881542d2c483732a71b7088e569bceded2687b4f"
+  },
+  "jane.html": {
+    "before": null,
+    "after": "5d3578cf94d601e232100fe62411f22fc3d8917ba8b40f5c379390f5323c4f91"
+  },
+  "jane.css": {
+    "before": null,
+    "after": "81caf150c9a8cf86c4ca7b14e3bc96043949e874e452055be92819f679dbd304"
+  },
+  "jane-study.js": {
+    "before": null,
+    "after": "020bd1f4c7d5e06f5d5ff189f757b1f3defc1ae93fe64d74d1a8192f68c9a0ec"
+  },
+  "JANE-STANDARD.md": {
+    "before": null,
+    "after": "e4384169fc961d259a07a87870762140f7e550673a1d183a73b1a089e282bfb9"
+  },
+  "tests/jane.cjs": {
+    "before": null,
+    "after": "0cde36964fc7ffd483a413526bc18c91de28f9b92a41d7971b57f13ef0c302a8"
+  },
+  "tests/jane-motion.cjs": {
+    "before": null,
+    "after": "faab6324022aed33c220642b4fbfe87c50f2537f8db032cb68da3576e57f919c"
+  },
+  "tests/jane-jessie-baseline.json": {
+    "before": null,
+    "after": "82b3ec868999908e9352adbcc16434d04be72597fa8a6e8615ac649c5b9c9356"
+  },
+  "tests/render-jane-review.cjs": {
+    "before": null,
+    "after": "58c62bad41d13dcf17fce266898f8e21bb9c5ef949041855915ec108feceb906"
+  },
+  "docs/references/jane-motion-research.md": {
+    "before": null,
+    "after": "1e8ce93a447ad072f9ed54f06f4396fb26de7af20c1d7cb46105399bf1df9632"
+  },
+  "assets/jane/jane-big.png": {
+    "before": null,
+    "after": "036ac8c48e4eebd140040c0f479f293fc0c5eb5a19143f1de782fbd9fe46e710"
+  },
+  "assets/jane/jane-mini.png": {
+    "before": null,
+    "after": "4f678a5469759c9653da26b239afa7838baf3a52a2a3d363f739a53f1e685a0e"
+  },
+  "assets/jane/jane-animation.json": {
+    "before": null,
+    "after": "99622bde7c736e10132a092237976982ed05a09b809921ffd2277a3c6748eae6"
+  },
+  "docs/review/jane-run-comparison.gif": {
+    "before": null,
+    "after": "698f6e0ec861200386201c9eecb8b39a154489b3817f3d4f44663e79b6ba6c1c"
+  },
+  "docs/review/jane-pose-review.png": {
+    "before": null,
+    "after": "0c1e893a0a58689c10847ed67deacc6432763c1e81323d094b970766d13f14c6"
+  }
+}

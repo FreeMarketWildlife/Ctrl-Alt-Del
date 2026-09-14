@@ -1,0 +1,15 @@
+const fs=require('node:fs'),vm=require('node:vm');
+const {createCanvas}=require('@napi-rs/canvas');
+const root=process.argv[2]||__dirname+'/jessie-refinement';
+const out=process.argv[3]||'/private/tmp/jessie-detail.png';
+const sandbox={window:{},document:{createElement:()=>createCanvas(1,1)}};
+vm.createContext(sandbox);
+vm.runInContext(fs.readFileSync(root+'/jessie-motion.js','utf8'),sandbox);
+sandbox.CADJessieMotion=sandbox.window.CADJessieMotion;
+vm.runInContext(fs.readFileSync(root+'/jessie.js','utf8'),sandbox);
+const A=sandbox.window.CADJessie;
+const cv=createCanvas(128*4,128*2),c=cv.getContext('2d');
+c.fillStyle='#34434b';c.fillRect(0,0,cv.width,cv.height);
+const items=[['idle',0],['walk',0],['run',0],['jab',2],['crouch',1],['walk',4],['run',5],['hurt',0]];
+items.forEach(([state,frame],i)=>{const x=(i%4)*128,y=Math.floor(i/4)*128;c.fillStyle='#7c9298';c.font='8px monospace';c.fillText(state+' '+frame,x+8,y+9);A.draw(c,'big',x+64,y+112,{state,frame});c.fillStyle='#53656b';c.fillRect(x,y+112,128,1);});
+const large=createCanvas(cv.width*3,cv.height*3),g=large.getContext('2d');g.imageSmoothingEnabled=false;g.drawImage(cv,0,0,large.width,large.height);fs.writeFileSync(out,large.toBuffer('image/png'));

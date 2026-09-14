@@ -1,0 +1,3675 @@
+{
+  "id": "scrapper",
+  "name": "Scrapper",
+  "group": "Mechs",
+  "sourcePixelWorldUnits": 1,
+  "sizes": {
+    "mini": {
+      "width": 48,
+      "height": 48,
+      "anchor": [
+        20,
+        40
+      ]
+    }
+  },
+  "palette": [
+    "#101620",
+    "#1d2634",
+    "#29364d",
+    "#42536a",
+    "#72838e",
+    "#4c3234",
+    "#80483c",
+    "#b66f49",
+    "#dfa76a",
+    "#e7c799",
+    "#243e45",
+    "#356976",
+    "#61a8a6",
+    "#99d4c5",
+    "#d6ece0",
+    "#d4ccad"
+  ],
+  "columns": 12,
+  "rows": [
+    "idle",
+    "walk",
+    "run",
+    "charge",
+    "fire",
+    "run-fire",
+    "melee",
+    "jump",
+    "hurt",
+    "death"
+  ],
+  "timingMs": {
+    "idle": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "walk": [
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80
+    ],
+    "run": [
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50
+    ],
+    "charge": [
+      100,
+      100,
+      130,
+      130,
+      160,
+      100
+    ],
+    "fire": [
+      70,
+      45,
+      65,
+      80,
+      110,
+      160
+    ],
+    "run-fire": [
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50
+    ],
+    "melee": [
+      100,
+      160,
+      45,
+      75,
+      110,
+      170
+    ],
+    "jump": [
+      70,
+      100,
+      160,
+      110,
+      75,
+      90
+    ],
+    "hurt": [
+      70,
+      90,
+      110,
+      150
+    ],
+    "death": [
+      90,
+      110,
+      95,
+      80,
+      80,
+      110,
+      170,
+      600
+    ]
+  },
+  "frameCounts": {
+    "idle": 8,
+    "walk": 12,
+    "run": 12,
+    "charge": 6,
+    "fire": 6,
+    "run-fire": 12,
+    "melee": 6,
+    "jump": 6,
+    "hurt": 4,
+    "death": 8
+  },
+  "loops": {
+    "idle": true,
+    "walk": true,
+    "run": true,
+    "charge": false,
+    "fire": false,
+    "run-fire": true,
+    "melee": false,
+    "jump": false,
+    "hurt": false,
+    "death": false
+  },
+  "framePadding": "Repeat final authored pose to fill 12 columns",
+  "motion": {
+    "name": "Scrapper",
+    "id": "scrapper",
+    "sourcePixelWorldUnits": 1,
+    "framePadding": "Repeat final authored pose to fill 12 columns",
+    "palette": [
+      "#101620",
+      "#1d2634",
+      "#29364d",
+      "#42536a",
+      "#72838e",
+      "#4c3234",
+      "#80483c",
+      "#b66f49",
+      "#dfa76a",
+      "#e7c799",
+      "#243e45",
+      "#356976",
+      "#61a8a6",
+      "#99d4c5",
+      "#d6ece0",
+      "#d4ccad"
+    ],
+    "sizes": {
+      "mini": {
+        "width": 48,
+        "height": 48,
+        "anchor": [
+          20,
+          40
+        ],
+        "heightPx": 32
+      }
+    },
+    "columns": 12,
+    "rows": [
+      "idle",
+      "walk",
+      "run",
+      "charge",
+      "fire",
+      "run-fire",
+      "melee",
+      "jump",
+      "hurt",
+      "death"
+    ],
+    "timingMs": {
+      "idle": [
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160
+      ],
+      "walk": [
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80
+      ],
+      "run": [
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50
+      ],
+      "charge": [
+        100,
+        100,
+        130,
+        130,
+        160,
+        100
+      ],
+      "fire": [
+        70,
+        45,
+        65,
+        80,
+        110,
+        160
+      ],
+      "run-fire": [
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50
+      ],
+      "melee": [
+        100,
+        160,
+        45,
+        75,
+        110,
+        170
+      ],
+      "jump": [
+        70,
+        100,
+        160,
+        110,
+        75,
+        90
+      ],
+      "hurt": [
+        70,
+        90,
+        110,
+        150
+      ],
+      "death": [
+        90,
+        110,
+        95,
+        80,
+        80,
+        110,
+        170,
+        600
+      ]
+    },
+    "frameCounts": {
+      "idle": 8,
+      "walk": 12,
+      "run": 12,
+      "charge": 6,
+      "fire": 6,
+      "run-fire": 12,
+      "melee": 6,
+      "jump": 6,
+      "hurt": 4,
+      "death": 8
+    },
+    "loops": {
+      "idle": true,
+      "walk": true,
+      "run": true,
+      "charge": false,
+      "fire": false,
+      "run-fire": true,
+      "melee": false,
+      "jump": false,
+      "hurt": false,
+      "death": false
+    },
+    "contactFrames": {
+      "walk": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "run": [
+        0,
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "run-fire": [
+        0,
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "charge": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "fire": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "melee": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "jump": [
+        4,
+        5
+      ],
+      "death": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "phases": {
+      "idle": [
+        "scan",
+        "scan",
+        "scan",
+        "scan",
+        "scan",
+        "scan",
+        "scan",
+        "scan"
+      ],
+      "walk": [
+        "contact",
+        "down",
+        "support",
+        "pass",
+        "rise",
+        "push",
+        "contact",
+        "down",
+        "support",
+        "pass",
+        "rise",
+        "push"
+      ],
+      "run": [
+        "contact",
+        "down",
+        "support",
+        "push",
+        "flight",
+        "fall",
+        "contact",
+        "down",
+        "support",
+        "push",
+        "flight",
+        "fall"
+      ],
+      "charge": [
+        "notice",
+        "brace",
+        "windup",
+        "aim",
+        "lock",
+        "ready"
+      ],
+      "fire": [
+        "aim",
+        "discharge",
+        "recoil",
+        "settle",
+        "vent",
+        "ready"
+      ],
+      "run-fire": [
+        "contact",
+        "down",
+        "support",
+        "push",
+        "flight",
+        "fall",
+        "contact",
+        "down",
+        "support",
+        "push",
+        "flight",
+        "fall"
+      ],
+      "melee": [
+        "guard",
+        "windup",
+        "strike",
+        "impact",
+        "retract",
+        "recover"
+      ],
+      "jump": [
+        "takeoff",
+        "rise",
+        "apex",
+        "fall",
+        "land",
+        "recover"
+      ],
+      "hurt": [
+        "impact",
+        "recoil",
+        "settle",
+        "recover"
+      ],
+      "death": [
+        "hit",
+        "fail",
+        "buckle",
+        "fall",
+        "impact",
+        "settle",
+        "power-down",
+        "wreck"
+      ]
+    },
+    "motion": {
+      "dimensions": {
+        "mini": {
+          "hipY": -16,
+          "thigh": 7,
+          "shin": 7,
+          "spread": 1,
+          "sole": 3
+        }
+      },
+      "poses": {
+        "mini": {
+          "idle": [
+            {
+              "bob": 0,
+              "lean": 0,
+              "angle": 0,
+              "shift": 0,
+              "phase": "scan",
+              "near": {
+                "hip": [
+                  1,
+                  -16
+                ],
+                "knee": [
+                  4,
+                  -10
+                ],
+                "ankle": [
+                  6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -16
+                ],
+                "knee": [
+                  -3,
+                  -9
+                ],
+                "ankle": [
+                  -6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": 0,
+              "lean": 0,
+              "angle": 0,
+              "shift": 0,
+              "phase": "scan",
+              "near": {
+                "hip": [
+                  1,
+                  -16
+                ],
+                "knee": [
+                  4,
+                  -10
+                ],
+                "ankle": [
+                  6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -16
+                ],
+                "knee": [
+                  -3,
+                  -9
+                ],
+                "ankle": [
+                  -6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": 0,
+              "lean": 0,
+              "angle": 0,
+              "shift": 0,
+              "phase": "scan",
+              "near": {
+                "hip": [
+                  1,
+                  -16
+                ],
+                "knee": [
+                  4,
+                  -10
+                ],
+                "ankle": [
+                  6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -16
+                ],
+                "knee": [
+                  -3,
+                  -9
+                ],
+                "ankle": [
+                  -6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": 0,
+              "lean": 0,
+              "angle": 0,
+              "shift": 0,
+              "phase": "scan",
+              "near": {
+                "hip": [
+                  1,
+                  -16
+                ],
+                "knee": [
+                  4,
+                  -10
+                ],
+                "ankle": [
+                  6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -16
+                ],
+                "knee": [
+                  -3,
+                  -9
+                ],
+                "ankle": [
+                  -6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": 0,
+              "lean": 0,
+              "angle": 0,
+              "shift": 0,
+              "phase": "scan",
+              "near": {
+                "hip": [
+                  1,
+                  -16
+                ],
+                "knee": [
+                  4,
+                  -10
+                ],
+                "ankle": [
+                  6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -16
+                ],
+                "knee": [
+                  -3,
+                  -9
+                ],
+                "ankle": [
+                  -6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": 0,
+              "lean": 0,
+              "angle": 0,
+              "shift": 0,
+              "phase": "scan",
+              "near": {
+                "hip": [
+                  1,
+                  -16
+                ],
+                "knee": [
+                  4,
+                  -10
+                ],
+                "ankle": [
+                  6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -16
+                ],
+                "knee": [
+                  -3,
+                  -9
+                ],
+                "ankle": [
+                  -6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": 0,
+              "lean": 0,
+              "angle": 0,
+              "shift": 0,
+              "phase": "scan",
+              "near": {
+                "hip": [
+                  1,
+                  -16
+                ],
+                "knee": [
+                  4,
+                  -10
+                ],
+                "ankle": [
+                  6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -16
+                ],
+                "knee": [
+                  -3,
+                  -9
+                ],
+                "ankle": [
+                  -6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": 0,
+              "lean": 0,
+              "angle": 0,
+              "shift": 0,
+              "phase": "scan",
+              "near": {
+                "hip": [
+                  1,
+                  -16
+                ],
+                "knee": [
+                  4,
+                  -10
+                ],
+                "ankle": [
+                  6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -16
+                ],
+                "knee": [
+                  -3,
+                  -9
+                ],
+                "ankle": [
+                  -6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            }
+          ],
+          "walk": [
+            {
+              "bob": 1,
+              "lean": 0,
+              "angle": 0,
+              "shift": 0,
+              "phase": "contact",
+              "near": {
+                "hip": [
+                  1,
+                  -15
+                ],
+                "knee": [
+                  6,
+                  -10
+                ],
+                "ankle": [
+                  7,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -15
+                ],
+                "knee": [
+                  -2,
+                  -8
+                ],
+                "ankle": [
+                  -7,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": 1,
+              "lean": 0,
+              "angle": 0,
+              "shift": 0,
+              "phase": "down",
+              "near": {
+                "hip": [
+                  1,
+                  -15
+                ],
+                "knee": [
+                  6,
+                  -10
+                ],
+                "ankle": [
+                  5,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -15
+                ],
+                "knee": [
+                  0,
+                  -8
+                ],
+                "ankle": [
+                  -6,
+                  -5
+                ],
+                "pitch": 0.75,
+                "contact": false
+              }
+            },
+            {
+              "bob": 1,
+              "lean": 0,
+              "angle": 0,
+              "shift": 0,
+              "phase": "support",
+              "near": {
+                "hip": [
+                  1,
+                  -15
+                ],
+                "knee": [
+                  5,
+                  -10
+                ],
+                "ankle": [
+                  3,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -15
+                ],
+                "knee": [
+                  3,
+                  -9
+                ],
+                "ankle": [
+                  -4,
+                  -7
+                ],
+                "pitch": 0.45,
+                "contact": false
+              }
+            },
+            {
+              "bob": 0,
+              "lean": 0,
+              "angle": 0,
+              "shift": 0,
+              "phase": "pass",
+              "near": {
+                "hip": [
+                  1,
+                  -16
+                ],
+                "knee": [
+                  4,
+                  -9
+                ],
+                "ankle": [
+                  1,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -16
+                ],
+                "knee": [
+                  5,
+                  -12
+                ],
+                "ankle": [
+                  -1,
+                  -8
+                ],
+                "pitch": 0,
+                "contact": false
+              }
+            },
+            {
+              "bob": 0,
+              "lean": 0,
+              "angle": 0,
+              "shift": 0,
+              "phase": "rise",
+              "near": {
+                "hip": [
+                  1,
+                  -16
+                ],
+                "knee": [
+                  2,
+                  -9
+                ],
+                "ankle": [
+                  -1,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -16
+                ],
+                "knee": [
+                  5,
+                  -13
+                ],
+                "ankle": [
+                  2,
+                  -7
+                ],
+                "pitch": -0.2,
+                "contact": false
+              }
+            },
+            {
+              "bob": 0,
+              "lean": 0,
+              "angle": 0,
+              "shift": 0,
+              "phase": "push",
+              "near": {
+                "hip": [
+                  1,
+                  -16
+                ],
+                "knee": [
+                  1,
+                  -9
+                ],
+                "ankle": [
+                  -3,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -16
+                ],
+                "knee": [
+                  5,
+                  -12
+                ],
+                "ankle": [
+                  4,
+                  -5
+                ],
+                "pitch": -0.25,
+                "contact": false
+              }
+            },
+            {
+              "bob": 1,
+              "lean": 0,
+              "angle": 0,
+              "shift": 0,
+              "phase": "contact",
+              "near": {
+                "hip": [
+                  1,
+                  -15
+                ],
+                "knee": [
+                  0,
+                  -8
+                ],
+                "ankle": [
+                  -5,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -15
+                ],
+                "knee": [
+                  4,
+                  -10
+                ],
+                "ankle": [
+                  5,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": 1,
+              "lean": 0,
+              "angle": 0,
+              "shift": 0,
+              "phase": "down",
+              "near": {
+                "hip": [
+                  1,
+                  -15
+                ],
+                "knee": [
+                  2,
+                  -8
+                ],
+                "ankle": [
+                  -4,
+                  -5
+                ],
+                "pitch": 0.75,
+                "contact": false
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -15
+                ],
+                "knee": [
+                  4,
+                  -10
+                ],
+                "ankle": [
+                  3,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": 1,
+              "lean": 0,
+              "angle": 0,
+              "shift": 0,
+              "phase": "support",
+              "near": {
+                "hip": [
+                  1,
+                  -15
+                ],
+                "knee": [
+                  5,
+                  -9
+                ],
+                "ankle": [
+                  -2,
+                  -7
+                ],
+                "pitch": 0.45,
+                "contact": false
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -15
+                ],
+                "knee": [
+                  3,
+                  -10
+                ],
+                "ankle": [
+                  1,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": 0,
+              "lean": 0,
+              "angle": 0,
+              "shift": 0,
+              "phase": "pass",
+              "near": {
+                "hip": [
+                  1,
+                  -16
+                ],
+                "knee": [
+                  7,
+                  -12
+                ],
+                "ankle": [
+                  1,
+                  -8
+                ],
+                "pitch": 0,
+                "contact": false
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -16
+                ],
+                "knee": [
+                  2,
+                  -9
+                ],
+                "ankle": [
+                  -1,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": 0,
+              "lean": 0,
+              "angle": 0,
+              "shift": 0,
+              "phase": "rise",
+              "near": {
+                "hip": [
+                  1,
+                  -16
+                ],
+                "knee": [
+                  7,
+                  -13
+                ],
+                "ankle": [
+                  4,
+                  -7
+                ],
+                "pitch": -0.2,
+                "contact": false
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -16
+                ],
+                "knee": [
+                  0,
+                  -9
+                ],
+                "ankle": [
+                  -3,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": 0,
+              "lean": 0,
+              "angle": 0,
+              "shift": 0,
+              "phase": "push",
+              "near": {
+                "hip": [
+                  1,
+                  -16
+                ],
+                "knee": [
+                  7,
+                  -12
+                ],
+                "ankle": [
+                  6,
+                  -5
+                ],
+                "pitch": -0.25,
+                "contact": false
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -16
+                ],
+                "knee": [
+                  -1,
+                  -9
+                ],
+                "ankle": [
+                  -5,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            }
+          ],
+          "run": [
+            {
+              "bob": 1,
+              "lean": 1,
+              "angle": 0,
+              "shift": 0,
+              "phase": "contact",
+              "near": {
+                "hip": [
+                  1,
+                  -15
+                ],
+                "knee": [
+                  6,
+                  -10
+                ],
+                "ankle": [
+                  7,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -15
+                ],
+                "knee": [
+                  4,
+                  -10
+                ],
+                "ankle": [
+                  -3,
+                  -11
+                ],
+                "pitch": 0.4,
+                "contact": false
+              }
+            },
+            {
+              "bob": 1,
+              "lean": 1,
+              "angle": 0,
+              "shift": 0,
+              "phase": "down",
+              "near": {
+                "hip": [
+                  1,
+                  -15
+                ],
+                "knee": [
+                  6,
+                  -10
+                ],
+                "ankle": [
+                  5,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -15
+                ],
+                "knee": [
+                  5,
+                  -11
+                ],
+                "ankle": [
+                  -1,
+                  -8
+                ],
+                "pitch": 0,
+                "contact": false
+              }
+            },
+            {
+              "bob": 0,
+              "lean": 1,
+              "angle": 0,
+              "shift": 0,
+              "phase": "support",
+              "near": {
+                "hip": [
+                  1,
+                  -16
+                ],
+                "knee": [
+                  4,
+                  -10
+                ],
+                "ankle": [
+                  2,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -16
+                ],
+                "knee": [
+                  5,
+                  -12
+                ],
+                "ankle": [
+                  2,
+                  -6
+                ],
+                "pitch": -0.3,
+                "contact": false
+              }
+            },
+            {
+              "bob": -1,
+              "lean": 1,
+              "angle": 0,
+              "shift": 0,
+              "phase": "push",
+              "near": {
+                "hip": [
+                  1,
+                  -17
+                ],
+                "knee": [
+                  3,
+                  -10
+                ],
+                "ankle": [
+                  -2,
+                  -5
+                ],
+                "pitch": 0.9,
+                "contact": false
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -17
+                ],
+                "knee": [
+                  4,
+                  -12
+                ],
+                "ankle": [
+                  4,
+                  -5
+                ],
+                "pitch": -0.35,
+                "contact": false
+              }
+            },
+            {
+              "bob": 0,
+              "lean": 1,
+              "angle": 0,
+              "shift": 0,
+              "phase": "flight",
+              "near": {
+                "hip": [
+                  1,
+                  -16
+                ],
+                "knee": [
+                  3,
+                  -9
+                ],
+                "ankle": [
+                  -4,
+                  -8
+                ],
+                "pitch": 1.1,
+                "contact": false
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -16
+                ],
+                "knee": [
+                  4,
+                  -11
+                ],
+                "ankle": [
+                  5,
+                  -4
+                ],
+                "pitch": -0.3,
+                "contact": false
+              }
+            },
+            {
+              "bob": 0,
+              "lean": 1,
+              "angle": 0,
+              "shift": 0,
+              "phase": "fall",
+              "near": {
+                "hip": [
+                  1,
+                  -16
+                ],
+                "knee": [
+                  4,
+                  -10
+                ],
+                "ankle": [
+                  -3,
+                  -11
+                ],
+                "pitch": 0.8,
+                "contact": false
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -16
+                ],
+                "knee": [
+                  4,
+                  -11
+                ],
+                "ankle": [
+                  5,
+                  -4
+                ],
+                "pitch": -0.2,
+                "contact": false
+              }
+            },
+            {
+              "bob": 1,
+              "lean": 1,
+              "angle": 0,
+              "shift": 0,
+              "phase": "contact",
+              "near": {
+                "hip": [
+                  1,
+                  -15
+                ],
+                "knee": [
+                  6,
+                  -10
+                ],
+                "ankle": [
+                  -1,
+                  -11
+                ],
+                "pitch": 0.4,
+                "contact": false
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -15
+                ],
+                "knee": [
+                  4,
+                  -10
+                ],
+                "ankle": [
+                  5,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": 1,
+              "lean": 1,
+              "angle": 0,
+              "shift": 0,
+              "phase": "down",
+              "near": {
+                "hip": [
+                  1,
+                  -15
+                ],
+                "knee": [
+                  7,
+                  -11
+                ],
+                "ankle": [
+                  1,
+                  -8
+                ],
+                "pitch": 0,
+                "contact": false
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -15
+                ],
+                "knee": [
+                  4,
+                  -10
+                ],
+                "ankle": [
+                  3,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": 0,
+              "lean": 1,
+              "angle": 0,
+              "shift": 0,
+              "phase": "support",
+              "near": {
+                "hip": [
+                  1,
+                  -16
+                ],
+                "knee": [
+                  7,
+                  -12
+                ],
+                "ankle": [
+                  4,
+                  -6
+                ],
+                "pitch": -0.3,
+                "contact": false
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -16
+                ],
+                "knee": [
+                  2,
+                  -10
+                ],
+                "ankle": [
+                  0,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": -1,
+              "lean": 1,
+              "angle": 0,
+              "shift": 0,
+              "phase": "push",
+              "near": {
+                "hip": [
+                  1,
+                  -17
+                ],
+                "knee": [
+                  6,
+                  -12
+                ],
+                "ankle": [
+                  6,
+                  -5
+                ],
+                "pitch": -0.35,
+                "contact": false
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -17
+                ],
+                "knee": [
+                  1,
+                  -10
+                ],
+                "ankle": [
+                  -4,
+                  -5
+                ],
+                "pitch": 0.9,
+                "contact": false
+              }
+            },
+            {
+              "bob": 0,
+              "lean": 1,
+              "angle": 0,
+              "shift": 0,
+              "phase": "flight",
+              "near": {
+                "hip": [
+                  1,
+                  -16
+                ],
+                "knee": [
+                  6,
+                  -11
+                ],
+                "ankle": [
+                  7,
+                  -4
+                ],
+                "pitch": -0.3,
+                "contact": false
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -16
+                ],
+                "knee": [
+                  1,
+                  -9
+                ],
+                "ankle": [
+                  -6,
+                  -8
+                ],
+                "pitch": 1.1,
+                "contact": false
+              }
+            },
+            {
+              "bob": 0,
+              "lean": 1,
+              "angle": 0,
+              "shift": 0,
+              "phase": "fall",
+              "near": {
+                "hip": [
+                  1,
+                  -16
+                ],
+                "knee": [
+                  6,
+                  -11
+                ],
+                "ankle": [
+                  7,
+                  -4
+                ],
+                "pitch": -0.2,
+                "contact": false
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -16
+                ],
+                "knee": [
+                  2,
+                  -10
+                ],
+                "ankle": [
+                  -5,
+                  -11
+                ],
+                "pitch": 0.8,
+                "contact": false
+              }
+            }
+          ],
+          "charge": [
+            {
+              "bob": 0,
+              "lean": 0,
+              "angle": 0,
+              "shift": 0,
+              "phase": "notice",
+              "near": {
+                "hip": [
+                  1,
+                  -16
+                ],
+                "knee": [
+                  4,
+                  -10
+                ],
+                "ankle": [
+                  6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -16
+                ],
+                "knee": [
+                  -3,
+                  -9
+                ],
+                "ankle": [
+                  -6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": 1,
+              "lean": -1,
+              "angle": 0,
+              "shift": 0,
+              "phase": "brace",
+              "near": {
+                "hip": [
+                  1,
+                  -15
+                ],
+                "knee": [
+                  6,
+                  -10
+                ],
+                "ankle": [
+                  6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -15
+                ],
+                "knee": [
+                  -1,
+                  -8
+                ],
+                "ankle": [
+                  -6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": 2,
+              "lean": -1,
+              "angle": 0,
+              "shift": 0,
+              "phase": "windup",
+              "near": {
+                "hip": [
+                  1,
+                  -14
+                ],
+                "knee": [
+                  7,
+                  -10
+                ],
+                "ankle": [
+                  6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -14
+                ],
+                "knee": [
+                  0,
+                  -7
+                ],
+                "ankle": [
+                  -6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": 2,
+              "lean": 0,
+              "angle": 0,
+              "shift": 0,
+              "phase": "aim",
+              "near": {
+                "hip": [
+                  1,
+                  -14
+                ],
+                "knee": [
+                  7,
+                  -10
+                ],
+                "ankle": [
+                  6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -14
+                ],
+                "knee": [
+                  0,
+                  -7
+                ],
+                "ankle": [
+                  -6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": 1,
+              "lean": 1,
+              "angle": 0,
+              "shift": 0,
+              "phase": "lock",
+              "near": {
+                "hip": [
+                  1,
+                  -15
+                ],
+                "knee": [
+                  6,
+                  -10
+                ],
+                "ankle": [
+                  6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -15
+                ],
+                "knee": [
+                  -1,
+                  -8
+                ],
+                "ankle": [
+                  -6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": 1,
+              "lean": 1,
+              "angle": 0,
+              "shift": 0,
+              "phase": "ready",
+              "near": {
+                "hip": [
+                  1,
+                  -15
+                ],
+                "knee": [
+                  6,
+                  -10
+                ],
+                "ankle": [
+                  6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -15
+                ],
+                "knee": [
+                  -1,
+                  -8
+                ],
+                "ankle": [
+                  -6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            }
+          ],
+          "fire": [
+            {
+              "bob": 0,
+              "lean": 0,
+              "angle": 0,
+              "shift": 0,
+              "phase": "aim",
+              "near": {
+                "hip": [
+                  1,
+                  -16
+                ],
+                "knee": [
+                  4,
+                  -10
+                ],
+                "ankle": [
+                  6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -16
+                ],
+                "knee": [
+                  -3,
+                  -9
+                ],
+                "ankle": [
+                  -6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": 0,
+              "lean": -1,
+              "angle": 0,
+              "shift": 0,
+              "phase": "discharge",
+              "near": {
+                "hip": [
+                  1,
+                  -16
+                ],
+                "knee": [
+                  4,
+                  -10
+                ],
+                "ankle": [
+                  6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -16
+                ],
+                "knee": [
+                  -3,
+                  -9
+                ],
+                "ankle": [
+                  -6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": 0,
+              "lean": -1,
+              "angle": 0,
+              "shift": 0,
+              "phase": "recoil",
+              "near": {
+                "hip": [
+                  1,
+                  -16
+                ],
+                "knee": [
+                  4,
+                  -10
+                ],
+                "ankle": [
+                  6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -16
+                ],
+                "knee": [
+                  -3,
+                  -9
+                ],
+                "ankle": [
+                  -6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": 0,
+              "lean": 0,
+              "angle": 0,
+              "shift": 0,
+              "phase": "settle",
+              "near": {
+                "hip": [
+                  1,
+                  -16
+                ],
+                "knee": [
+                  4,
+                  -10
+                ],
+                "ankle": [
+                  6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -16
+                ],
+                "knee": [
+                  -3,
+                  -9
+                ],
+                "ankle": [
+                  -6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": 0,
+              "lean": 0,
+              "angle": 0,
+              "shift": 0,
+              "phase": "vent",
+              "near": {
+                "hip": [
+                  1,
+                  -16
+                ],
+                "knee": [
+                  4,
+                  -10
+                ],
+                "ankle": [
+                  6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -16
+                ],
+                "knee": [
+                  -3,
+                  -9
+                ],
+                "ankle": [
+                  -6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": 0,
+              "lean": 0,
+              "angle": 0,
+              "shift": 0,
+              "phase": "ready",
+              "near": {
+                "hip": [
+                  1,
+                  -16
+                ],
+                "knee": [
+                  4,
+                  -10
+                ],
+                "ankle": [
+                  6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -16
+                ],
+                "knee": [
+                  -3,
+                  -9
+                ],
+                "ankle": [
+                  -6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            }
+          ],
+          "run-fire": [
+            {
+              "bob": 1,
+              "lean": 1,
+              "angle": 0,
+              "shift": 0,
+              "phase": "contact",
+              "near": {
+                "hip": [
+                  1,
+                  -15
+                ],
+                "knee": [
+                  6,
+                  -10
+                ],
+                "ankle": [
+                  7,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -15
+                ],
+                "knee": [
+                  4,
+                  -10
+                ],
+                "ankle": [
+                  -3,
+                  -11
+                ],
+                "pitch": 0.4,
+                "contact": false
+              }
+            },
+            {
+              "bob": 1,
+              "lean": 1,
+              "angle": 0,
+              "shift": 0,
+              "phase": "down",
+              "near": {
+                "hip": [
+                  1,
+                  -15
+                ],
+                "knee": [
+                  6,
+                  -10
+                ],
+                "ankle": [
+                  5,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -15
+                ],
+                "knee": [
+                  5,
+                  -11
+                ],
+                "ankle": [
+                  -1,
+                  -8
+                ],
+                "pitch": 0,
+                "contact": false
+              }
+            },
+            {
+              "bob": 0,
+              "lean": 1,
+              "angle": 0,
+              "shift": 0,
+              "phase": "support",
+              "near": {
+                "hip": [
+                  1,
+                  -16
+                ],
+                "knee": [
+                  4,
+                  -10
+                ],
+                "ankle": [
+                  2,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -16
+                ],
+                "knee": [
+                  5,
+                  -12
+                ],
+                "ankle": [
+                  2,
+                  -6
+                ],
+                "pitch": -0.3,
+                "contact": false
+              }
+            },
+            {
+              "bob": -1,
+              "lean": 1,
+              "angle": 0,
+              "shift": 0,
+              "phase": "push",
+              "near": {
+                "hip": [
+                  1,
+                  -17
+                ],
+                "knee": [
+                  3,
+                  -10
+                ],
+                "ankle": [
+                  -2,
+                  -5
+                ],
+                "pitch": 0.9,
+                "contact": false
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -17
+                ],
+                "knee": [
+                  4,
+                  -12
+                ],
+                "ankle": [
+                  4,
+                  -5
+                ],
+                "pitch": -0.35,
+                "contact": false
+              }
+            },
+            {
+              "bob": 0,
+              "lean": 1,
+              "angle": 0,
+              "shift": 0,
+              "phase": "flight",
+              "near": {
+                "hip": [
+                  1,
+                  -16
+                ],
+                "knee": [
+                  3,
+                  -9
+                ],
+                "ankle": [
+                  -4,
+                  -8
+                ],
+                "pitch": 1.1,
+                "contact": false
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -16
+                ],
+                "knee": [
+                  4,
+                  -11
+                ],
+                "ankle": [
+                  5,
+                  -4
+                ],
+                "pitch": -0.3,
+                "contact": false
+              }
+            },
+            {
+              "bob": 0,
+              "lean": 1,
+              "angle": 0,
+              "shift": 0,
+              "phase": "fall",
+              "near": {
+                "hip": [
+                  1,
+                  -16
+                ],
+                "knee": [
+                  4,
+                  -10
+                ],
+                "ankle": [
+                  -3,
+                  -11
+                ],
+                "pitch": 0.8,
+                "contact": false
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -16
+                ],
+                "knee": [
+                  4,
+                  -11
+                ],
+                "ankle": [
+                  5,
+                  -4
+                ],
+                "pitch": -0.2,
+                "contact": false
+              }
+            },
+            {
+              "bob": 1,
+              "lean": 1,
+              "angle": 0,
+              "shift": 0,
+              "phase": "contact",
+              "near": {
+                "hip": [
+                  1,
+                  -15
+                ],
+                "knee": [
+                  6,
+                  -10
+                ],
+                "ankle": [
+                  -1,
+                  -11
+                ],
+                "pitch": 0.4,
+                "contact": false
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -15
+                ],
+                "knee": [
+                  4,
+                  -10
+                ],
+                "ankle": [
+                  5,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": 1,
+              "lean": 1,
+              "angle": 0,
+              "shift": 0,
+              "phase": "down",
+              "near": {
+                "hip": [
+                  1,
+                  -15
+                ],
+                "knee": [
+                  7,
+                  -11
+                ],
+                "ankle": [
+                  1,
+                  -8
+                ],
+                "pitch": 0,
+                "contact": false
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -15
+                ],
+                "knee": [
+                  4,
+                  -10
+                ],
+                "ankle": [
+                  3,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": 0,
+              "lean": 1,
+              "angle": 0,
+              "shift": 0,
+              "phase": "support",
+              "near": {
+                "hip": [
+                  1,
+                  -16
+                ],
+                "knee": [
+                  7,
+                  -12
+                ],
+                "ankle": [
+                  4,
+                  -6
+                ],
+                "pitch": -0.3,
+                "contact": false
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -16
+                ],
+                "knee": [
+                  2,
+                  -10
+                ],
+                "ankle": [
+                  0,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": -1,
+              "lean": 1,
+              "angle": 0,
+              "shift": 0,
+              "phase": "push",
+              "near": {
+                "hip": [
+                  1,
+                  -17
+                ],
+                "knee": [
+                  6,
+                  -12
+                ],
+                "ankle": [
+                  6,
+                  -5
+                ],
+                "pitch": -0.35,
+                "contact": false
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -17
+                ],
+                "knee": [
+                  1,
+                  -10
+                ],
+                "ankle": [
+                  -4,
+                  -5
+                ],
+                "pitch": 0.9,
+                "contact": false
+              }
+            },
+            {
+              "bob": 0,
+              "lean": 1,
+              "angle": 0,
+              "shift": 0,
+              "phase": "flight",
+              "near": {
+                "hip": [
+                  1,
+                  -16
+                ],
+                "knee": [
+                  6,
+                  -11
+                ],
+                "ankle": [
+                  7,
+                  -4
+                ],
+                "pitch": -0.3,
+                "contact": false
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -16
+                ],
+                "knee": [
+                  1,
+                  -9
+                ],
+                "ankle": [
+                  -6,
+                  -8
+                ],
+                "pitch": 1.1,
+                "contact": false
+              }
+            },
+            {
+              "bob": 0,
+              "lean": 1,
+              "angle": 0,
+              "shift": 0,
+              "phase": "fall",
+              "near": {
+                "hip": [
+                  1,
+                  -16
+                ],
+                "knee": [
+                  6,
+                  -11
+                ],
+                "ankle": [
+                  7,
+                  -4
+                ],
+                "pitch": -0.2,
+                "contact": false
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -16
+                ],
+                "knee": [
+                  2,
+                  -10
+                ],
+                "ankle": [
+                  -5,
+                  -11
+                ],
+                "pitch": 0.8,
+                "contact": false
+              }
+            }
+          ],
+          "melee": [
+            {
+              "bob": 0,
+              "lean": 0,
+              "angle": 0,
+              "shift": 0,
+              "phase": "guard",
+              "near": {
+                "hip": [
+                  1,
+                  -16
+                ],
+                "knee": [
+                  4,
+                  -10
+                ],
+                "ankle": [
+                  6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -16
+                ],
+                "knee": [
+                  -3,
+                  -9
+                ],
+                "ankle": [
+                  -6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": 1,
+              "lean": -1,
+              "angle": 0,
+              "shift": 0,
+              "phase": "windup",
+              "near": {
+                "hip": [
+                  1,
+                  -15
+                ],
+                "knee": [
+                  6,
+                  -10
+                ],
+                "ankle": [
+                  6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -15
+                ],
+                "knee": [
+                  -1,
+                  -8
+                ],
+                "ankle": [
+                  -6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": 0,
+              "lean": 2,
+              "angle": 0,
+              "shift": 0,
+              "phase": "strike",
+              "near": {
+                "hip": [
+                  1,
+                  -16
+                ],
+                "knee": [
+                  4,
+                  -10
+                ],
+                "ankle": [
+                  6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -16
+                ],
+                "knee": [
+                  -3,
+                  -9
+                ],
+                "ankle": [
+                  -6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": 0,
+              "lean": 2,
+              "angle": 0,
+              "shift": 0,
+              "phase": "impact",
+              "near": {
+                "hip": [
+                  1,
+                  -16
+                ],
+                "knee": [
+                  4,
+                  -10
+                ],
+                "ankle": [
+                  6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -16
+                ],
+                "knee": [
+                  -3,
+                  -9
+                ],
+                "ankle": [
+                  -6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": 1,
+              "lean": 1,
+              "angle": 0,
+              "shift": 0,
+              "phase": "retract",
+              "near": {
+                "hip": [
+                  1,
+                  -15
+                ],
+                "knee": [
+                  6,
+                  -10
+                ],
+                "ankle": [
+                  6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -15
+                ],
+                "knee": [
+                  -1,
+                  -8
+                ],
+                "ankle": [
+                  -6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": 0,
+              "lean": 0,
+              "angle": 0,
+              "shift": 0,
+              "phase": "recover",
+              "near": {
+                "hip": [
+                  1,
+                  -16
+                ],
+                "knee": [
+                  4,
+                  -10
+                ],
+                "ankle": [
+                  6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -16
+                ],
+                "knee": [
+                  -3,
+                  -9
+                ],
+                "ankle": [
+                  -6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            }
+          ],
+          "jump": [
+            {
+              "bob": 0,
+              "lean": 1,
+              "angle": 0,
+              "shift": 0,
+              "phase": "takeoff",
+              "near": {
+                "hip": [
+                  1,
+                  -16
+                ],
+                "knee": [
+                  5,
+                  -10
+                ],
+                "ankle": [
+                  0,
+                  -5
+                ],
+                "pitch": 0.6,
+                "contact": false
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -16
+                ],
+                "knee": [
+                  -1,
+                  -9
+                ],
+                "ankle": [
+                  -5,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": -1,
+              "lean": 1,
+              "angle": 0,
+              "shift": 0,
+              "phase": "rise",
+              "near": {
+                "hip": [
+                  1,
+                  -17
+                ],
+                "knee": [
+                  7,
+                  -13
+                ],
+                "ankle": [
+                  4,
+                  -7
+                ],
+                "pitch": -0.1,
+                "contact": false
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -17
+                ],
+                "knee": [
+                  -1,
+                  -10
+                ],
+                "ankle": [
+                  -6,
+                  -5
+                ],
+                "pitch": 0.8,
+                "contact": false
+              }
+            },
+            {
+              "bob": -1,
+              "lean": 1,
+              "angle": 0,
+              "shift": 0,
+              "phase": "apex",
+              "near": {
+                "hip": [
+                  1,
+                  -17
+                ],
+                "knee": [
+                  8,
+                  -15
+                ],
+                "ankle": [
+                  5,
+                  -9
+                ],
+                "pitch": -0.2,
+                "contact": false
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -17
+                ],
+                "knee": [
+                  0,
+                  -10
+                ],
+                "ankle": [
+                  -6,
+                  -6
+                ],
+                "pitch": 1,
+                "contact": false
+              }
+            },
+            {
+              "bob": 0,
+              "lean": 1,
+              "angle": 0,
+              "shift": 0,
+              "phase": "fall",
+              "near": {
+                "hip": [
+                  1,
+                  -16
+                ],
+                "knee": [
+                  7,
+                  -13
+                ],
+                "ankle": [
+                  6,
+                  -6
+                ],
+                "pitch": -0.2,
+                "contact": false
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -16
+                ],
+                "knee": [
+                  1,
+                  -9
+                ],
+                "ankle": [
+                  -5,
+                  -5
+                ],
+                "pitch": 0.6,
+                "contact": false
+              }
+            },
+            {
+              "bob": 3,
+              "lean": 1,
+              "angle": 0,
+              "shift": 0,
+              "phase": "land",
+              "near": {
+                "hip": [
+                  1,
+                  -13
+                ],
+                "knee": [
+                  7,
+                  -10
+                ],
+                "ankle": [
+                  6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -13
+                ],
+                "knee": [
+                  2,
+                  -7
+                ],
+                "ankle": [
+                  -4,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": 1,
+              "lean": 1,
+              "angle": 0,
+              "shift": 0,
+              "phase": "recover",
+              "near": {
+                "hip": [
+                  1,
+                  -15
+                ],
+                "knee": [
+                  6,
+                  -10
+                ],
+                "ankle": [
+                  4,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -15
+                ],
+                "knee": [
+                  1,
+                  -8
+                ],
+                "ankle": [
+                  -4,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            }
+          ],
+          "hurt": [
+            {
+              "bob": 0,
+              "lean": -2,
+              "angle": -0.08,
+              "shift": 0,
+              "phase": "impact",
+              "near": {
+                "hip": [
+                  1,
+                  -16
+                ],
+                "knee": [
+                  4,
+                  -10
+                ],
+                "ankle": [
+                  6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -16
+                ],
+                "knee": [
+                  -3,
+                  -9
+                ],
+                "ankle": [
+                  -6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": 1,
+              "lean": -2,
+              "angle": -0.12,
+              "shift": 0,
+              "phase": "recoil",
+              "near": {
+                "hip": [
+                  1,
+                  -15
+                ],
+                "knee": [
+                  6,
+                  -10
+                ],
+                "ankle": [
+                  6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -15
+                ],
+                "knee": [
+                  -1,
+                  -8
+                ],
+                "ankle": [
+                  -6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": 1,
+              "lean": -1,
+              "angle": -0.04,
+              "shift": 0,
+              "phase": "settle",
+              "near": {
+                "hip": [
+                  1,
+                  -15
+                ],
+                "knee": [
+                  6,
+                  -10
+                ],
+                "ankle": [
+                  6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -15
+                ],
+                "knee": [
+                  -1,
+                  -8
+                ],
+                "ankle": [
+                  -6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": 0,
+              "lean": 0,
+              "angle": 0,
+              "shift": 0,
+              "phase": "recover",
+              "near": {
+                "hip": [
+                  1,
+                  -16
+                ],
+                "knee": [
+                  4,
+                  -10
+                ],
+                "ankle": [
+                  6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -16
+                ],
+                "knee": [
+                  -3,
+                  -9
+                ],
+                "ankle": [
+                  -6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            }
+          ],
+          "death": [
+            {
+              "bob": 0,
+              "lean": 0,
+              "angle": -0.1,
+              "shift": 0,
+              "phase": "hit",
+              "near": {
+                "hip": [
+                  1,
+                  -16
+                ],
+                "knee": [
+                  4,
+                  -10
+                ],
+                "ankle": [
+                  6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -1,
+                  -16
+                ],
+                "knee": [
+                  -4,
+                  -10
+                ],
+                "ankle": [
+                  -6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": 1,
+              "lean": 0,
+              "angle": -0.16,
+              "shift": -1,
+              "phase": "fail",
+              "near": {
+                "hip": [
+                  0,
+                  -15
+                ],
+                "knee": [
+                  5,
+                  -10
+                ],
+                "ankle": [
+                  6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -2,
+                  -15
+                ],
+                "knee": [
+                  -7,
+                  -10
+                ],
+                "ankle": [
+                  -6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": 3,
+              "lean": 0,
+              "angle": 0.15,
+              "shift": -1,
+              "phase": "buckle",
+              "near": {
+                "hip": [
+                  0,
+                  -13
+                ],
+                "knee": [
+                  6,
+                  -10
+                ],
+                "ankle": [
+                  6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -2,
+                  -13
+                ],
+                "knee": [
+                  -8,
+                  -10
+                ],
+                "ankle": [
+                  -6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": 5,
+              "lean": 0,
+              "angle": 0.52,
+              "shift": -2,
+              "phase": "fall",
+              "near": {
+                "hip": [
+                  -1,
+                  -11
+                ],
+                "knee": [
+                  6,
+                  -10
+                ],
+                "ankle": [
+                  6,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -3,
+                  -11
+                ],
+                "knee": [
+                  -10,
+                  -9
+                ],
+                "ankle": [
+                  -7,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": 8,
+              "lean": 0,
+              "angle": 1.16,
+              "shift": -5,
+              "phase": "impact",
+              "near": {
+                "hip": [
+                  -4,
+                  -8
+                ],
+                "knee": [
+                  3,
+                  -10
+                ],
+                "ankle": [
+                  5,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -6,
+                  -8
+                ],
+                "knee": [
+                  -13,
+                  -9
+                ],
+                "ankle": [
+                  -10,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": 8,
+              "lean": 0,
+              "angle": 1.5,
+              "shift": -6,
+              "phase": "settle",
+              "near": {
+                "hip": [
+                  -5,
+                  -8
+                ],
+                "knee": [
+                  2,
+                  -10
+                ],
+                "ankle": [
+                  3,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -7,
+                  -8
+                ],
+                "knee": [
+                  -14,
+                  -10
+                ],
+                "ankle": [
+                  -13,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": 8,
+              "lean": 0,
+              "angle": 1.47,
+              "shift": -6,
+              "phase": "power-down",
+              "near": {
+                "hip": [
+                  -5,
+                  -8
+                ],
+                "knee": [
+                  2,
+                  -10
+                ],
+                "ankle": [
+                  3,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -7,
+                  -8
+                ],
+                "knee": [
+                  -14,
+                  -10
+                ],
+                "ankle": [
+                  -13,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            },
+            {
+              "bob": 8,
+              "lean": 0,
+              "angle": 1.47,
+              "shift": -6,
+              "phase": "wreck",
+              "near": {
+                "hip": [
+                  -5,
+                  -8
+                ],
+                "knee": [
+                  2,
+                  -10
+                ],
+                "ankle": [
+                  3,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              },
+              "far": {
+                "hip": [
+                  -7,
+                  -8
+                ],
+                "knee": [
+                  -14,
+                  -10
+                ],
+                "ankle": [
+                  -13,
+                  -3
+                ],
+                "pitch": 0,
+                "contact": true
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

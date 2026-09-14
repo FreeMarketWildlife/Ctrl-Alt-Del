@@ -1,0 +1,147 @@
+{
+  "assetId": "cad.mini.recyke.train-car",
+  "revision": 1,
+  "name": "Public rail · carriage",
+  "kind": "background",
+  "biome": "recyke",
+  "family": "mini",
+  "approval": "review-candidate",
+  "source": {
+    "type": "adapted-native",
+    "file": "recyke-development/recyke-art.js",
+    "function": "skyline train",
+    "note": "Separated native carriage; movement belongs to scene provider."
+  },
+  "native": {
+    "width": 64,
+    "height": 27,
+    "origin": [
+      0,
+      27
+    ],
+    "originName": "base-left",
+    "selectionBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 64,
+      "height": 27
+    },
+    "visibleBounds": [
+      {
+        "variant": 0,
+        "frame": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 26
+      }
+    ],
+    "animationEnvelope": {
+      "x": 0,
+      "y": 0,
+      "width": 64,
+      "height": 27
+    }
+  },
+  "sockets": [
+    {
+      "id": "next",
+      "type": "rail-car-mini",
+      "x": 68,
+      "y": 0,
+      "facing": "right"
+    }
+  ],
+  "render": {
+    "kind": "sprite-sheet",
+    "layer": "distant",
+    "parallax": {
+      "x": 1,
+      "y": 1
+    },
+    "variants": [
+      {
+        "id": "v0",
+        "uri": "assets/mini/train-car.png",
+        "sha256": "e817fb25c872e5db07cfbba0fa8534002d83bdecb23122eb47dfa29654159b79",
+        "width": 64,
+        "height": 27
+      }
+    ],
+    "frameSize": [
+      64,
+      27
+    ],
+    "frameCount": 1,
+    "allowedFacing": [
+      1
+    ],
+    "scale": 1
+  },
+  "collision": {
+    "defaults": [],
+    "decorative": true,
+    "behavior": "none"
+  },
+  "properties": {
+    "variant": {
+      "type": "integer",
+      "default": 0,
+      "min": 0,
+      "max": 0,
+      "description": "Explicit visual variation; collision is unchanged."
+    },
+    "state": {
+      "type": "enum",
+      "values": [
+        "idle"
+      ],
+      "default": "idle"
+    }
+  },
+  "animation": {
+    "states": {
+      "idle": {
+        "frames": [
+          0
+        ],
+        "timingMs": [
+          1000
+        ],
+        "loop": true
+      }
+    },
+    "frameEvents": [],
+    "timingUnit": "ms",
+    "sourceFramesOnly": true,
+    "deterministic": true
+  },
+  "tags": [
+    "mini",
+    "recyke",
+    "background",
+    "train",
+    "rail",
+    "public",
+    "background",
+    "native"
+  ],
+  "thumbnail": {
+    "uri": "assets/mini/train-car.png",
+    "frame": 0,
+    "variant": 0,
+    "nativeSize": [
+      64,
+      27
+    ],
+    "noResample": true
+  },
+  "placement": {
+    "snap": 1,
+    "suggestedGrid": 8,
+    "preview": "native-art+anchor+collision",
+    "repeat": null,
+    "allowScale": false,
+    "allowRotation": false
+  }
+}

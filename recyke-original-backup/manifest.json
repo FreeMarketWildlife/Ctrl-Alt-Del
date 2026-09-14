@@ -1,0 +1,98 @@
+{
+  "AGENTS.md": {
+    "before": "be768dcafc6f51c643480b7e0d1f92316ed07262aad87ca1820531e4d5173037",
+    "after": "5b2df268beb81948f3ef62e136a5c4a0041b336107a7e93c0377ca23edf1c366"
+  },
+  "ART-STANDARDS.md": {
+    "before": "7d48c1e207179731facb0e86ec75277a50657e5abc9cee92d198efc5a5aa8df6",
+    "after": "3998ab37cf18b612a2f910452f58108f37b392044c0838034c8bb4ab1f0519f8"
+  },
+  "ENEMY-STANDARD.md": {
+    "before": "9602fef623786dd7c37a5b7839d7e3f06a1af8ce0d4c9138890117434af09782",
+    "after": "da9105c717cee9a55c800b45ba4f2d03a7b80b170b0d4fc7627da1af3748bd47"
+  },
+  "JANE-STANDARD.md": {
+    "before": "e4384169fc961d259a07a87870762140f7e550673a1d183a73b1a089e282bfb9",
+    "after": "98932fd9c078e2f704a57fd83e42cf9c99aaa04168fd0052a872fb765b8301bd"
+  },
+  "README.md": {
+    "before": "e65b4909ad75897cb72abba2b052ce1ef31efc50d8659cdd67782af8da44c74c",
+    "after": "c2cd6663e9b19566730dfee41f34f61f97a7ad997045215390f22d3843bc3813"
+  },
+  "RECYKE-LEVEL.md": {
+    "before": null,
+    "after": "b696995a934d238d48040dbe0878827f6720a46b55e426f0e082c58d253d64e0"
+  },
+  "codex.html": {
+    "before": "b1b5c7a7d5a14b9ec3d628dcc9f20a72261d4303c958727cc43b09c1139dd05d",
+    "after": "d1fe472782ffd5af39e9b6cadf35f761840ddfdfeb2bff1f8d8fc51453e5f948"
+  },
+  "docs/review/recyke-big-small.png": {
+    "before": null,
+    "after": "c0daa7ac9d6ab6fb9bc17d3a04ea3b827a52d7738e563b7776339904a7f4d408"
+  },
+  "docs/review/recyke-playthrough.gif": {
+    "before": null,
+    "after": "ee03d62a8f3d1e4e056a831ae4d8a18caea3394a44a47481647efa08a1a22c51"
+  },
+  "enemies.html": {
+    "before": "22937f419e9f8c479eda03d92df7c1825edc918b3dfaf488ae0b9ecbd12623f3",
+    "after": "c94070543bf2e02eddb9f23040a8e18f83bc4453d4f2848746c60cc8125b7e0c"
+  },
+  "jane.html": {
+    "before": "5d3578cf94d601e232100fe62411f22fc3d8917ba8b40f5c379390f5323c4f91",
+    "after": "3212bb8ed1eecd1fcfa98191418f1e82a9c82d9767ea3a5f1beea9cb06b44cc5"
+  },
+  "jessie.html": {
+    "before": "2feec9cf2d5b8314db874b23b7c806bbc77a90f6ade59d7f2572b88efd842a97",
+    "after": "2e00d892c7c3130f8811ceccf354109d6843a904142413a847207c176ac58350"
+  },
+  "play.html": {
+    "before": "a4ba269ff2bac02b1efe2b4a03f2b3caefa0b50096db565804195b54d4f549b5",
+    "after": "10c8bd15f5917c06c4f34d55877bddacedb14a49f42592d435d2c83e6a158a00"
+  },
+  "play.js": {
+    "before": "09d24ad29c355dd867717f8d38f53b79929b137689ca9345d1d85e2783ee6e1a",
+    "after": "b0498f09a5ce45f6b2230f225c6aacf67f2b7587942ae166a7af669356b45a0d"
+  },
+  "recyke-art.js": {
+    "before": null,
+    "after": "7c761b7beceb5fcfad47e3440ed7ca9b7f90724f905c18db824d8a7a6f8d905b"
+  },
+  "recyke-level.js": {
+    "before": null,
+    "after": "9f4afd3080ddd27875b3ab9f493255de7fdde8ce4f0dfb00bd8e1993afbddef1"
+  },
+  "recyke.css": {
+    "before": null,
+    "after": "09aecee0dc3f9291f9ebb3789ab75d2fd52fbe370a9c72ca008dd9601e340eff"
+  },
+  "recyke.html": {
+    "before": null,
+    "after": "08840cb3dd2d6b41d65472ca40df6b377c090ff302da2674f4502524535756b5"
+  },
+  "recyke.js": {
+    "before": null,
+    "after": "c321c0213212c9aafbab76b2ba6f98272a44d3437cc8aafa70b1aa03e717ff7a"
+  },
+  "tests/recyke-art.cjs": {
+    "before": null,
+    "after": "2ab4a6e269aabb54f993ddd29d6fefd29fc31bd30feb92bf3687d7b1f41fe229"
+  },
+  "tests/recyke-browser.cjs": {
+    "before": null,
+    "after": "c1e0bd872b85f199541939a97484baf70202ef4f7b1d7d43c5c6db4341952b25"
+  },
+  "tests/recyke-heroes-enemies-baseline.json": {
+    "before": null,
+    "after": "5ab8054eeb7e9dbe014ec08b6df8147a64d22510d818375b029195511fbbfdd1"
+  },
+  "tests/recyke-level.cjs": {
+    "before": null,
+    "after": "82ec8015f82d98dfd2f261449da993616e02085db53cdae9a71f248c8b458a50"
+  },
+  "tests/render-recyke-review.cjs": {
+    "before": null,
+    "after": "c57d31ec1ba0958e19e612f5e40b368e726f9bcaf3e76edbbc3c3556d0f79e88"
+  }
+}

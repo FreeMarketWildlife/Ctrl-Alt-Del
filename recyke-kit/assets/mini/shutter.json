@@ -1,0 +1,155 @@
+{
+  "assetId": "cad.mini.recyke.shutter",
+  "revision": 1,
+  "name": "Workshop · closed shutter bay",
+  "kind": "building",
+  "biome": "recyke",
+  "family": "mini",
+  "approval": "review-candidate",
+  "source": {
+    "type": "new-native",
+    "file": "src/mini.cjs",
+    "renderer": "src/painters.cjs"
+  },
+  "native": {
+    "width": 64,
+    "height": 112,
+    "origin": [
+      0,
+      112
+    ],
+    "originName": "base-left",
+    "selectionBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 64,
+      "height": 112
+    },
+    "visibleBounds": [
+      {
+        "variant": 0,
+        "frame": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 112
+      },
+      {
+        "variant": 1,
+        "frame": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 112
+      }
+    ],
+    "animationEnvelope": {
+      "x": 0,
+      "y": 0,
+      "width": 64,
+      "height": 112
+    }
+  },
+  "sockets": [],
+  "render": {
+    "kind": "sprite-sheet",
+    "layer": "architecture",
+    "parallax": {
+      "x": 1,
+      "y": 1
+    },
+    "variants": [
+      {
+        "id": "v0",
+        "uri": "assets/mini/shutter-v0.png",
+        "sha256": "4f0c240cff0cf8b00af23f808278f4767e4b9d5ee3c7313e409d8530d29dc6ba",
+        "width": 64,
+        "height": 112
+      },
+      {
+        "id": "v1",
+        "uri": "assets/mini/shutter-v1.png",
+        "sha256": "8f116ba8f46bb0c5a0475a0dc24fbda3aea44e32982ba9dcdb6cc32b19653771",
+        "width": 64,
+        "height": 112
+      }
+    ],
+    "frameSize": [
+      64,
+      112
+    ],
+    "frameCount": 1,
+    "allowedFacing": [
+      1
+    ],
+    "scale": 1
+  },
+  "collision": {
+    "defaults": [],
+    "decorative": true,
+    "behavior": "none"
+  },
+  "properties": {
+    "variant": {
+      "type": "integer",
+      "default": 0,
+      "min": 0,
+      "max": 1,
+      "description": "Explicit visual variation; collision is unchanged."
+    },
+    "state": {
+      "type": "enum",
+      "values": [
+        "idle"
+      ],
+      "default": "idle"
+    }
+  },
+  "animation": {
+    "states": {
+      "idle": {
+        "frames": [
+          0
+        ],
+        "timingMs": [
+          1000
+        ],
+        "loop": true
+      }
+    },
+    "frameEvents": [],
+    "timingUnit": "ms",
+    "sourceFramesOnly": true,
+    "deterministic": true
+  },
+  "tags": [
+    "mini",
+    "recyke",
+    "building",
+    "facade",
+    "workshop",
+    "shutter",
+    "decorative",
+    "native"
+  ],
+  "thumbnail": {
+    "uri": "assets/mini/shutter-v0.png",
+    "frame": 0,
+    "variant": 0,
+    "nativeSize": [
+      64,
+      112
+    ],
+    "noResample": true
+  },
+  "placement": {
+    "snap": 1,
+    "suggestedGrid": 8,
+    "preview": "native-art+anchor+collision",
+    "repeat": {
+      "x": 64
+    },
+    "allowScale": false,
+    "allowRotation": false
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "assetId": "cad.mini.recyke.rail-beam",
+  "revision": 1,
+  "name": "Elevated rail · repeat beam",
+  "kind": "background",
+  "biome": "recyke",
+  "family": "mini",
+  "approval": "review-candidate",
+  "source": {
+    "type": "new-native",
+    "file": "src/mini.cjs",
+    "renderer": "src/painters.cjs"
+  },
+  "native": {
+    "width": 48,
+    "height": 8,
+    "origin": [
+      0,
+      0
+    ],
+    "originName": "top-left",
+    "selectionBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 48,
+      "height": 8
+    },
+    "visibleBounds": [
+      {
+        "variant": 0,
+        "frame": 0,
+        "x": 0,
+        "y": 0,
+        "width": 48,
+        "height": 8
+      }
+    ],
+    "animationEnvelope": {
+      "x": 0,
+      "y": 0,
+      "width": 48,
+      "height": 8
+    }
+  },
+  "sockets": [],
+  "render": {
+    "kind": "sprite-sheet",
+    "layer": "distant",
+    "parallax": {
+      "x": 1,
+      "y": 1
+    },
+    "variants": [
+      {
+        "id": "v0",
+        "uri": "assets/mini/rail-beam.png",
+        "sha256": "3749c281bbfa5df357726f174267860a16588307a4a6476b97beb5bb0a7dd6a1",
+        "width": 48,
+        "height": 8
+      }
+    ],
+    "frameSize": [
+      48,
+      8
+    ],
+    "frameCount": 1,
+    "allowedFacing": [
+      1
+    ],
+    "scale": 1
+  },
+  "collision": {
+    "defaults": [],
+    "decorative": true,
+    "behavior": "none"
+  },
+  "properties": {
+    "variant": {
+      "type": "integer",
+      "default": 0,
+      "min": 0,
+      "max": 0,
+      "description": "Explicit visual variation; collision is unchanged."
+    },
+    "state": {
+      "type": "enum",
+      "values": [
+        "idle"
+      ],
+      "default": "idle"
+    }
+  },
+  "animation": {
+    "states": {
+      "idle": {
+        "frames": [
+          0
+        ],
+        "timingMs": [
+          1000
+        ],
+        "loop": true
+      }
+    },
+    "frameEvents": [],
+    "timingUnit": "ms",
+    "sourceFramesOnly": true,
+    "deterministic": true
+  },
+  "tags": [
+    "mini",
+    "recyke",
+    "background",
+    "rail",
+    "beam",
+    "repeat",
+    "native"
+  ],
+  "thumbnail": {
+    "uri": "assets/mini/rail-beam.png",
+    "frame": 0,
+    "variant": 0,
+    "nativeSize": [
+      48,
+      8
+    ],
+    "noResample": true
+  },
+  "placement": {
+    "snap": 1,
+    "suggestedGrid": 8,
+    "preview": "native-art+anchor+collision",
+    "repeat": {
+      "x": 48
+    },
+    "allowScale": false,
+    "allowRotation": false
+  }
+}

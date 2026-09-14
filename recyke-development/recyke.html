@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#111a1b">
+  <title>Recyke / First Shift — CTRL ALT DEL</title>
+  <link rel="stylesheet" href="recyke.css?v=0.17.0">
+</head>
+<body>
+<main>
+  <header class="site-header">
+    <a href="play.html">CTRL ALT DEL</a>
+    <nav aria-label="Project navigation"><a href="codex.html">Concept Art</a><a href="enemies.html">Enemy workshop</a></nav>
+  </header>
+  <section class="intro" aria-labelledby="level-title">
+    <div><p class="eyebrow">STARTER MISSION / THE RECYKE</p><h1 id="level-title">First Shift<span>.</span></h1><p class="brief">Through the sorting yard. Past the machines. Reach Line 7.</p></div>
+    <div class="mission-stamp"><span>RCY—07</span><small>RECLAMATION DISTRICT</small><p>A/D move · W jump<br>S/Down duck · Space fire · E melee<br>Q swap · P pause</p></div>
+  </section>
+
+  <div class="mission-tools" id="mission-tools">
+    <div class="choice" role="group" aria-label="Character size"><span class="tool-label">VERSION</span><div class="segments"><button type="button" data-size="mini" aria-pressed="true">Mini</button></div></div>
+    <div class="choice" role="group" aria-label="Playable character"><span class="tool-label">HERO</span><div class="segments"><button type="button" data-hero="jessie" aria-pressed="true">Jessie</button><button type="button" data-hero="jane" aria-pressed="false">Jane</button></div></div>
+    <div class="session-actions"><label class="assist"><input type="checkbox" id="auto-fire"> Auto fire</label><button type="button" id="restart-button">Restart</button><button type="button" id="pause-button" aria-pressed="false">Pause <kbd>P</kbd></button></div>
+  </div>
+
+  <section class="mission" aria-label="Playable Recyke starter mission">
+    <div class="game-hud">
+      <div class="health-stat"><span id="hero-name">JESSIE</span><meter id="health-meter" min="0" max="100" value="100" aria-label="Health">100</meter><span id="health-value">100 / 100</span></div>
+      <div class="zone-stat"><span class="hud-label">SECTOR</span><strong id="zone-name">Receiving yard</strong></div>
+      <div class="progress-stat"><span id="route-label">LINE 7</span><progress id="route-progress" max="1" value="0" aria-label="Progress to Line 7">0%</progress><span id="progress-value">0%</span></div>
+    </div>
+    <div class="game-stage" id="game-stage" tabindex="0" aria-label="Game viewport; scroll horizontally on narrow screens">
+      <canvas id="game-canvas" width="480" height="270" tabindex="0" aria-label="Recyke starter level. Move with A and D or arrow keys. Jump with W or Up. Hold S or Down to crouch. Fire with Space or K. Melee with E. Swap character with Q. Pause with P." aria-describedby="keyboard-help">Your browser needs canvas support to play this level.</canvas>
+    </div>
+    <div class="field-note"><span class="live-dot" aria-hidden="true"></span><p id="field-notice">Reach Line 7. Follow the painted arrows through the yard.</p><span id="checkpoint-status">CHECKPOINT / NOT REACHED</span></div>
+    <p id="viewport-note" hidden>The scene keeps its crisp pixels. Turn your phone sideways or pan the viewport to see more.</p>
+    <div class="touch-controls" aria-label="Touch game controls">
+      <div class="touch-direction"><button type="button" data-control="left" aria-label="Move left">Left</button><button type="button" data-control="right" aria-label="Move right">Right</button><button type="button" data-control="down" aria-label="Hold to crouch">Duck</button></div>
+      <div class="touch-actions"><button type="button" data-control="swap" aria-label="Swap Jessie and Jane">Swap</button><button type="button" data-control="melee" aria-label="Melee attack">Melee</button><button type="button" data-control="jump" aria-label="Jump">Jump</button><button type="button" data-control="fire" class="fire-control" aria-label="Fire weapon">Fire</button></div>
+    </div>
+  </section>
+
+  <div class="mission-bottom">
+    <p class="family-note" id="family-note">Mini / 32px characters</p>
+    <p id="combat-count">0 machines disabled</p>
+  </div>
+  <details class="field-guide" id="keyboard-help">
+    <summary>Field guide <span>KEYBOARD + TOUCH</span></summary>
+    <div class="guide-columns">
+      <div><h2>Keep moving.</h2><p>Follow the yard toward Line 7. Jump onto sorting platforms, watch for charging machines, and use the checkpoint before the final stretch.</p><p>Change hero at any time. Pressing Restart begins a new run. Hold S or Down on the ground to crouch. Keep holding while moving or firing. Release to stand when there is room.</p></div>
+      <div class="key-list"><p><kbd>A</kbd><kbd>D</kbd><span>Move / arrow keys also work</span></p><p><kbd>S</kbd><kbd>Down</kbd><span>Hold to crouch; move and fire while ducking</span></p><p><kbd>W</kbd><span>Jump / Up also works</span></p><p><kbd>Space</kbd><kbd>K</kbd><span>Hold to fire</span></p><p><kbd>E</kbd><span>Melee</span><kbd>Q</kbd><span>Swap hero</span></p><p><kbd>P</kbd><span>Pause</span><kbd>R</kbd><span>Retry when paused or down</span></p></div>
+    </div>
+    <p class="assist-note">Auto fire keeps your weapon firing while you move. It is optional and starts off.</p>
+  </details>
+  <footer><span>THE RECYKE / FIRST SHIFT</span><div><a href="jessie.html">Jessie</a><a href="jane.html">Jane</a><a href="enemies.html">The machines</a><a href="play.html">Episodes</a></div></footer>
+</main>
+
+<dialog id="mission-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-description">
+  <p class="eyebrow" id="dialog-eyebrow">RUN ON HOLD</p><h2 id="dialog-title">Take a breath.</h2><p id="dialog-description">The yard will wait.</p>
+  <div class="dialog-actions"><button type="button" id="dialog-primary">Resume</button><button type="button" id="dialog-restart">Start over</button></div>
+  <p class="dialog-hint" id="dialog-hint">P or Escape to resume</p>
+</dialog>
+<p class="sr-only" id="announcements" role="status" aria-live="polite"></p>
+<script src="pixel-grid.js?v=0.14.0"></script>
+<script src="jessie-motion.js?v=0.14.0"></script><script src="jessie.js?v=0.14.1"></script>
+<script src="jane-motion.js?v=0.15.0"></script><script src="jane.js?v=0.15.0"></script>
+<script src="enemy-mech-motion.js?v=0.16.0"></script><script src="enemy-mechs.js?v=0.16.0"></script><script src="enemy-drones.js?v=0.16.0"></script><script src="enemies.js?v=0.16.0"></script>
+<script src="recyke-level.js?v=0.17.0"></script><script src="recyke-art.js?v=0.17.0"></script><script src="recyke.js?v=0.17.0"></script>
+</body>
+</html>

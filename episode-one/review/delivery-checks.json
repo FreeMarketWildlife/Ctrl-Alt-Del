@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "coreScenarios": 20,
+  "playableMaps": 12,
+  "chapters": 10,
+  "browserDPR": [
+    1,
+    2
+  ],
+  "playtestReturnCycles": 20,
+  "browserErrors": 0,
+  "nativeAssets": 80,
+  "newNativeAssets": 33,
+  "sourceProtection": {
+    "baselineFilesIncludingNestedGitMetadata": 1949,
+    "changed": [],
+    "kitArchiveFilesCompared": 333
+  },
+  "originalRecykeScenarios": 13,
+  "originalCrouchScenarios": 16,
+  "cutsceneDoorPixels": {
+    "changed": true,
+    "skipMatchesOpen": true,
+    "normalTime": 0.9500000000000001,
+    "skipTime": 0.9
+  }
+}

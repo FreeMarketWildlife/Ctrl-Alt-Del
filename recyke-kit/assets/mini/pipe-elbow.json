@@ -1,0 +1,167 @@
+{
+  "assetId": "cad.mini.recyke.pipe-elbow",
+  "revision": 1,
+  "name": "Pipe · down elbow",
+  "kind": "prop",
+  "biome": "recyke",
+  "family": "mini",
+  "approval": "review-candidate",
+  "source": {
+    "type": "new-native",
+    "file": "src/mini.cjs",
+    "renderer": "src/painters.cjs"
+  },
+  "native": {
+    "width": 16,
+    "height": 16,
+    "origin": [
+      0,
+      0
+    ],
+    "originName": "top-left",
+    "selectionBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 16,
+      "height": 16
+    },
+    "visibleBounds": [
+      {
+        "variant": 0,
+        "frame": 0,
+        "x": 0,
+        "y": 2,
+        "width": 16,
+        "height": 14
+      },
+      {
+        "variant": 1,
+        "frame": 0,
+        "x": 0,
+        "y": 2,
+        "width": 16,
+        "height": 14
+      }
+    ],
+    "animationEnvelope": {
+      "x": 0,
+      "y": 0,
+      "width": 16,
+      "height": 16
+    }
+  },
+  "sockets": [
+    {
+      "id": "in",
+      "type": "pipe-mini",
+      "x": 0,
+      "y": 5,
+      "facing": "left"
+    },
+    {
+      "id": "out",
+      "type": "pipe-mini",
+      "x": 10,
+      "y": 16,
+      "facing": "down"
+    }
+  ],
+  "render": {
+    "kind": "sprite-sheet",
+    "layer": "scenery",
+    "parallax": {
+      "x": 1,
+      "y": 1
+    },
+    "variants": [
+      {
+        "id": "v0",
+        "uri": "assets/mini/pipe-elbow-v0.png",
+        "sha256": "924ed3f3382faeffcb9a6cfe2cadb192d2aa10c338260d29c198b1b52f91f5dc",
+        "width": 16,
+        "height": 16
+      },
+      {
+        "id": "v1",
+        "uri": "assets/mini/pipe-elbow-v1.png",
+        "sha256": "407a54d48297a6a1de739e58d3672aadbf86bdd6a43b739f31276dcfc2a7efe6",
+        "width": 16,
+        "height": 16
+      }
+    ],
+    "frameSize": [
+      16,
+      16
+    ],
+    "frameCount": 1,
+    "allowedFacing": [
+      1
+    ],
+    "scale": 1
+  },
+  "collision": {
+    "defaults": [],
+    "decorative": true,
+    "behavior": "none"
+  },
+  "properties": {
+    "variant": {
+      "type": "integer",
+      "default": 0,
+      "min": 0,
+      "max": 1,
+      "description": "Explicit visual variation; collision is unchanged."
+    },
+    "state": {
+      "type": "enum",
+      "values": [
+        "idle"
+      ],
+      "default": "idle"
+    }
+  },
+  "animation": {
+    "states": {
+      "idle": {
+        "frames": [
+          0
+        ],
+        "timingMs": [
+          1000
+        ],
+        "loop": true
+      }
+    },
+    "frameEvents": [],
+    "timingUnit": "ms",
+    "sourceFramesOnly": true,
+    "deterministic": true
+  },
+  "tags": [
+    "mini",
+    "recyke",
+    "prop",
+    "pipe",
+    "connector",
+    "corner",
+    "native"
+  ],
+  "thumbnail": {
+    "uri": "assets/mini/pipe-elbow-v0.png",
+    "frame": 0,
+    "variant": 0,
+    "nativeSize": [
+      16,
+      16
+    ],
+    "noResample": true
+  },
+  "placement": {
+    "snap": 1,
+    "suggestedGrid": 8,
+    "preview": "native-art+anchor+collision",
+    "repeat": null,
+    "allowScale": false,
+    "allowRotation": false
+  }
+}

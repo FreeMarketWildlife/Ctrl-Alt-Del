@@ -1,0 +1,169 @@
+{
+  "assetId": "cad.mini.recyke.pipe-vertical",
+  "revision": 1,
+  "name": "Pipe · vertical coupling",
+  "kind": "prop",
+  "biome": "recyke",
+  "family": "mini",
+  "approval": "review-candidate",
+  "source": {
+    "type": "new-native",
+    "file": "src/mini.cjs",
+    "renderer": "src/painters.cjs"
+  },
+  "native": {
+    "width": 9,
+    "height": 32,
+    "origin": [
+      0,
+      0
+    ],
+    "originName": "top-left",
+    "selectionBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 9,
+      "height": 32
+    },
+    "visibleBounds": [
+      {
+        "variant": 0,
+        "frame": 0,
+        "x": 1,
+        "y": 0,
+        "width": 7,
+        "height": 32
+      },
+      {
+        "variant": 1,
+        "frame": 0,
+        "x": 1,
+        "y": 0,
+        "width": 7,
+        "height": 32
+      }
+    ],
+    "animationEnvelope": {
+      "x": 0,
+      "y": 0,
+      "width": 9,
+      "height": 32
+    }
+  },
+  "sockets": [
+    {
+      "id": "in",
+      "type": "pipe-mini",
+      "x": 4,
+      "y": 0,
+      "facing": "up"
+    },
+    {
+      "id": "out",
+      "type": "pipe-mini",
+      "x": 4,
+      "y": 32,
+      "facing": "down"
+    }
+  ],
+  "render": {
+    "kind": "sprite-sheet",
+    "layer": "scenery",
+    "parallax": {
+      "x": 1,
+      "y": 1
+    },
+    "variants": [
+      {
+        "id": "v0",
+        "uri": "assets/mini/pipe-vertical-v0.png",
+        "sha256": "953e488b22eeb62c3fa0d1d32a6a138722040b9e95df8f384ad4f19689dedb1f",
+        "width": 9,
+        "height": 32
+      },
+      {
+        "id": "v1",
+        "uri": "assets/mini/pipe-vertical-v1.png",
+        "sha256": "8c53e77ed26ad672b5b94790e68ad0d1a6b3d5a1048ecea85f3b6ee08d36f4fe",
+        "width": 9,
+        "height": 32
+      }
+    ],
+    "frameSize": [
+      9,
+      32
+    ],
+    "frameCount": 1,
+    "allowedFacing": [
+      1
+    ],
+    "scale": 1
+  },
+  "collision": {
+    "defaults": [],
+    "decorative": true,
+    "behavior": "none"
+  },
+  "properties": {
+    "variant": {
+      "type": "integer",
+      "default": 0,
+      "min": 0,
+      "max": 1,
+      "description": "Explicit visual variation; collision is unchanged."
+    },
+    "state": {
+      "type": "enum",
+      "values": [
+        "idle"
+      ],
+      "default": "idle"
+    }
+  },
+  "animation": {
+    "states": {
+      "idle": {
+        "frames": [
+          0
+        ],
+        "timingMs": [
+          1000
+        ],
+        "loop": true
+      }
+    },
+    "frameEvents": [],
+    "timingUnit": "ms",
+    "sourceFramesOnly": true,
+    "deterministic": true
+  },
+  "tags": [
+    "mini",
+    "recyke",
+    "prop",
+    "pipe",
+    "connector",
+    "rust",
+    "native"
+  ],
+  "thumbnail": {
+    "uri": "assets/mini/pipe-vertical-v0.png",
+    "frame": 0,
+    "variant": 0,
+    "nativeSize": [
+      9,
+      32
+    ],
+    "noResample": true
+  },
+  "placement": {
+    "snap": 1,
+    "suggestedGrid": 8,
+    "preview": "native-art+anchor+collision",
+    "repeat": {
+      "y": 32
+    },
+    "allowScale": false,
+    "allowRotation": false
+  }
+}

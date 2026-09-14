@@ -1,0 +1,25 @@
+{
+  "description": "Approved hero masters before the enemy pass. Source, assets, and every native output pixel must remain unchanged.",
+  "files": {
+    "jessie-motion.js": "02b3d6604279b9029290bb80a953559c64465c7c85fb3bd1beb6598734850f40",
+    "jessie.js": "38bd8cee948da2b1c508bb910b1970fd48da54653d6b32f0caa0ba39cf36b97c",
+    "assets/jessie/jessie-animation.json": "75cbd0ec77ef195ae1b1fed5a1da99417bb29e2932bf9b7e383db1cba965c478",
+    "assets/jessie/jessie-big.png": "a8f7005de9c99996d563630ffabd541a5800a780c5c99f698827c4fa5ec16f6a",
+    "assets/jessie/jessie-mini.png": "00c5f93841d3e59e92ae5e4b801c0597c9517bad208a3d05e5da2a0be2e51dc2",
+    "jane-motion.js": "29a56af475a924e5703436ab881542d2c483732a71b7088e569bceded2687b4f",
+    "jane.js": "a4486ede2aab3ae3f50a7792c5743b1e2d419f871d42087a460af988e9276e0c",
+    "assets/jane/jane-animation.json": "99622bde7c736e10132a092237976982ed05a09b809921ffd2277a3c6748eae6",
+    "assets/jane/jane-big.png": "036ac8c48e4eebd140040c0f479f293fc0c5eb5a19143f1de782fbd9fe46e710",
+    "assets/jane/jane-mini.png": "4f678a5469759c9653da26b239afa7838baf3a52a2a3d363f739a53f1e685a0e"
+  },
+  "renderRGBA": {
+    "jessie": {
+      "big": "96505fb680ffc392784e32bb9de0d695b9ddaffd874ea961e82a00584d257a88",
+      "mini": "2a4171ac35963c86fbf36f54c7c33d63c01366cd9d0876e91dfbdd0d08f42705"
+    },
+    "jane": {
+      "big": "15c93323f6d4e5a72ffa4f9e7aa7f76a6b4a959802c9f95c68995535f6adcb19",
+      "mini": "e1bdb0824a443dac08fa9519e27648ff9bbfc00b106d191d738c681ac827ca62"
+    }
+  }
+}

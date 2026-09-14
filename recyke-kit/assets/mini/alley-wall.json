@@ -1,0 +1,155 @@
+{
+  "assetId": "cad.mini.recyke.alley-wall",
+  "revision": 1,
+  "name": "Alley wall · quiet masonry",
+  "kind": "building",
+  "biome": "recyke",
+  "family": "mini",
+  "approval": "review-candidate",
+  "source": {
+    "type": "new-native",
+    "file": "src/mini.cjs",
+    "renderer": "src/painters.cjs"
+  },
+  "native": {
+    "width": 64,
+    "height": 112,
+    "origin": [
+      0,
+      112
+    ],
+    "originName": "base-left",
+    "selectionBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 64,
+      "height": 112
+    },
+    "visibleBounds": [
+      {
+        "variant": 0,
+        "frame": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 112
+      },
+      {
+        "variant": 1,
+        "frame": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 112
+      }
+    ],
+    "animationEnvelope": {
+      "x": 0,
+      "y": 0,
+      "width": 64,
+      "height": 112
+    }
+  },
+  "sockets": [],
+  "render": {
+    "kind": "sprite-sheet",
+    "layer": "architecture",
+    "parallax": {
+      "x": 1,
+      "y": 1
+    },
+    "variants": [
+      {
+        "id": "v0",
+        "uri": "assets/mini/alley-wall-v0.png",
+        "sha256": "985d873d473026b9ee7bf27ca14a91a162b8ab5c2f50f9bd79dd0e86549de1e1",
+        "width": 64,
+        "height": 112
+      },
+      {
+        "id": "v1",
+        "uri": "assets/mini/alley-wall-v1.png",
+        "sha256": "ea5f503d5534cc58799b42281f4cae2c496a37a8274ee7091ef2e41f77afa9f3",
+        "width": 64,
+        "height": 112
+      }
+    ],
+    "frameSize": [
+      64,
+      112
+    ],
+    "frameCount": 1,
+    "allowedFacing": [
+      1
+    ],
+    "scale": 1
+  },
+  "collision": {
+    "defaults": [],
+    "decorative": true,
+    "behavior": "none"
+  },
+  "properties": {
+    "variant": {
+      "type": "integer",
+      "default": 0,
+      "min": 0,
+      "max": 1,
+      "description": "Explicit visual variation; collision is unchanged."
+    },
+    "state": {
+      "type": "enum",
+      "values": [
+        "idle"
+      ],
+      "default": "idle"
+    }
+  },
+  "animation": {
+    "states": {
+      "idle": {
+        "frames": [
+          0
+        ],
+        "timingMs": [
+          1000
+        ],
+        "loop": true
+      }
+    },
+    "frameEvents": [],
+    "timingUnit": "ms",
+    "sourceFramesOnly": true,
+    "deterministic": true
+  },
+  "tags": [
+    "mini",
+    "recyke",
+    "building",
+    "alley",
+    "masonry",
+    "wall",
+    "quiet backdrop",
+    "native"
+  ],
+  "thumbnail": {
+    "uri": "assets/mini/alley-wall-v0.png",
+    "frame": 0,
+    "variant": 0,
+    "nativeSize": [
+      64,
+      112
+    ],
+    "noResample": true
+  },
+  "placement": {
+    "snap": 1,
+    "suggestedGrid": 8,
+    "preview": "native-art+anchor+collision",
+    "repeat": {
+      "x": 64
+    },
+    "allowScale": false,
+    "allowRotation": false
+  }
+}

@@ -1,0 +1,256 @@
+{
+  "assetId": "cad.mini.recyke.press",
+  "revision": 1,
+  "name": "Sorting press · working cycle",
+  "kind": "animated",
+  "biome": "recyke",
+  "family": "mini",
+  "approval": "review-candidate",
+  "source": {
+    "type": "native-extraction",
+    "file": "recyke-development/recyke-art.js",
+    "sha256": "8a8e9d21716e8cbacb20230e75d6953fe6e686392f23cef759b8c10f7d8d1588",
+    "function": "machinery",
+    "nativeCrop": [
+      442,
+      132,
+      63,
+      90
+    ],
+    "noResampling": true
+  },
+  "native": {
+    "width": 63,
+    "height": 90,
+    "origin": [
+      0,
+      90
+    ],
+    "originName": "base-left",
+    "selectionBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 63,
+      "height": 90
+    },
+    "visibleBounds": [
+      {
+        "variant": 0,
+        "frame": 0,
+        "x": 0,
+        "y": 1,
+        "width": 63,
+        "height": 89
+      },
+      {
+        "variant": 0,
+        "frame": 1,
+        "x": 0,
+        "y": 1,
+        "width": 63,
+        "height": 89
+      },
+      {
+        "variant": 0,
+        "frame": 2,
+        "x": 0,
+        "y": 1,
+        "width": 63,
+        "height": 89
+      },
+      {
+        "variant": 0,
+        "frame": 3,
+        "x": 0,
+        "y": 1,
+        "width": 63,
+        "height": 89
+      },
+      {
+        "variant": 0,
+        "frame": 4,
+        "x": 0,
+        "y": 1,
+        "width": 63,
+        "height": 89
+      },
+      {
+        "variant": 0,
+        "frame": 5,
+        "x": 0,
+        "y": 1,
+        "width": 63,
+        "height": 89
+      },
+      {
+        "variant": 0,
+        "frame": 6,
+        "x": 0,
+        "y": 1,
+        "width": 63,
+        "height": 89
+      },
+      {
+        "variant": 0,
+        "frame": 7,
+        "x": 0,
+        "y": 1,
+        "width": 63,
+        "height": 89
+      },
+      {
+        "variant": 0,
+        "frame": 8,
+        "x": 0,
+        "y": 1,
+        "width": 63,
+        "height": 89
+      },
+      {
+        "variant": 0,
+        "frame": 9,
+        "x": 0,
+        "y": 1,
+        "width": 63,
+        "height": 89
+      },
+      {
+        "variant": 0,
+        "frame": 10,
+        "x": 0,
+        "y": 1,
+        "width": 63,
+        "height": 89
+      },
+      {
+        "variant": 0,
+        "frame": 11,
+        "x": 0,
+        "y": 1,
+        "width": 63,
+        "height": 89
+      }
+    ],
+    "animationEnvelope": {
+      "x": 0,
+      "y": 0,
+      "width": 63,
+      "height": 90
+    }
+  },
+  "sockets": [],
+  "render": {
+    "kind": "sprite-sheet",
+    "layer": "scenery",
+    "parallax": {
+      "x": 1,
+      "y": 1
+    },
+    "variants": [
+      {
+        "id": "v0",
+        "uri": "assets/mini/press.png",
+        "sha256": "d81a5d14ca0aee1721c997f39419f10f5b74862bb332ac1770f188b381191a41",
+        "width": 756,
+        "height": 90
+      }
+    ],
+    "frameSize": [
+      63,
+      90
+    ],
+    "frameCount": 12,
+    "allowedFacing": [
+      1
+    ],
+    "scale": 1
+  },
+  "collision": {
+    "defaults": [],
+    "decorative": true,
+    "behavior": "none"
+  },
+  "properties": {
+    "variant": {
+      "type": "integer",
+      "default": 0,
+      "min": 0,
+      "max": 0,
+      "description": "Explicit visual variation; collision is unchanged."
+    },
+    "state": {
+      "type": "enum",
+      "values": [
+        "idle"
+      ],
+      "default": "idle"
+    }
+  },
+  "animation": {
+    "states": {
+      "idle": {
+        "frames": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "timingMs": [
+          582,
+          582,
+          582,
+          582,
+          582,
+          582,
+          582,
+          582,
+          582,
+          582,
+          582,
+          582
+        ],
+        "loop": true
+      }
+    },
+    "frameEvents": [],
+    "timingUnit": "ms",
+    "sourceFramesOnly": true,
+    "deterministic": true
+  },
+  "tags": [
+    "mini",
+    "recyke",
+    "animated",
+    "press",
+    "machinery",
+    "reused",
+    "decorative",
+    "native"
+  ],
+  "thumbnail": {
+    "uri": "assets/mini/press.png",
+    "frame": 0,
+    "variant": 0,
+    "nativeSize": [
+      63,
+      90
+    ],
+    "noResample": true
+  },
+  "placement": {
+    "snap": 1,
+    "suggestedGrid": 8,
+    "preview": "native-art+anchor+collision",
+    "repeat": null,
+    "allowScale": false,
+    "allowRotation": false
+  }
+}

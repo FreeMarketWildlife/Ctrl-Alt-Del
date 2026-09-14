@@ -1,0 +1,146 @@
+{
+  "assetId": "cad.mini.recyke.bins",
+  "revision": 1,
+  "name": "Refuse bin + bag",
+  "kind": "prop",
+  "biome": "recyke",
+  "family": "mini",
+  "approval": "review-candidate",
+  "source": {
+    "type": "native-extraction",
+    "file": "recyke-development/recyke-art.js",
+    "sha256": "8a8e9d21716e8cbacb20230e75d6953fe6e686392f23cef759b8c10f7d8d1588",
+    "function": "machinery",
+    "nativeCrop": [
+      160,
+      194,
+      70,
+      28
+    ],
+    "noResampling": true
+  },
+  "native": {
+    "width": 70,
+    "height": 28,
+    "origin": [
+      0,
+      28
+    ],
+    "originName": "base-left",
+    "selectionBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 70,
+      "height": 28
+    },
+    "visibleBounds": [
+      {
+        "variant": 0,
+        "frame": 0,
+        "x": 0,
+        "y": 3,
+        "width": 67,
+        "height": 25
+      }
+    ],
+    "animationEnvelope": {
+      "x": 0,
+      "y": 0,
+      "width": 70,
+      "height": 28
+    }
+  },
+  "sockets": [],
+  "render": {
+    "kind": "sprite-sheet",
+    "layer": "scenery",
+    "parallax": {
+      "x": 1,
+      "y": 1
+    },
+    "variants": [
+      {
+        "id": "v0",
+        "uri": "assets/mini/bins.png",
+        "sha256": "b078e03ccd9ad67e846b168089dc94659459f772ad1e9e6f363d7ecc5e457281",
+        "width": 70,
+        "height": 28
+      }
+    ],
+    "frameSize": [
+      70,
+      28
+    ],
+    "frameCount": 1,
+    "allowedFacing": [
+      1
+    ],
+    "scale": 1
+  },
+  "collision": {
+    "defaults": [],
+    "decorative": true,
+    "behavior": "none"
+  },
+  "properties": {
+    "variant": {
+      "type": "integer",
+      "default": 0,
+      "min": 0,
+      "max": 0,
+      "description": "Explicit visual variation; collision is unchanged."
+    },
+    "state": {
+      "type": "enum",
+      "values": [
+        "idle"
+      ],
+      "default": "idle"
+    }
+  },
+  "animation": {
+    "states": {
+      "idle": {
+        "frames": [
+          0
+        ],
+        "timingMs": [
+          5000
+        ],
+        "loop": true
+      }
+    },
+    "frameEvents": [],
+    "timingUnit": "ms",
+    "sourceFramesOnly": true,
+    "deterministic": true
+  },
+  "tags": [
+    "mini",
+    "recyke",
+    "prop",
+    "bins",
+    "machinery",
+    "reused",
+    "decorative",
+    "native"
+  ],
+  "thumbnail": {
+    "uri": "assets/mini/bins.png",
+    "frame": 0,
+    "variant": 0,
+    "nativeSize": [
+      70,
+      28
+    ],
+    "noResample": true
+  },
+  "placement": {
+    "snap": 1,
+    "suggestedGrid": 8,
+    "preview": "native-art+anchor+collision",
+    "repeat": null,
+    "allowScale": false,
+    "allowRotation": false
+  }
+}

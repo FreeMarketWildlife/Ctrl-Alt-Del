@@ -1,0 +1,250 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1050" viewBox="0 0 1600 1050" role="img" aria-labelledby="title desc">
+<title id="title">Ctrl Alt Del desktop level editor workspace proposal</title>
+<desc id="desc">Annotated desktop wireframe with asset browser at left, native scene in the center, hierarchy and inspector at right, and mission steps below. A noncanon street to alley demo illustrates placement and links. This is planning documentation, not an editor implementation or approved artwork.</desc>
+<style>text{font-family:Arial,sans-serif;fill:#dce7e3} .small{font-size:13px;fill:#a6b9b3}.label{font-size:14px;font-weight:700;letter-spacing:1px}.title{font-size:25px;font-weight:700}.body{font-size:15px}.mono{font-family:monospace;font-size:13px}.accent{fill:#b9d68a}</style>
+<rect x="0" y="0" width="1600" height="1050" rx="0" fill="#101a18"/>
+<text x="28" y="39" class="title">CTRL ALT DEL / LEVEL EDITOR</text>
+<text x="28" y="64" class="small">Desktop workspace proposal · keyboard + mouse · diagram only</text>
+<text x="1200" y="39" class="label" style="fill:#b9d68a">NONCANON EDITOR DEMO</text>
+<text x="1200" y="62" class="small">Ground · Mini · native art remains 1:1</text>
+<rect x="20" y="86" width="1560" height="55" rx="5" fill="#20332d" stroke="#445950"/>
+<text x="36" y="111" class="label">Recyke street → alley  •</text>
+<text x="36" y="129" class="small">Recovery local · file has unsaved changes</text>
+<rect x="402" y="99" width="70" height="29" rx="4" fill="#293d35" stroke="#4a6255"/>
+<text x="412" y="119" class="small">Save</text>
+<rect x="482" y="99" width="80" height="29" rx="4" fill="#293d35" stroke="#4a6255"/>
+<text x="492" y="119" class="small">Undo</text>
+<rect x="572" y="99" width="80" height="29" rx="4" fill="#293d35" stroke="#4a6255"/>
+<text x="582" y="119" class="small">Redo</text>
+<rect x="662" y="99" width="95" height="29" rx="4" fill="#293d35" stroke="#4a6255"/>
+<text x="672" y="119" class="small">Validate</text>
+<rect x="1037" y="99" width="136" height="29" rx="4" fill="#36513d" stroke="#4a6255"/>
+<text x="1047" y="119" class="small">Play from Start</text>
+<rect x="1183" y="99" width="121" height="29" rx="4" fill="#293d35" stroke="#4a6255"/>
+<text x="1193" y="119" class="small">Play Here ▾</text>
+<rect x="1314" y="99" width="97" height="29" rx="4" fill="#293d35" stroke="#4a6255"/>
+<text x="1324" y="119" class="small">Checkpoint</text>
+<rect x="1421" y="99" width="140" height="29" rx="4" fill="#293d35" stroke="#4a6255"/>
+<text x="1431" y="119" class="small">Stop / return</text>
+<rect x="20" y="151" width="250" height="695" rx="4" fill="#182923" stroke="#3c5147"/>
+<text x="36" y="181" class="label">1  ASSET BROWSER</text>
+<rect x="34" y="195" width="222" height="34" rx="4" fill="#0e1c17" stroke="#506a5c"/>
+<text x="44" y="217" class="small">Search: Recyke, pipe, door…</text>
+<text x="36" y="250" class="body" style="fill:#b9d68a">Terrain   Buildings   Props</text>
+<text x="36" y="274" class="small">Actors   Gameplay   Assemblies</text>
+<path d="M34 286 L256 286" fill="none" stroke="#445950"/>
+<text x="36" y="310" class="small">Native kit / recent assets</text>
+<rect x="34" y="325" width="222" height="62" rx="4" fill="#1d3028" stroke="#344c3d"/>
+<rect x="44" y="337" width="35" height="35" rx="0" fill="#3e5548" stroke="#77917a"/>
+<text x="91" y="350" class="body">Street terrain</text>
+<text x="91" y="370" class="small">8×8 proposed module</text>
+<rect x="34" y="396" width="222" height="62" rx="4" fill="#1d3028" stroke="#344c3d"/>
+<rect x="44" y="408" width="35" height="35" rx="0" fill="#3e5548" stroke="#77917a"/>
+<text x="91" y="421" class="body">Catwalk</text>
+<text x="91" y="441" class="small">One-way top / repeat</text>
+<rect x="34" y="467" width="222" height="62" rx="4" fill="#1d3028" stroke="#344c3d"/>
+<rect x="44" y="479" width="35" height="35" rx="0" fill="#3e5548" stroke="#77917a"/>
+<text x="91" y="492" class="body">Crate</text>
+<text x="91" y="512" class="small">24×16 / solid</text>
+<rect x="34" y="538" width="222" height="62" rx="4" fill="#1d3028" stroke="#344c3d"/>
+<rect x="44" y="550" width="35" height="35" rx="0" fill="#3e5548" stroke="#77917a"/>
+<text x="91" y="563" class="body">Facade bay</text>
+<text x="91" y="583" class="small">Native repeat sockets</text>
+<rect x="34" y="609" width="222" height="62" rx="4" fill="#243a30" stroke="#57725b"/>
+<rect x="44" y="621" width="35" height="35" rx="0" fill="#3e5548" stroke="#77917a"/>
+<text x="91" y="634" class="body">Alley door</text>
+<text x="91" y="654" class="small">Open / closed / locked</text>
+<rect x="34" y="680" width="222" height="62" rx="4" fill="#1d3028" stroke="#344c3d"/>
+<rect x="44" y="692" width="35" height="35" rx="0" fill="#3e5548" stroke="#77917a"/>
+<text x="91" y="705" class="body">Sentinel</text>
+<text x="91" y="725" class="small">48×48 cell / patrol</text>
+<text x="36" y="782" class="small">Drag to place · click to stamp</text>
+<text x="36" y="808" class="small">Ghost shows anchor + collision</text>
+<text x="36" y="832" class="small">Favorites / Recent / All</text>
+<rect x="280" y="151" width="960" height="695" rx="4" fill="#13211c" stroke="#3c5147"/>
+<text x="296" y="180" class="label">2  CANVAS</text>
+<rect x="445" y="161" width="72" height="29" rx="4" fill="#293d35" stroke="#4a6255"/>
+<text x="455" y="181" class="small">Select</text>
+<rect x="527" y="161" width="72" height="29" rx="4" fill="#293d35" stroke="#4a6255"/>
+<text x="537" y="181" class="small">Paint</text>
+<rect x="609" y="161" width="80" height="29" rx="4" fill="#293d35" stroke="#4a6255"/>
+<text x="619" y="181" class="small">Objects</text>
+<rect x="699" y="161" width="100" height="29" rx="4" fill="#293d35" stroke="#4a6255"/>
+<text x="709" y="181" class="small">Geometry</text>
+<text x="1040" y="181" class="small">Grid 8 · Zoom 1×</text>
+<rect x="296" y="199" width="928" height="447" rx="0" fill="#101724" stroke="#3c5147"/>
+<path d="M304 199 L304 646" fill="none" stroke="#1c2930"/>
+<path d="M328 199 L328 646" fill="none" stroke="#1c2930"/>
+<path d="M352 199 L352 646" fill="none" stroke="#1c2930"/>
+<path d="M376 199 L376 646" fill="none" stroke="#1c2930"/>
+<path d="M400 199 L400 646" fill="none" stroke="#1c2930"/>
+<path d="M424 199 L424 646" fill="none" stroke="#1c2930"/>
+<path d="M448 199 L448 646" fill="none" stroke="#1c2930"/>
+<path d="M472 199 L472 646" fill="none" stroke="#1c2930"/>
+<path d="M496 199 L496 646" fill="none" stroke="#1c2930"/>
+<path d="M520 199 L520 646" fill="none" stroke="#1c2930"/>
+<path d="M544 199 L544 646" fill="none" stroke="#1c2930"/>
+<path d="M568 199 L568 646" fill="none" stroke="#1c2930"/>
+<path d="M592 199 L592 646" fill="none" stroke="#1c2930"/>
+<path d="M616 199 L616 646" fill="none" stroke="#1c2930"/>
+<path d="M640 199 L640 646" fill="none" stroke="#1c2930"/>
+<path d="M664 199 L664 646" fill="none" stroke="#1c2930"/>
+<path d="M688 199 L688 646" fill="none" stroke="#1c2930"/>
+<path d="M712 199 L712 646" fill="none" stroke="#1c2930"/>
+<path d="M736 199 L736 646" fill="none" stroke="#1c2930"/>
+<path d="M760 199 L760 646" fill="none" stroke="#1c2930"/>
+<path d="M784 199 L784 646" fill="none" stroke="#1c2930"/>
+<path d="M808 199 L808 646" fill="none" stroke="#1c2930"/>
+<path d="M832 199 L832 646" fill="none" stroke="#1c2930"/>
+<path d="M856 199 L856 646" fill="none" stroke="#1c2930"/>
+<path d="M880 199 L880 646" fill="none" stroke="#1c2930"/>
+<path d="M904 199 L904 646" fill="none" stroke="#1c2930"/>
+<path d="M928 199 L928 646" fill="none" stroke="#1c2930"/>
+<path d="M952 199 L952 646" fill="none" stroke="#1c2930"/>
+<path d="M976 199 L976 646" fill="none" stroke="#1c2930"/>
+<path d="M1000 199 L1000 646" fill="none" stroke="#1c2930"/>
+<path d="M1024 199 L1024 646" fill="none" stroke="#1c2930"/>
+<path d="M1048 199 L1048 646" fill="none" stroke="#1c2930"/>
+<path d="M1072 199 L1072 646" fill="none" stroke="#1c2930"/>
+<path d="M1096 199 L1096 646" fill="none" stroke="#1c2930"/>
+<path d="M1120 199 L1120 646" fill="none" stroke="#1c2930"/>
+<path d="M1144 199 L1144 646" fill="none" stroke="#1c2930"/>
+<path d="M1168 199 L1168 646" fill="none" stroke="#1c2930"/>
+<path d="M1192 199 L1192 646" fill="none" stroke="#1c2930"/>
+<path d="M1216 199 L1216 646" fill="none" stroke="#1c2930"/>
+<path d="M296 214 L1224 214" fill="none" stroke="#1c2930"/>
+<path d="M296 238 L1224 238" fill="none" stroke="#1c2930"/>
+<path d="M296 262 L1224 262" fill="none" stroke="#1c2930"/>
+<path d="M296 286 L1224 286" fill="none" stroke="#1c2930"/>
+<path d="M296 310 L1224 310" fill="none" stroke="#1c2930"/>
+<path d="M296 334 L1224 334" fill="none" stroke="#1c2930"/>
+<path d="M296 358 L1224 358" fill="none" stroke="#1c2930"/>
+<path d="M296 382 L1224 382" fill="none" stroke="#1c2930"/>
+<path d="M296 406 L1224 406" fill="none" stroke="#1c2930"/>
+<path d="M296 430 L1224 430" fill="none" stroke="#1c2930"/>
+<path d="M296 454 L1224 454" fill="none" stroke="#1c2930"/>
+<path d="M296 478 L1224 478" fill="none" stroke="#1c2930"/>
+<path d="M296 502 L1224 502" fill="none" stroke="#1c2930"/>
+<path d="M296 526 L1224 526" fill="none" stroke="#1c2930"/>
+<path d="M296 550 L1224 550" fill="none" stroke="#1c2930"/>
+<path d="M296 574 L1224 574" fill="none" stroke="#1c2930"/>
+<path d="M296 598 L1224 598" fill="none" stroke="#1c2930"/>
+<path d="M296 622 L1224 622" fill="none" stroke="#1c2930"/>
+<text x="309" y="223" class="small">Schematic level content / not game art</text>
+<rect x="320" y="297" width="64" height="75" rx="0" fill="#243044"/>
+<rect x="404" y="260" width="64" height="112" rx="0" fill="#243044"/>
+<rect x="508" y="280" width="64" height="92" rx="0" fill="#243044"/>
+<rect x="620" y="252" width="64" height="120" rx="0" fill="#243044"/>
+<rect x="735" y="294" width="64" height="78" rx="0" fill="#243044"/>
+<rect x="833" y="264" width="64" height="108" rx="0" fill="#243044"/>
+<rect x="950" y="291" width="64" height="81" rx="0" fill="#243044"/>
+<rect x="1060" y="257" width="64" height="115" rx="0" fill="#243044"/>
+<rect x="1170" y="286" width="64" height="86" rx="0" fill="#243044"/>
+<rect x="326" y="382" width="280" height="179" rx="0" fill="#344052" stroke="#60737c"/>
+<rect x="634" y="397" width="260" height="164" rx="0" fill="#303747" stroke="#60737c"/>
+<rect x="976" y="352" width="224" height="209" rx="0" fill="#344052" stroke="#60737c"/>
+<rect x="350" y="416" width="26" height="35" rx="0" fill="#5c797e"/>
+<rect x="409" y="416" width="26" height="35" rx="0" fill="#5c797e"/>
+<rect x="468" y="416" width="26" height="35" rx="0" fill="#5c797e"/>
+<rect x="527" y="416" width="26" height="35" rx="0" fill="#5c797e"/>
+<rect x="660" y="416" width="26" height="35" rx="0" fill="#5c797e"/>
+<rect x="719" y="416" width="26" height="35" rx="0" fill="#5c797e"/>
+<rect x="778" y="416" width="26" height="35" rx="0" fill="#5c797e"/>
+<rect x="837" y="416" width="26" height="35" rx="0" fill="#5c797e"/>
+<rect x="1000" y="416" width="26" height="35" rx="0" fill="#5c797e"/>
+<rect x="1059" y="416" width="26" height="35" rx="0" fill="#5c797e"/>
+<rect x="1118" y="416" width="26" height="35" rx="0" fill="#5c797e"/>
+<text x="360" y="372" class="small">STREET FRONTAGE</text>
+<text x="983" y="342" class="small">ALLEY RECESS</text>
+<rect x="296" y="561" width="928" height="76" rx="0" fill="#263d40"/>
+<rect x="296" y="560" width="928" height="3" rx="0" fill="#8bc7b8"/>
+<rect x="491" y="529" width="36" height="31" rx="0" fill="#637477" stroke="#a8bbb3"/>
+<rect x="537" y="511" width="36" height="49" rx="0" fill="#637477" stroke="#a8bbb3"/>
+<rect x="575" y="492" width="134" height="8" rx="0" fill="#6b8585"/>
+<path d="M575 489 L709 489" fill="none" stroke="#9acbe1" stroke-dasharray="4 3"/>
+<text x="585" y="479" class="small">ONE-WAY TOP</text>
+<rect x="355" y="513" width="20" height="47" rx="0" fill="#8e799f" stroke="#d9bbeb"/>
+<text x="333" y="502" class="small">Start</text>
+<path d="M350 560 L380 560" fill="none" stroke="#c8e7b4"/>
+<path d="M365 548 L365 571" fill="none" stroke="#c8e7b4"/>
+<rect x="749" y="514" width="20" height="46" rx="0" fill="#6f9192" stroke="#a5c6ca"/>
+<text x="723" y="504" class="small">Patrol A</text>
+<path d="M715 579 L827 579" fill="none" stroke="#f3c489"/>
+<path d="M715 572 L715 586" fill="none" stroke="#f3c489"/>
+<path d="M827 572 L827 586" fill="none" stroke="#f3c489"/>
+<text x="717" y="605" class="small">Drag endpoints</text>
+<rect x="873" y="524" width="12" height="36" rx="0" fill="#73b9ac"/>
+<text x="847" y="512" class="small">Checkpoint</text>
+<rect x="1064" y="485" width="38" height="75" rx="0" fill="#436779" stroke="#95d4d7"/>
+<rect x="1056" y="477" width="54" height="90" rx="0" fill="none" stroke="#b9d68a"/>
+<rect x="1053" y="474" width="6" height="6" rx="0" fill="#b9d68a"/>
+<rect x="1107" y="474" width="6" height="6" rx="0" fill="#b9d68a"/>
+<rect x="1053" y="564" width="6" height="6" rx="0" fill="#b9d68a"/>
+<rect x="1107" y="564" width="6" height="6" rx="0" fill="#b9d68a"/>
+<text x="1043" y="465" class="small" style="fill:#b9d68a">Alley Door</text>
+<path d="M1083 549 L1083 575" fill="none" stroke="#b9d68a"/>
+<path d="M1071 560 L1095 560" fill="none" stroke="#b9d68a"/>
+<rect x="1143" y="483" width="47" height="77" rx="0" fill="none" stroke="#e5b87c"/>
+<text x="1140" y="471" class="small" style="fill:#e5b87c">Exit</text>
+<rect x="1002" y="532" width="13" height="28" rx="0" fill="#b2c58b"/>
+<text x="948" y="607" class="small" style="fill:#b9d68a">Switch → open door → exit</text>
+<path d="M1009 530 Q1020 448 1065 490" fill="none" stroke="#b9d68a" stroke-dasharray="5 4"/>
+<text x="298" y="671" class="small">Space-drag pan   •   Wheel integer zoom   •   F frame selection   •   G snap</text>
+<text x="298" y="697" class="small">Geometry:  ━ solid    ┄ one-way    □ trigger    + feet/base anchor</text>
+<rect x="296" y="713" width="928" height="116" rx="4" fill="#1b2f27" stroke="#3c5147"/>
+<text x="310" y="735" class="small">SCHEMATIC OVERVIEW</text>
+<rect x="310" y="751" width="700" height="39" rx="0" fill="#283e37" stroke="#597062"/>
+<rect x="815" y="750" width="186" height="41" rx="0" fill="none" stroke="#b9d68a"/>
+<text x="319" y="777" class="small">Street entry     →     Service frontage     →     Alley mouth     →     Exit</text>
+<text x="311" y="813" class="small">Overview navigates the map; it does not resample game artwork.</text>
+<rect x="1250" y="151" width="330" height="277" rx="4" fill="#182923" stroke="#3c5147"/>
+<text x="1266" y="181" class="label">3  HIERARCHY</text>
+<text x="1510" y="181" class="small">Eye / lock</text>
+<text x="1267" y="213" class="small">Background  /  skyline + train</text>
+<text x="1267" y="241" class="small">World  /  street + platforms</text>
+<text x="1267" y="269" class="small">Actors  /  Jane + Patrol A</text>
+<text x="1267" y="297" class="small">Alley entrance  /  group</text>
+<rect x="1260" y="305" width="310" height="26" rx="0" fill="#35513b"/>
+<text x="1267" y="325" class="small" style="fill:#c5ddb0">    Alley Door  [selected]</text>
+<text x="1267" y="353" class="small">    Pipe + lamp</text>
+<text x="1267" y="381" class="small">Gameplay  /  switch + exit</text>
+<rect x="1250" y="438" width="330" height="408" rx="4" fill="#182923" stroke="#3c5147"/>
+<text x="1266" y="469" class="label">4  PROPERTY INSPECTOR</text>
+<text x="1266" y="497" class="title">Alley Door</text>
+<text x="1266" y="521" class="small">Mini · native door assembly</text>
+<text x="1266" y="551" class="small">Position</text>
+<text x="1380" y="551" class="small" style="fill:#c6dfad">X 1280     Y 224</text>
+<path d="M1266 562 L1563 562" fill="none" stroke="#445950"/>
+<text x="1266" y="588" class="small">Origin</text>
+<text x="1380" y="588" class="small" style="fill:#c6dfad">Base / feet</text>
+<path d="M1266 599 L1563 599" fill="none" stroke="#445950"/>
+<text x="1266" y="625" class="small">Initial state</text>
+<text x="1380" y="625" class="small" style="fill:#c6dfad">Locked</text>
+<path d="M1266 636 L1563 636" fill="none" stroke="#445950"/>
+<text x="1266" y="662" class="small">Opens when</text>
+<text x="1380" y="662" class="small" style="fill:#c6dfad">Switch used</text>
+<path d="M1266 673 L1563 673" fill="none" stroke="#445950"/>
+<text x="1266" y="699" class="small">Destination</text>
+<text x="1380" y="699" class="small" style="fill:#c6dfad">Demo exit</text>
+<path d="M1266 710 L1563 710" fill="none" stroke="#445950"/>
+<text x="1266" y="754" class="small">▸ Collision   ▸ Events   ▸ Advanced</text>
+<text x="1266" y="781" class="small">Pick a target in the canvas</text>
+<text x="1266" y="811" class="small" style="fill:#b9d68a">No individual sprite scaling</text>
+<rect x="20" y="856" width="1560" height="133" rx="4" fill="#1c3028" stroke="#445950"/>
+<text x="36" y="883" class="label">5  MISSION STEPS</text>
+<text x="256" y="883" class="small">Problems (1)    Sequence ▸</text>
+<rect x="36" y="900" width="260" height="38" rx="4" fill="#2d4735" stroke="#728a63"/>
+<text x="49" y="924" class="small">WHEN switch is used</text>
+<rect x="334" y="900" width="300" height="38" rx="4" fill="#2d4735" stroke="#728a63"/>
+<text x="347" y="924" class="small">COMPLETE switch objective</text>
+<rect x="672" y="900" width="284" height="38" rx="4" fill="#2d4735" stroke="#728a63"/>
+<text x="685" y="924" class="small">OPEN Alley Door</text>
+<rect x="994" y="900" width="294" height="38" rx="4" fill="#2d4735" stroke="#728a63"/>
+<text x="1007" y="924" class="small">ON exit → complete demo</text>
+<text x="303" y="924" class="body" style="fill:#b9d68a">→</text>
+<text x="642" y="924" class="body" style="fill:#b9d68a">→</text>
+<text x="963" y="924" class="body" style="fill:#b9d68a">→</text>
+<text x="36" y="967" class="small">Problems: select a message to frame the object and focus its field. Drafts can save with errors; play requires valid runtime data.</text>
+<text x="29" y="1023" class="body">Progressive controls: place and play first; expand behavior, event cards and sequence tracks when needed.</text>
+<text x="1347" y="1023" class="small">Planning / September 2026</text>
+</svg>

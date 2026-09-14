@@ -1,0 +1,216 @@
+{
+  "status": "appearance proposal A; idle review only",
+  "nativePixelsPerWorldUnit": 1,
+  "frameCounts": {
+    "idle": 8
+  },
+  "timingMs": {
+    "idle": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+    ]
+  },
+  "loops": {
+    "idle": true
+  },
+  "source": "frozen copies of jane-development masters; hashes in source-baseline.json",
+  "characters": {
+    "Jane": {
+      "sizes": {
+        "big": {
+          "width": 128,
+          "height": 128,
+          "anchor": [
+            64,
+            112
+          ],
+          "heightPx": 96
+        },
+        "mini": {
+          "width": 48,
+          "height": 48,
+          "anchor": [
+            20,
+            40
+          ],
+          "heightPx": 32
+        }
+      },
+      "palette": [
+        "#101620",
+        "#1d2634",
+        "#29364d",
+        "#42536a",
+        "#668ec4",
+        "#754b51",
+        "#b87569",
+        "#edb58d",
+        "#321c28",
+        "#662d3b",
+        "#a6504d",
+        "#352449",
+        "#653a86",
+        "#9564bd",
+        "#b7df53",
+        "#d4ccad"
+      ]
+    },
+    "Jessie": {
+      "sizes": {
+        "big": {
+          "width": 128,
+          "height": 128,
+          "anchor": [
+            64,
+            112
+          ],
+          "heightPx": 96
+        },
+        "mini": {
+          "width": 48,
+          "height": 48,
+          "anchor": [
+            20,
+            40
+          ],
+          "heightPx": 32
+        }
+      },
+      "palette": [
+        "#101620",
+        "#1d2634",
+        "#253c5c",
+        "#41658a",
+        "#7893b0",
+        "#352820",
+        "#604032",
+        "#926044",
+        "#edb985",
+        "#ffe0a5",
+        "#331d2a",
+        "#66313c",
+        "#a44b50",
+        "#d17a6b",
+        "#b0956c",
+        "#d4ccad"
+      ]
+    }
+  },
+  "checks": {
+    "rasterCases": 128,
+    "originalFilesUnchanged": 960,
+    "opaque": true,
+    "withinCells": true,
+    "connected": true,
+    "maximumPalette": 16,
+    "otherStatesUnavailable": true
+  },
+  "frameZero": [
+    {
+      "name": "Jane",
+      "version": "current",
+      "size": "big",
+      "bounds": [
+        42,
+        16,
+        104,
+        111
+      ],
+      "colors": 16
+    },
+    {
+      "name": "Jane",
+      "version": "current",
+      "size": "mini",
+      "bounds": [
+        12,
+        8,
+        34,
+        39
+      ],
+      "colors": 16
+    },
+    {
+      "name": "Jane",
+      "version": "proposed",
+      "size": "big",
+      "bounds": [
+        42,
+        16,
+        101,
+        111
+      ],
+      "colors": 16
+    },
+    {
+      "name": "Jane",
+      "version": "proposed",
+      "size": "mini",
+      "bounds": [
+        12,
+        8,
+        34,
+        39
+      ],
+      "colors": 16
+    },
+    {
+      "name": "Jessie",
+      "version": "current",
+      "size": "big",
+      "bounds": [
+        41,
+        16,
+        105,
+        111
+      ],
+      "colors": 15
+    },
+    {
+      "name": "Jessie",
+      "version": "current",
+      "size": "mini",
+      "bounds": [
+        12,
+        8,
+        35,
+        39
+      ],
+      "colors": 13
+    },
+    {
+      "name": "Jessie",
+      "version": "proposed",
+      "size": "big",
+      "bounds": [
+        41,
+        16,
+        105,
+        111
+      ],
+      "colors": 16
+    },
+    {
+      "name": "Jessie",
+      "version": "proposed",
+      "size": "mini",
+      "bounds": [
+        12,
+        8,
+        35,
+        39
+      ],
+      "colors": 15
+    }
+  ],
+  "columns": 8,
+  "rows": [
+    "idle"
+  ]
+}

@@ -1,0 +1,287 @@
+{
+  "name": "Jessie",
+  "sourcePixelWorldUnits": 1,
+  "palette": [
+    "#101620",
+    "#1d2634",
+    "#253c5c",
+    "#41658a",
+    "#7893b0",
+    "#352820",
+    "#604032",
+    "#926044",
+    "#edb985",
+    "#ffe0a5",
+    "#331d2a",
+    "#66313c",
+    "#a44b50",
+    "#d17a6b",
+    "#b0956c",
+    "#d4ccad"
+  ],
+  "sizes": {
+    "mini": {
+      "width": 48,
+      "height": 48,
+      "anchor": [
+        20,
+        40
+      ],
+      "heightPx": 32
+    }
+  },
+  "columns": 12,
+  "rows": [
+    "idle",
+    "walk",
+    "run",
+    "fire",
+    "run-fire",
+    "jump",
+    "jump-fire",
+    "crouch",
+    "jab",
+    "hurt",
+    "crouch-idle",
+    "crouch-walk",
+    "crouch-fire",
+    "crouch-walk-fire"
+  ],
+  "timingMs": {
+    "idle": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "walk": [
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80
+    ],
+    "run": [
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50
+    ],
+    "fire": [
+      60,
+      75,
+      130
+    ],
+    "run-fire": [
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50
+    ],
+    "jump": [
+      70,
+      100,
+      160,
+      110,
+      75,
+      90
+    ],
+    "jump-fire": [
+      70,
+      100,
+      160,
+      110,
+      75,
+      90
+    ],
+    "crouch": [
+      90,
+      140,
+      140,
+      90
+    ],
+    "jab": [
+      90,
+      40,
+      75,
+      65,
+      80,
+      160
+    ],
+    "hurt": [
+      70,
+      100,
+      110
+    ],
+    "crouch-idle": [
+      160,
+      160,
+      160,
+      160
+    ],
+    "crouch-walk": [
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80
+    ],
+    "crouch-fire": [
+      60,
+      75,
+      130
+    ],
+    "crouch-walk-fire": [
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80
+    ]
+  },
+  "frameCounts": {
+    "idle": 8,
+    "walk": 12,
+    "run": 12,
+    "fire": 3,
+    "run-fire": 12,
+    "jump": 6,
+    "jump-fire": 6,
+    "crouch": 4,
+    "jab": 6,
+    "hurt": 3,
+    "crouch-idle": 4,
+    "crouch-walk": 12,
+    "crouch-fire": 3,
+    "crouch-walk-fire": 12
+  },
+  "loops": {
+    "idle": true,
+    "walk": true,
+    "run": true,
+    "fire": false,
+    "run-fire": true,
+    "jump": false,
+    "jump-fire": false,
+    "crouch": false,
+    "jab": false,
+    "hurt": false,
+    "crouch-idle": true,
+    "crouch-walk": true,
+    "crouch-fire": false,
+    "crouch-walk-fire": true
+  },
+  "contactFrames": {
+    "walk": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "run": [
+      0,
+      1,
+      2,
+      6,
+      7,
+      8
+    ],
+    "run-fire": [
+      0,
+      1,
+      2,
+      6,
+      7,
+      8
+    ],
+    "crouch-idle": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "crouch-walk": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "crouch-fire": [
+      0,
+      1,
+      2
+    ],
+    "crouch-walk-fire": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "framePadding": "Repeat final authored pose to fill 12 columns"
+}

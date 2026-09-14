@@ -1,0 +1,137 @@
+{
+  "assetId": "cad.big.recyke.drain",
+  "revision": 1,
+  "name": "Street drain",
+  "kind": "prop",
+  "biome": "recyke",
+  "family": "big",
+  "approval": "review-candidate",
+  "source": {
+    "type": "new-native",
+    "file": "src/big.cjs",
+    "renderer": "src/painters.cjs"
+  },
+  "native": {
+    "width": 48,
+    "height": 13,
+    "origin": [
+      0,
+      13
+    ],
+    "originName": "base-left",
+    "selectionBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 48,
+      "height": 13
+    },
+    "visibleBounds": [
+      {
+        "variant": 0,
+        "frame": 0,
+        "x": 0,
+        "y": 0,
+        "width": 48,
+        "height": 13
+      }
+    ],
+    "animationEnvelope": {
+      "x": 0,
+      "y": 0,
+      "width": 48,
+      "height": 13
+    }
+  },
+  "sockets": [],
+  "render": {
+    "kind": "sprite-sheet",
+    "layer": "foreground",
+    "parallax": {
+      "x": 1,
+      "y": 1
+    },
+    "variants": [
+      {
+        "id": "v0",
+        "uri": "assets/big/drain.png",
+        "sha256": "0bd6969a5fb20660ab5b98785483ad2a7621ca477051f164f7aa09c3aedb43ee",
+        "width": 48,
+        "height": 13
+      }
+    ],
+    "frameSize": [
+      48,
+      13
+    ],
+    "frameCount": 1,
+    "allowedFacing": [
+      1
+    ],
+    "scale": 1
+  },
+  "collision": {
+    "defaults": [],
+    "decorative": true,
+    "behavior": "none"
+  },
+  "properties": {
+    "variant": {
+      "type": "integer",
+      "default": 0,
+      "min": 0,
+      "max": 0,
+      "description": "Explicit visual variation; collision is unchanged."
+    },
+    "state": {
+      "type": "enum",
+      "values": [
+        "idle"
+      ],
+      "default": "idle"
+    }
+  },
+  "animation": {
+    "states": {
+      "idle": {
+        "frames": [
+          0
+        ],
+        "timingMs": [
+          1000
+        ],
+        "loop": true
+      }
+    },
+    "frameEvents": [],
+    "timingUnit": "ms",
+    "sourceFramesOnly": true,
+    "deterministic": true
+  },
+  "tags": [
+    "big",
+    "recyke",
+    "prop",
+    "drain",
+    "grate",
+    "street",
+    "native"
+  ],
+  "thumbnail": {
+    "uri": "assets/big/drain.png",
+    "frame": 0,
+    "variant": 0,
+    "nativeSize": [
+      48,
+      13
+    ],
+    "noResample": true
+  },
+  "placement": {
+    "snap": 1,
+    "suggestedGrid": 16,
+    "preview": "native-art+anchor+collision",
+    "repeat": null,
+    "allowScale": false,
+    "allowRotation": false
+  }
+}

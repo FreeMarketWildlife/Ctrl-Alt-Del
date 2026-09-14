@@ -1,0 +1,336 @@
+{
+  "assetId": "cad.mini.recyke.boiler",
+  "revision": 1,
+  "name": "Boiler + native steam",
+  "kind": "animated",
+  "biome": "recyke",
+  "family": "mini",
+  "approval": "review-candidate",
+  "source": {
+    "type": "native-extraction",
+    "file": "recyke-development/recyke-art.js",
+    "sha256": "8a8e9d21716e8cbacb20230e75d6953fe6e686392f23cef759b8c10f7d8d1588",
+    "function": "machinery",
+    "nativeCrop": [
+      663,
+      118,
+      56,
+      104
+    ],
+    "noResampling": true
+  },
+  "native": {
+    "width": 56,
+    "height": 104,
+    "origin": [
+      7,
+      104
+    ],
+    "originName": "base-left",
+    "selectionBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 56,
+      "height": 104
+    },
+    "visibleBounds": [
+      {
+        "variant": 0,
+        "frame": 0,
+        "x": 7,
+        "y": 9,
+        "width": 40,
+        "height": 90
+      },
+      {
+        "variant": 0,
+        "frame": 1,
+        "x": 7,
+        "y": 8,
+        "width": 40,
+        "height": 91
+      },
+      {
+        "variant": 0,
+        "frame": 2,
+        "x": 7,
+        "y": 7,
+        "width": 40,
+        "height": 92
+      },
+      {
+        "variant": 0,
+        "frame": 3,
+        "x": 7,
+        "y": 6,
+        "width": 40,
+        "height": 93
+      },
+      {
+        "variant": 0,
+        "frame": 4,
+        "x": 7,
+        "y": 4,
+        "width": 40,
+        "height": 95
+      },
+      {
+        "variant": 0,
+        "frame": 5,
+        "x": 7,
+        "y": 9,
+        "width": 40,
+        "height": 90
+      },
+      {
+        "variant": 0,
+        "frame": 6,
+        "x": 7,
+        "y": 8,
+        "width": 40,
+        "height": 91
+      },
+      {
+        "variant": 0,
+        "frame": 7,
+        "x": 7,
+        "y": 7,
+        "width": 40,
+        "height": 92
+      },
+      {
+        "variant": 0,
+        "frame": 8,
+        "x": 7,
+        "y": 6,
+        "width": 40,
+        "height": 93
+      },
+      {
+        "variant": 0,
+        "frame": 9,
+        "x": 7,
+        "y": 4,
+        "width": 40,
+        "height": 95
+      },
+      {
+        "variant": 0,
+        "frame": 10,
+        "x": 7,
+        "y": 9,
+        "width": 40,
+        "height": 90
+      },
+      {
+        "variant": 0,
+        "frame": 11,
+        "x": 7,
+        "y": 8,
+        "width": 39,
+        "height": 91
+      },
+      {
+        "variant": 0,
+        "frame": 12,
+        "x": 7,
+        "y": 7,
+        "width": 39,
+        "height": 92
+      },
+      {
+        "variant": 0,
+        "frame": 13,
+        "x": 7,
+        "y": 6,
+        "width": 38,
+        "height": 93
+      },
+      {
+        "variant": 0,
+        "frame": 14,
+        "x": 7,
+        "y": 4,
+        "width": 38,
+        "height": 95
+      },
+      {
+        "variant": 0,
+        "frame": 15,
+        "x": 7,
+        "y": 9,
+        "width": 40,
+        "height": 90
+      },
+      {
+        "variant": 0,
+        "frame": 16,
+        "x": 7,
+        "y": 8,
+        "width": 40,
+        "height": 91
+      },
+      {
+        "variant": 0,
+        "frame": 17,
+        "x": 7,
+        "y": 7,
+        "width": 40,
+        "height": 92
+      },
+      {
+        "variant": 0,
+        "frame": 18,
+        "x": 7,
+        "y": 6,
+        "width": 40,
+        "height": 93
+      },
+      {
+        "variant": 0,
+        "frame": 19,
+        "x": 7,
+        "y": 4,
+        "width": 39,
+        "height": 95
+      }
+    ],
+    "animationEnvelope": {
+      "x": 0,
+      "y": 0,
+      "width": 56,
+      "height": 104
+    }
+  },
+  "sockets": [],
+  "render": {
+    "kind": "sprite-sheet",
+    "layer": "scenery",
+    "parallax": {
+      "x": 1,
+      "y": 1
+    },
+    "variants": [
+      {
+        "id": "v0",
+        "uri": "assets/mini/boiler.png",
+        "sha256": "231d3fa4f595c9c989c4571ed33eb8f3f0ff47d1ca38c96dd73d3f3000473adc",
+        "width": 1120,
+        "height": 104
+      }
+    ],
+    "frameSize": [
+      56,
+      104
+    ],
+    "frameCount": 20,
+    "allowedFacing": [
+      1
+    ],
+    "scale": 1
+  },
+  "collision": {
+    "defaults": [],
+    "decorative": true,
+    "behavior": "none"
+  },
+  "properties": {
+    "variant": {
+      "type": "integer",
+      "default": 0,
+      "min": 0,
+      "max": 0,
+      "description": "Explicit visual variation; collision is unchanged."
+    },
+    "state": {
+      "type": "enum",
+      "values": [
+        "idle"
+      ],
+      "default": "idle"
+    }
+  },
+  "animation": {
+    "states": {
+      "idle": {
+        "frames": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "timingMs": [
+          250,
+          250,
+          250,
+          250,
+          250,
+          250,
+          250,
+          250,
+          250,
+          250,
+          250,
+          250,
+          250,
+          250,
+          250,
+          250,
+          250,
+          250,
+          250,
+          250
+        ],
+        "loop": true
+      }
+    },
+    "frameEvents": [],
+    "timingUnit": "ms",
+    "sourceFramesOnly": true,
+    "deterministic": true
+  },
+  "tags": [
+    "mini",
+    "recyke",
+    "animated",
+    "boiler",
+    "machinery",
+    "reused",
+    "decorative",
+    "native"
+  ],
+  "thumbnail": {
+    "uri": "assets/mini/boiler.png",
+    "frame": 0,
+    "variant": 0,
+    "nativeSize": [
+      56,
+      104
+    ],
+    "noResample": true
+  },
+  "placement": {
+    "snap": 1,
+    "suggestedGrid": 8,
+    "preview": "native-art+anchor+collision",
+    "repeat": null,
+    "allowScale": false,
+    "allowRotation": false
+  }
+}

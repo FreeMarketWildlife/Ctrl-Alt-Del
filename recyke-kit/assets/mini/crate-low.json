@@ -1,0 +1,152 @@
+{
+  "assetId": "cad.mini.recyke.crate-low",
+  "revision": 1,
+  "name": "Cargo crate · low",
+  "kind": "platform",
+  "biome": "recyke",
+  "family": "mini",
+  "approval": "review-candidate",
+  "source": {
+    "type": "native-extraction",
+    "file": "recyke-development/recyke-art.js",
+    "sha256": "8a8e9d21716e8cbacb20230e75d6953fe6e686392f23cef759b8c10f7d8d1588",
+    "function": "surfaces",
+    "extraction": "exact native rectangle; no resizing"
+  },
+  "native": {
+    "width": 24,
+    "height": 16,
+    "origin": [
+      12,
+      16
+    ],
+    "originName": "base-center",
+    "selectionBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 24,
+      "height": 16
+    },
+    "visibleBounds": [
+      {
+        "variant": 0,
+        "frame": 0,
+        "x": 0,
+        "y": 0,
+        "width": 24,
+        "height": 16
+      }
+    ],
+    "animationEnvelope": {
+      "x": 0,
+      "y": 0,
+      "width": 24,
+      "height": 16
+    }
+  },
+  "sockets": [],
+  "render": {
+    "kind": "sprite-sheet",
+    "layer": "playable",
+    "parallax": {
+      "x": 1,
+      "y": 1
+    },
+    "variants": [
+      {
+        "id": "v0",
+        "uri": "assets/mini/crate-low.png",
+        "sha256": "48971ebbf03a67a34b671aa056ae3f72c458e4c2cd911238d95691daa2a26be1",
+        "width": 24,
+        "height": 16
+      }
+    ],
+    "frameSize": [
+      24,
+      16
+    ],
+    "frameCount": 1,
+    "allowedFacing": [
+      1
+    ],
+    "scale": 1
+  },
+  "collision": {
+    "defaults": [
+      {
+        "channel": "world",
+        "mask": [
+          "player",
+          "projectile"
+        ],
+        "kind": "solid",
+        "x": -12,
+        "y": -16,
+        "width": 24,
+        "height": 16
+      }
+    ],
+    "decorative": false,
+    "behavior": "none"
+  },
+  "properties": {
+    "variant": {
+      "type": "integer",
+      "default": 0,
+      "min": 0,
+      "max": 0,
+      "description": "Explicit visual variation; collision is unchanged."
+    },
+    "state": {
+      "type": "enum",
+      "values": [
+        "idle"
+      ],
+      "default": "idle"
+    }
+  },
+  "animation": {
+    "states": {
+      "idle": {
+        "frames": [
+          0
+        ],
+        "timingMs": [
+          1000
+        ],
+        "loop": true
+      }
+    },
+    "frameEvents": [],
+    "timingUnit": "ms",
+    "sourceFramesOnly": true,
+    "deterministic": true
+  },
+  "tags": [
+    "mini",
+    "recyke",
+    "platform",
+    "crate",
+    "cover",
+    "elevation",
+    "native"
+  ],
+  "thumbnail": {
+    "uri": "assets/mini/crate-low.png",
+    "frame": 0,
+    "variant": 0,
+    "nativeSize": [
+      24,
+      16
+    ],
+    "noResample": true
+  },
+  "placement": {
+    "snap": 1,
+    "suggestedGrid": 8,
+    "preview": "native-art+anchor+collision",
+    "repeat": null,
+    "allowScale": false,
+    "allowRotation": false
+  }
+}

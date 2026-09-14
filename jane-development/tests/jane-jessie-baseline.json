@@ -1,0 +1,14 @@
+{
+  "description": "Jessie native RGBA sprite sheets before the Jane pass. Every output pixel must remain unchanged.",
+  "renderRGBA": {
+    "big": "96505fb680ffc392784e32bb9de0d695b9ddaffd874ea961e82a00584d257a88",
+    "mini": "2a4171ac35963c86fbf36f54c7c33d63c01366cd9d0876e91dfbdd0d08f42705"
+  },
+  "files": {
+    "jessie.js": "a6e0068e1b10f61a6ed198e18f6f772755bdc625a47c071ca240c6be27b98d68",
+    "jessie-motion.js": "184166af8c9471e5bcfa68dcae5bb34bf7853fdee0161f009d16a3af642ec959",
+    "assets/jessie/jessie-mini.png": "eb6ac4ba445328ba48f7c2dd412d1942f890b47f084cbccc168797b2a4588cdb",
+    "assets/jessie/jessie-animation.json": "425e18e8fdaf14754f35d67a2fd4c9e93f2780610d63f4e45fc3e002b44f77e5"
+  },
+  "note": "Mini-only Proposal A with user-authorized held crouch modes. Original action pixels and motion verified against mini-review/crouch-baseline; pre-mini build remains archived."
+}

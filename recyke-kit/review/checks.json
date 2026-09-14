@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "definitions": 94,
+  "nativeSheets": 186,
+  "authoredFrameVariantRasters": 276,
+  "opaquePixelsChecked": 1124275,
+  "compatibleStreetSeamPairs": 96,
+  "protectedFilesUnchanged": 1949,
+  "approvedCharacterSheetsUnchanged": 4,
+  "traversals": [
+    {
+      "family": "mini",
+      "seconds": 15.32,
+      "input": "right + discrete grounded jumps; 3 entrance inspections",
+      "visitedRaised": true,
+      "completed": true
+    },
+    {
+      "family": "big",
+      "seconds": 15.18,
+      "input": "right + discrete grounded jumps; 3 entrance inspections",
+      "visitedRaised": true,
+      "completed": true
+    }
+  ],
+  "limits": [
+    "Traversal harness, not campaign combat simulation.",
+    "Bounds checks run during generation against a padded canvas.",
+    "Art judgment requires the accompanying visual review."
+  ]
+}

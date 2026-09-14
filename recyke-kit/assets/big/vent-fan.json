@@ -1,0 +1,167 @@
+{
+  "assetId": "cad.big.recyke.vent-fan",
+  "revision": 1,
+  "name": "Wall extractor · turning fan",
+  "kind": "animated",
+  "biome": "recyke",
+  "family": "big",
+  "approval": "review-candidate",
+  "source": {
+    "type": "new-native",
+    "file": "src/big.cjs",
+    "renderer": "src/painters.cjs"
+  },
+  "native": {
+    "width": 48,
+    "height": 48,
+    "origin": [
+      0,
+      48
+    ],
+    "originName": "base-left",
+    "selectionBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 48,
+      "height": 48
+    },
+    "visibleBounds": [
+      {
+        "variant": 0,
+        "frame": 0,
+        "x": 0,
+        "y": 0,
+        "width": 48,
+        "height": 48
+      },
+      {
+        "variant": 0,
+        "frame": 1,
+        "x": 0,
+        "y": 0,
+        "width": 48,
+        "height": 48
+      },
+      {
+        "variant": 0,
+        "frame": 2,
+        "x": 0,
+        "y": 0,
+        "width": 48,
+        "height": 48
+      },
+      {
+        "variant": 0,
+        "frame": 3,
+        "x": 0,
+        "y": 0,
+        "width": 48,
+        "height": 48
+      }
+    ],
+    "animationEnvelope": {
+      "x": 0,
+      "y": 0,
+      "width": 48,
+      "height": 48
+    }
+  },
+  "sockets": [],
+  "render": {
+    "kind": "sprite-sheet",
+    "layer": "scenery",
+    "parallax": {
+      "x": 1,
+      "y": 1
+    },
+    "variants": [
+      {
+        "id": "v0",
+        "uri": "assets/big/vent-fan.png",
+        "sha256": "34125aa305f0bfe1e1d75a177776363229ae3bd1d1158e4ff4ed3c6d6a3d3933",
+        "width": 192,
+        "height": 48
+      }
+    ],
+    "frameSize": [
+      48,
+      48
+    ],
+    "frameCount": 4,
+    "allowedFacing": [
+      1
+    ],
+    "scale": 1
+  },
+  "collision": {
+    "defaults": [],
+    "decorative": true,
+    "behavior": "none"
+  },
+  "properties": {
+    "variant": {
+      "type": "integer",
+      "default": 0,
+      "min": 0,
+      "max": 0,
+      "description": "Explicit visual variation; collision is unchanged."
+    },
+    "state": {
+      "type": "enum",
+      "values": [
+        "idle"
+      ],
+      "default": "idle"
+    }
+  },
+  "animation": {
+    "states": {
+      "idle": {
+        "frames": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "timingMs": [
+          140,
+          140,
+          140,
+          140
+        ],
+        "loop": true
+      }
+    },
+    "frameEvents": [],
+    "timingUnit": "ms",
+    "sourceFramesOnly": true,
+    "deterministic": true
+  },
+  "tags": [
+    "big",
+    "recyke",
+    "animated",
+    "vent",
+    "fan",
+    "machinery",
+    "native"
+  ],
+  "thumbnail": {
+    "uri": "assets/big/vent-fan.png",
+    "frame": 0,
+    "variant": 0,
+    "nativeSize": [
+      48,
+      48
+    ],
+    "noResample": true
+  },
+  "placement": {
+    "snap": 1,
+    "suggestedGrid": 16,
+    "preview": "native-art+anchor+collision",
+    "repeat": null,
+    "allowScale": false,
+    "allowRotation": false
+  }
+}

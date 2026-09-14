@@ -1,0 +1,192 @@
+{
+  "assetId": "cad.mini.recyke.facade",
+  "revision": 1,
+  "name": "Tenement · window bay",
+  "kind": "building",
+  "biome": "recyke",
+  "family": "mini",
+  "approval": "review-candidate",
+  "source": {
+    "type": "new-native",
+    "file": "src/mini.cjs",
+    "renderer": "src/painters.cjs"
+  },
+  "native": {
+    "width": 64,
+    "height": 112,
+    "origin": [
+      0,
+      112
+    ],
+    "originName": "base-left",
+    "selectionBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 64,
+      "height": 112
+    },
+    "visibleBounds": [
+      {
+        "variant": 0,
+        "frame": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 112
+      },
+      {
+        "variant": 1,
+        "frame": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 112
+      },
+      {
+        "variant": 2,
+        "frame": 0,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 112
+      }
+    ],
+    "animationEnvelope": {
+      "x": 0,
+      "y": 0,
+      "width": 64,
+      "height": 112
+    }
+  },
+  "sockets": [
+    {
+      "id": "left",
+      "type": "facade-mini",
+      "x": 0,
+      "y": 0,
+      "facing": "left"
+    },
+    {
+      "id": "right",
+      "type": "facade-mini",
+      "x": 64,
+      "y": 0,
+      "facing": "right"
+    },
+    {
+      "id": "roof",
+      "type": "roof-mini",
+      "x": 0,
+      "y": -112,
+      "facing": "up"
+    }
+  ],
+  "render": {
+    "kind": "sprite-sheet",
+    "layer": "architecture",
+    "parallax": {
+      "x": 1,
+      "y": 1
+    },
+    "variants": [
+      {
+        "id": "v0",
+        "uri": "assets/mini/facade-v0.png",
+        "sha256": "4762dcb9f9e7710d75eb403025009196f77a41df2453b64bba602a263ca73deb",
+        "width": 64,
+        "height": 112
+      },
+      {
+        "id": "v1",
+        "uri": "assets/mini/facade-v1.png",
+        "sha256": "248dd235b250b62de5d99c2c538a9f0bf591aadc5d7cb0df0630a86953c00a0c",
+        "width": 64,
+        "height": 112
+      },
+      {
+        "id": "v2",
+        "uri": "assets/mini/facade-v2.png",
+        "sha256": "96680fa95177decd15bfc1e7f47ac6f01a35bd08e6e5405a484ef45486e784b9",
+        "width": 64,
+        "height": 112
+      }
+    ],
+    "frameSize": [
+      64,
+      112
+    ],
+    "frameCount": 1,
+    "allowedFacing": [
+      1
+    ],
+    "scale": 1
+  },
+  "collision": {
+    "defaults": [],
+    "decorative": true,
+    "behavior": "none"
+  },
+  "properties": {
+    "variant": {
+      "type": "integer",
+      "default": 0,
+      "min": 0,
+      "max": 2,
+      "description": "Explicit visual variation; collision is unchanged."
+    },
+    "state": {
+      "type": "enum",
+      "values": [
+        "idle"
+      ],
+      "default": "idle"
+    }
+  },
+  "animation": {
+    "states": {
+      "idle": {
+        "frames": [
+          0
+        ],
+        "timingMs": [
+          1000
+        ],
+        "loop": true
+      }
+    },
+    "frameEvents": [],
+    "timingUnit": "ms",
+    "sourceFramesOnly": true,
+    "deterministic": true
+  },
+  "tags": [
+    "mini",
+    "recyke",
+    "building",
+    "facade",
+    "building",
+    "windows",
+    "wall",
+    "native"
+  ],
+  "thumbnail": {
+    "uri": "assets/mini/facade-v0.png",
+    "frame": 0,
+    "variant": 0,
+    "nativeSize": [
+      64,
+      112
+    ],
+    "noResample": true
+  },
+  "placement": {
+    "snap": 1,
+    "suggestedGrid": 8,
+    "preview": "native-art+anchor+collision",
+    "repeat": {
+      "x": 64
+    },
+    "allowScale": false,
+    "allowRotation": false
+  }
+}

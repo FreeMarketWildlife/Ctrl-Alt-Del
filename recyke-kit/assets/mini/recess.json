@@ -1,0 +1,146 @@
+{
+  "assetId": "cad.mini.recyke.recess",
+  "revision": 1,
+  "name": "Concealed entrance · deep reveal",
+  "kind": "building",
+  "biome": "recyke",
+  "family": "mini",
+  "approval": "review-candidate",
+  "source": {
+    "type": "new-native",
+    "file": "src/mini.cjs",
+    "renderer": "src/painters.cjs"
+  },
+  "native": {
+    "width": 80,
+    "height": 80,
+    "origin": [
+      0,
+      80
+    ],
+    "originName": "base-left",
+    "selectionBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 80,
+      "height": 80
+    },
+    "visibleBounds": [
+      {
+        "variant": 0,
+        "frame": 0,
+        "x": 0,
+        "y": 0,
+        "width": 80,
+        "height": 80
+      }
+    ],
+    "animationEnvelope": {
+      "x": 0,
+      "y": 0,
+      "width": 80,
+      "height": 80
+    }
+  },
+  "sockets": [
+    {
+      "id": "door",
+      "type": "door-mini",
+      "x": 16,
+      "y": 0,
+      "facing": "front"
+    }
+  ],
+  "render": {
+    "kind": "sprite-sheet",
+    "layer": "architecture",
+    "parallax": {
+      "x": 1,
+      "y": 1
+    },
+    "variants": [
+      {
+        "id": "v0",
+        "uri": "assets/mini/recess.png",
+        "sha256": "a3ebb2db6bfa475f15bdc9335c3fd756a0875dc6642c4bfe4995c43dd6dc4826",
+        "width": 80,
+        "height": 80
+      }
+    ],
+    "frameSize": [
+      80,
+      80
+    ],
+    "frameCount": 1,
+    "allowedFacing": [
+      1
+    ],
+    "scale": 1
+  },
+  "collision": {
+    "defaults": [],
+    "decorative": true,
+    "behavior": "none"
+  },
+  "properties": {
+    "variant": {
+      "type": "integer",
+      "default": 0,
+      "min": 0,
+      "max": 0,
+      "description": "Explicit visual variation; collision is unchanged."
+    },
+    "state": {
+      "type": "enum",
+      "values": [
+        "idle"
+      ],
+      "default": "idle"
+    }
+  },
+  "animation": {
+    "states": {
+      "idle": {
+        "frames": [
+          0
+        ],
+        "timingMs": [
+          1000
+        ],
+        "loop": true
+      }
+    },
+    "frameEvents": [],
+    "timingUnit": "ms",
+    "sourceFramesOnly": true,
+    "deterministic": true
+  },
+  "tags": [
+    "mini",
+    "recyke",
+    "building",
+    "door",
+    "entrance",
+    "recess",
+    "moral code",
+    "native"
+  ],
+  "thumbnail": {
+    "uri": "assets/mini/recess.png",
+    "frame": 0,
+    "variant": 0,
+    "nativeSize": [
+      80,
+      80
+    ],
+    "noResample": true
+  },
+  "placement": {
+    "snap": 1,
+    "suggestedGrid": 8,
+    "preview": "native-art+anchor+collision",
+    "repeat": null,
+    "allowScale": false,
+    "allowRotation": false
+  }
+}

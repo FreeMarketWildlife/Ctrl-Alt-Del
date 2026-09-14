@@ -1,0 +1,86 @@
+[
+  {
+    "id": "cad.mini.recyke.alley-entrance",
+    "revision": 1,
+    "family": "mini",
+    "origin": [
+      0,
+      0
+    ],
+    "children": [
+      {
+        "localId": "reveal",
+        "assetId": "cad.mini.recyke.recess",
+        "position": [
+          0,
+          0
+        ]
+      },
+      {
+        "localId": "door",
+        "assetId": "cad.mini.recyke.concealed-door",
+        "position": [
+          16,
+          0
+        ]
+      }
+    ],
+    "exposedProperties": {
+      "doorState": {
+        "target": "door",
+        "property": "state",
+        "values": [
+          "sealed",
+          "latched",
+          "unlatched",
+          "opening",
+          "open"
+        ]
+      }
+    },
+    "repeat": false,
+    "behavior": "none; consumer binds the door entry socket"
+  },
+  {
+    "id": "cad.big.recyke.alley-entrance",
+    "revision": 1,
+    "family": "big",
+    "origin": [
+      0,
+      0
+    ],
+    "children": [
+      {
+        "localId": "reveal",
+        "assetId": "cad.big.recyke.recess",
+        "position": [
+          0,
+          0
+        ]
+      },
+      {
+        "localId": "door",
+        "assetId": "cad.big.recyke.concealed-door",
+        "position": [
+          32,
+          0
+        ]
+      }
+    ],
+    "exposedProperties": {
+      "doorState": {
+        "target": "door",
+        "property": "state",
+        "values": [
+          "sealed",
+          "latched",
+          "unlatched",
+          "opening",
+          "open"
+        ]
+      }
+    },
+    "repeat": false,
+    "behavior": "none; consumer binds the door entry socket"
+  }
+]

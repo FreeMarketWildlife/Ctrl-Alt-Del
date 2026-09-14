@@ -1,0 +1,152 @@
+{
+  "assetId": "cad.mini.recyke.corner",
+  "revision": 1,
+  "name": "Masonry return · exposed corner",
+  "kind": "building",
+  "biome": "recyke",
+  "family": "mini",
+  "approval": "review-candidate",
+  "source": {
+    "type": "new-native",
+    "file": "src/mini.cjs",
+    "renderer": "src/painters.cjs"
+  },
+  "native": {
+    "width": 12,
+    "height": 112,
+    "origin": [
+      0,
+      112
+    ],
+    "originName": "base-left",
+    "selectionBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 12,
+      "height": 112
+    },
+    "visibleBounds": [
+      {
+        "variant": 0,
+        "frame": 0,
+        "x": 0,
+        "y": 0,
+        "width": 12,
+        "height": 112
+      },
+      {
+        "variant": 1,
+        "frame": 0,
+        "x": 0,
+        "y": 0,
+        "width": 12,
+        "height": 112
+      }
+    ],
+    "animationEnvelope": {
+      "x": 0,
+      "y": 0,
+      "width": 12,
+      "height": 112
+    }
+  },
+  "sockets": [],
+  "render": {
+    "kind": "sprite-sheet",
+    "layer": "architecture",
+    "parallax": {
+      "x": 1,
+      "y": 1
+    },
+    "variants": [
+      {
+        "id": "v0",
+        "uri": "assets/mini/corner-v0.png",
+        "sha256": "52179933b15af2aff86393f710a32e5a91c6bd54e0d65f54dfc60e188fc70d8c",
+        "width": 12,
+        "height": 112
+      },
+      {
+        "id": "v1",
+        "uri": "assets/mini/corner-v1.png",
+        "sha256": "7fcbdc6d8abb54424cd142661be907a1b3a7d53fde72a8df7c07527716bc4abd",
+        "width": 12,
+        "height": 112
+      }
+    ],
+    "frameSize": [
+      12,
+      112
+    ],
+    "frameCount": 1,
+    "allowedFacing": [
+      1
+    ],
+    "scale": 1
+  },
+  "collision": {
+    "defaults": [],
+    "decorative": true,
+    "behavior": "none"
+  },
+  "properties": {
+    "variant": {
+      "type": "integer",
+      "default": 0,
+      "min": 0,
+      "max": 1,
+      "description": "Explicit visual variation; collision is unchanged."
+    },
+    "state": {
+      "type": "enum",
+      "values": [
+        "idle"
+      ],
+      "default": "idle"
+    }
+  },
+  "animation": {
+    "states": {
+      "idle": {
+        "frames": [
+          0
+        ],
+        "timingMs": [
+          1000
+        ],
+        "loop": true
+      }
+    },
+    "frameEvents": [],
+    "timingUnit": "ms",
+    "sourceFramesOnly": true,
+    "deterministic": true
+  },
+  "tags": [
+    "mini",
+    "recyke",
+    "building",
+    "corner",
+    "return",
+    "endcap",
+    "native"
+  ],
+  "thumbnail": {
+    "uri": "assets/mini/corner-v0.png",
+    "frame": 0,
+    "variant": 0,
+    "nativeSize": [
+      12,
+      112
+    ],
+    "noResample": true
+  },
+  "placement": {
+    "snap": 1,
+    "suggestedGrid": 8,
+    "preview": "native-art+anchor+collision",
+    "repeat": null,
+    "allowScale": false,
+    "allowRotation": false
+  }
+}
